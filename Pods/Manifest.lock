@@ -1,0 +1,16 @@
+PODS:
+  - KeyboardKit (2.6.0)
+
+DEPENDENCIES:
+  - KeyboardKit
+
+SPEC REPOS:
+  trunk:
+    - KeyboardKit
+
+SPEC CHECKSUMS:
+  KeyboardKit: 66fd5dcd26780f8b2e6ebac7bc0cfd31e58ea182
+
+PODFILE CHECKSUM: 13f0ce51f8b2df94b38b81fc8f7b95978ac41d0f
+
+COCOAPODS: 1.8.4
