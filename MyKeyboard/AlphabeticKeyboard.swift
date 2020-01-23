@@ -39,11 +39,7 @@ extension AlphabeticKeyboard {
         ["z", "x", "c", "v", "b", "n", "m"]
     ]
     
-    static var upperCasedCharacters: [[String]] = [
-        ["Z", "X", "C", "V", "B", "N", "M"],
-        ["Z", "X", "C", "V", "B", "N", "M"],
-        ["Z", "X", "C", "V", "B", "N", "M"]
-    ]
+    static var upperCasedCharacters: [[String]] = []
     
     static func characters(uppercased: Bool) -> [[String]] {
         guard uppercased == true else { return characters }
@@ -57,7 +53,7 @@ extension AlphabeticKeyboard {
     }
     
     static private func needsUppercasedChars() -> Bool {
-        return false
+        return upperCasedCharacters.count > 0 ? true : false
     }
 }
 

@@ -41,6 +41,11 @@ extension KeyboardViewController {
     func setupAlphabeticKeyboard(uppercased: Bool = false, index: Int) {
         
         AlphabeticKeyboard.characters = FontKeyboard.ViewModel.keyboards[index].characters
+        if let upperCasedFont = FontKeyboard.ViewModel.keyboards[index].upperCharacters {
+            AlphabeticKeyboard.upperCasedCharacters = upperCasedFont
+        } else {
+            AlphabeticKeyboard.upperCasedCharacters = []
+        }
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
