@@ -1,16 +1,20 @@
 PODS:
   - KeyboardKit (2.6.0)
+  - ShimmerSwift (2.1.1)
 
 DEPENDENCIES:
   - KeyboardKit
+  - ShimmerSwift
 
 SPEC REPOS:
   trunk:
     - KeyboardKit
+    - ShimmerSwift
 
 SPEC CHECKSUMS:
   KeyboardKit: 66fd5dcd26780f8b2e6ebac7bc0cfd31e58ea182
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
 
-PODFILE CHECKSUM: 13f0ce51f8b2df94b38b81fc8f7b95978ac41d0f
+PODFILE CHECKSUM: bbca313afe74403719d7f6e86aac9294ff0d83bb
 
 COCOAPODS: 1.8.4

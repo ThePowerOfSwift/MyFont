@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QOM-Wg-JWm">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp3-cE-btS">
+                    <rect key="frame" x="0.0" y="0.0" width="427" height="163"/>
+                    <color key="backgroundColor" red="0.25566923619999998" green="0.34606605769999998" blue="0.57649594550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Subscribe" image="lock.open" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="semibold"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bp3-cE-btS" firstAttribute="top" secondItem="QOM-Wg-JWm" secondAttribute="top" id="M7O-wq-uEr"/>
+                <constraint firstItem="bp3-cE-btS" firstAttribute="leading" secondItem="QOM-Wg-JWm" secondAttribute="leading" id="ck0-ql-P1g"/>
+                <constraint firstAttribute="trailing" secondItem="bp3-cE-btS" secondAttribute="trailing" id="pDC-Un-Wb8"/>
+                <constraint firstAttribute="bottom" secondItem="bp3-cE-btS" secondAttribute="bottom" id="uQL-Lp-zHu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nSl-yO-9mz"/>
+            <point key="canvasLocation" x="173.18840579710147" y="47.209821428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lock.open" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

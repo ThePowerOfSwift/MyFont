@@ -54,7 +54,7 @@ extension KeyboardViewController {
     
     private func addFontToolbar(index: Int) {
         var fontsToAdd: [KeyboardAction] = []
-        for i in stride(from: 0, to: 8, by: 1) {
+        for i in stride(from: 0, to: 22, by: 1) {
             let keyBoard = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             fontsToAdd.append(keyBoard)
         }

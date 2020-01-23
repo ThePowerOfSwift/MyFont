@@ -7,6 +7,7 @@ target 'MyFonts' do
 
   # Pods for MyFonts
   pod 'KeyboardKit'
+  pod 'ShimmerSwift'
 
 end
 
@@ -16,5 +17,6 @@ target 'MyKeyboard' do
 
   # Pods for MyKeyboard
   pod 'KeyboardKit'
+  pod 'ShimmerSwift'
 
 end
