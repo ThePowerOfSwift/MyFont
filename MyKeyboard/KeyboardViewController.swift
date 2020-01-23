@@ -35,16 +35,11 @@ class KeyboardViewController: KeyboardInputViewController {
     private func lockKeyboard() {
         // Setup ShimmeringView
         let shimmerView = ShimmeringView(frame: view.bounds)
-        
         let subscribeButton = UIButton.fromNibTyped(owner: self, named: "SubscribeButton", in: .main)
         subscribeButton.alpha = 0.85
-        // Setup the view you want shimmered
-        // Add the view you want shimmered to the `shimmerView`
         shimmerView.contentView = subscribeButton
         view.addSubview(shimmerView)
-        // Start shimmering
         shimmerView.isShimmering = true
-
     }
     
     // MARK: - Keyboard Functionality

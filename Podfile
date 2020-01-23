@@ -8,6 +8,8 @@ target 'MyFonts' do
   # Pods for MyFonts
   pod 'KeyboardKit'
   pod 'ShimmerSwift'
+  pod "UPCarouselFlowLayout"
+  pod 'SwiftyGif'
 
 end
 

@@ -36,6 +36,11 @@
 		8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
 		8F454BDD23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
 		8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B997023D9B90F0093C072 /* SubscribeButton.xib */; };
+		8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */; };
+		8FF0081423D9D231002B5D8A /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081123D9D230002B5D8A /* gif1.gif */; };
+		8FF0081523D9D231002B5D8A /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081223D9D230002B5D8A /* gif2.gif */; };
+		8FF0081623D9D231002B5D8A /* gif0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081323D9D231002B5D8A /* gif0.gif */; };
+		8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */; };
 		D972BEDF3FF90693355B264A /* Pods_MyKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E4E8592A045920483A2A1A /* Pods_MyKeyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +100,11 @@
 		8F454BD423D87F7300E4B696 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontKeyoboardModel.swift; sourceTree = "<group>"; };
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
+		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
+		8FF0081123D9D230002B5D8A /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
+		8FF0081223D9D230002B5D8A /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
+		8FF0081323D9D231002B5D8A /* gif0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif0.gif; sourceTree = "<group>"; };
+		8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCell.swift; sourceTree = "<group>"; };
 		DE96F19AB24D1CA3DD5CEDD7 /* Pods-MyFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.debug.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.debug.xcconfig"; sourceTree = "<group>"; };
 		F6893AAF9EB5C45D76383BFD /* Pods-MyKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +172,8 @@
 		8F3BD9EE23D878A500DE541C /* MyFonts */ = {
 			isa = PBXGroup;
 			children = (
+				8FF0081023D9D14F002B5D8A /* gifs */,
+				8FEDA77323D9C6AB00DF127D /* SubscribeScene */,
 				8F454BD923D8837F00E4B696 /* Shared */,
 				8F454BD023D87C3C00E4B696 /* Assets.swift */,
 				8F3BD9EF23D878A500DE541C /* AppDelegate.swift */,
@@ -220,6 +232,25 @@
 				8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8FEDA77323D9C6AB00DF127D /* SubscribeScene */ = {
+			isa = PBXGroup;
+			children = (
+				8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */,
+				8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */,
+			);
+			path = SubscribeScene;
+			sourceTree = "<group>";
+		};
+		8FF0081023D9D14F002B5D8A /* gifs */ = {
+			isa = PBXGroup;
+			children = (
+				8FF0081323D9D231002B5D8A /* gif0.gif */,
+				8FF0081123D9D230002B5D8A /* gif1.gif */,
+				8FF0081223D9D230002B5D8A /* gif2.gif */,
+			);
+			path = gifs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +339,11 @@
 			files = (
 				8F454BD723D87F7300E4B696 /* Colors.xcassets in Resources */,
 				8F3BD9FC23D878A600DE541C /* LaunchScreen.storyboard in Resources */,
+				8FF0081523D9D231002B5D8A /* gif2.gif in Resources */,
+				8FF0081623D9D231002B5D8A /* gif0.gif in Resources */,
 				8F454BD523D87F7300E4B696 /* Images.xcassets in Resources */,
 				8F3BD9F923D878A600DE541C /* Assets.xcassets in Resources */,
+				8FF0081423D9D231002B5D8A /* gif1.gif in Resources */,
 				8F3BD9F723D878A500DE541C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +433,9 @@
 				8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */,
 				8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
+				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
 				8F3BD9F223D878A500DE541C /* SceneDelegate.swift in Sources */,
+				8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */,
 				8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
