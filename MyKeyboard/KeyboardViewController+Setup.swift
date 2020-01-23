@@ -26,12 +26,16 @@ extension KeyboardViewController {
         KeyboardManager.sharedInstance.currentKeyboard = keyboardType
         keyboardStackView.removeAllArrangedSubviews()
         switch keyboardType {
-        case .alphabetic(let uppercased): setupAlphabeticKeyboard(uppercased: uppercased, index: 0)
-        case .alpabetic(let uppercased, let index): setupAlphabeticKeyboard(uppercased: uppercased, index: index)
+        case .alphabetic(let uppercased):
+            setupAlphabeticKeyboard(uppercased: uppercased, index: KeyboardManager.sharedInstance.currentIndex)
+        case .alpabetic(let uppercased, let index):
+            KeyboardManager.sharedInstance.currentIndex = index
+            setupAlphabeticKeyboard(uppercased: uppercased, index: index)
         case .numeric: setupNumericKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         default: return
         }
+        addFontToolbar(index: KeyboardManager.sharedInstance.currentIndex)
     }
     
     func setupAlphabeticKeyboard(uppercased: Bool = false, index: Int) {
@@ -40,12 +44,12 @@ extension KeyboardViewController {
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
-        addFontToolbar(index: index)
+        //        addFontToolbar(index: index)
     }
     
     private func addFontToolbar(index: Int) {
         var fontsToAdd: [KeyboardAction] = []
-        for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
+        for i in stride(from: 0, to: 8, by: 1) {
             let keyBoard = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             fontsToAdd.append(keyBoard)
         }
@@ -55,7 +59,7 @@ extension KeyboardViewController {
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }
         keyboardStackView.insertArrangedSubview(view, at: 0)
-//        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
+        //        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
     }
     
     func setupNumericKeyboard() {

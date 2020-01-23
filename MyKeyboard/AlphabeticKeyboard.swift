@@ -26,9 +26,9 @@ extension AlphabeticKeyboard {
     
     static func actions(
         uppercased: Bool,
-        in viewController: KeyboardViewController, needsUppercasedChars: Bool = false) -> KeyboardActionRows {
+        in viewController: KeyboardViewController) -> KeyboardActionRows {
         KeyboardActionRows
-            .from(characters(uppercased: uppercased, needsUppercasedChars: needsUppercasedChars))
+            .from(characters(uppercased: uppercased))
             .addingSideActions(uppercased: uppercased)
             .appending(bottomActions(leftmost: switchAction, for: viewController))
     }
@@ -45,15 +45,19 @@ extension AlphabeticKeyboard {
         ["Z", "X", "C", "V", "B", "N", "M"]
     ]
     
-    static func characters(uppercased: Bool, needsUppercasedChars: Bool = false) -> [[String]] {
+    static func characters(uppercased: Bool) -> [[String]] {
         guard uppercased == true else { return characters }
-        guard needsUppercasedChars == false else { return characters.uppercased() }
+        guard needsUppercasedChars() == true else { return characters.uppercased() }
         
         return upperCasedCharacters
     }
     
     static var switchAction: KeyboardAction {
         .switchToKeyboard(.numeric)
+    }
+    
+    static private func needsUppercasedChars() -> Bool {
+        return false
     }
 }
 

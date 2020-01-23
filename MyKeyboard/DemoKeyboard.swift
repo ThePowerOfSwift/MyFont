@@ -21,10 +21,10 @@ extension DemoKeyboard {
     
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
         let actions = [leftmost, .space, .newLine]
-        let isEmoji = vc.keyboardType == .emojis
-        let isImage = vc.keyboardType == .images
-        let includeImageActions = !isEmoji && !isImage
-        return includeImageActions ? actions : actions.withoutImageActions
+//        let isEmoji = vc.keyboardType == .emojis
+//        let isImage = vc.keyboardType == .images
+//        let includeImageActions = !isEmoji && !isImage
+        return actions
     }
 }
 
