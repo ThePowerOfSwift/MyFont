@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CD6D4975D655F14AC785DB3 /* Pods_MyFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E476A4BE1FEC61CD738FDB /* Pods_MyFonts.framework */; };
+		3562061EB11B795ED6AE9FF2 /* Pods_MyKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */; };
+		3BD4F045B96CF1BF34EDDAC6 /* Pods_MyFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */; };
 		8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9EF23D878A500DE541C /* AppDelegate.swift */; };
 		8F3BD9F223D878A500DE541C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F123D878A500DE541C /* SceneDelegate.swift */; };
 		8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F323D878A500DE541C /* ViewController.swift */; };
@@ -35,13 +36,15 @@
 		8F454BD823D87F7300E4B696 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F454BD423D87F7300E4B696 /* Colors.xcassets */; };
 		8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
 		8F454BDD23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
+		8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C723DAD41F00C25DDF /* UserFontModel.swift */; };
+		8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */; };
+		8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */; };
 		8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B997023D9B90F0093C072 /* SubscribeButton.xib */; };
 		8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */; };
 		8FF0081423D9D231002B5D8A /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081123D9D230002B5D8A /* gif1.gif */; };
 		8FF0081523D9D231002B5D8A /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081223D9D230002B5D8A /* gif2.gif */; };
 		8FF0081623D9D231002B5D8A /* gif0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081323D9D231002B5D8A /* gif0.gif */; };
 		8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */; };
-		D972BEDF3FF90693355B264A /* Pods_MyKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E4E8592A045920483A2A1A /* Pods_MyKeyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +72,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36E476A4BE1FEC61CD738FDB /* Pods_MyFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51FF1FF01A6BB87F3962AC72 /* Pods-MyFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.release.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.release.xcconfig"; sourceTree = "<group>"; };
-		63F12F0D921C870675DCCF71 /* Pods-MyKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.release.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.release.xcconfig"; sourceTree = "<group>"; };
-		80E4E8592A045920483A2A1A /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F43F5C1F6432AFCF71415D /* Pods-MyFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.debug.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.debug.xcconfig"; sourceTree = "<group>"; };
+		4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFA6F933E8F89B9482B3FD6 /* Pods-MyFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.release.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.release.xcconfig"; sourceTree = "<group>"; };
+		7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.release.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		8F3BD9EC23D878A500DE541C /* MyFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BD9EF23D878A500DE541C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F3BD9F123D878A500DE541C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,14 +102,17 @@
 		8F454BD323D87F7300E4B696 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8F454BD423D87F7300E4B696 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontKeyoboardModel.swift; sourceTree = "<group>"; };
+		8F7648C723DAD41F00C25DDF /* UserFontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontModel.swift; sourceTree = "<group>"; };
+		8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontsViewController.swift; sourceTree = "<group>"; };
+		8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontCell.swift; sourceTree = "<group>"; };
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		8FF0081123D9D230002B5D8A /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
 		8FF0081223D9D230002B5D8A /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
 		8FF0081323D9D231002B5D8A /* gif0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif0.gif; sourceTree = "<group>"; };
 		8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCell.swift; sourceTree = "<group>"; };
-		DE96F19AB24D1CA3DD5CEDD7 /* Pods-MyFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.debug.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.debug.xcconfig"; sourceTree = "<group>"; };
-		F6893AAF9EB5C45D76383BFD /* Pods-MyKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD6D4975D655F14AC785DB3 /* Pods_MyFonts.framework in Frameworks */,
+				3BD4F045B96CF1BF34EDDAC6 /* Pods_MyFonts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D972BEDF3FF90693355B264A /* Pods_MyKeyboard.framework in Frameworks */,
+				3562061EB11B795ED6AE9FF2 /* Pods_MyKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,19 +138,19 @@
 		04D673BFFCCC25D4B20E510A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE96F19AB24D1CA3DD5CEDD7 /* Pods-MyFonts.debug.xcconfig */,
-				51FF1FF01A6BB87F3962AC72 /* Pods-MyFonts.release.xcconfig */,
-				F6893AAF9EB5C45D76383BFD /* Pods-MyKeyboard.debug.xcconfig */,
-				63F12F0D921C870675DCCF71 /* Pods-MyKeyboard.release.xcconfig */,
+				49F43F5C1F6432AFCF71415D /* Pods-MyFonts.debug.xcconfig */,
+				5DFA6F933E8F89B9482B3FD6 /* Pods-MyFonts.release.xcconfig */,
+				EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */,
+				7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		38A0F262875713028917483C /* Frameworks */ = {
+		2F7FB72810B1F5B3A70C1DA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36E476A4BE1FEC61CD738FDB /* Pods_MyFonts.framework */,
-				80E4E8592A045920483A2A1A /* Pods_MyKeyboard.framework */,
+				AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */,
+				4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +162,7 @@
 				8F3BDA0823D878C800DE541C /* MyKeyboard */,
 				8F3BD9ED23D878A500DE541C /* Products */,
 				04D673BFFCCC25D4B20E510A /* Pods */,
-				38A0F262875713028917483C /* Frameworks */,
+				2F7FB72810B1F5B3A70C1DA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,19 +178,10 @@
 		8F3BD9EE23D878A500DE541C /* MyFonts */ = {
 			isa = PBXGroup;
 			children = (
-				8FF0081023D9D14F002B5D8A /* gifs */,
-				8FEDA77323D9C6AB00DF127D /* SubscribeScene */,
+				8F7648C323DAD35E00C25DDF /* Scenes */,
 				8F454BD923D8837F00E4B696 /* Shared */,
-				8F454BD023D87C3C00E4B696 /* Assets.swift */,
-				8F3BD9EF23D878A500DE541C /* AppDelegate.swift */,
-				8F3BD9F123D878A500DE541C /* SceneDelegate.swift */,
+				8F7648C523DAD37A00C25DDF /* SupportingFiles */,
 				8F3BD9F323D878A500DE541C /* ViewController.swift */,
-				8F3BD9F523D878A500DE541C /* Main.storyboard */,
-				8F454BD423D87F7300E4B696 /* Colors.xcassets */,
-				8F454BD323D87F7300E4B696 /* Images.xcassets */,
-				8F3BD9F823D878A600DE541C /* Assets.xcassets */,
-				8F3BD9FA23D878A600DE541C /* LaunchScreen.storyboard */,
-				8F3BD9FD23D878A600DE541C /* Info.plist */,
 			);
 			path = MyFonts;
 			sourceTree = "<group>";
@@ -234,6 +231,50 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8F7648C323DAD35E00C25DDF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8F7648C423DAD36900C25DDF /* UserFonts */,
+				8FEDA77323D9C6AB00DF127D /* SubscribeScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8F7648C423DAD36900C25DDF /* UserFonts */ = {
+			isa = PBXGroup;
+			children = (
+				8F7648C723DAD41F00C25DDF /* UserFontModel.swift */,
+				8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */,
+				8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */,
+			);
+			path = UserFonts;
+			sourceTree = "<group>";
+		};
+		8F7648C523DAD37A00C25DDF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8F7648C623DAD3F300C25DDF /* Resources */,
+				8F3BD9EF23D878A500DE541C /* AppDelegate.swift */,
+				8F3BD9F123D878A500DE541C /* SceneDelegate.swift */,
+				8F3BD9F523D878A500DE541C /* Main.storyboard */,
+				8F3BD9FA23D878A600DE541C /* LaunchScreen.storyboard */,
+				8F454BD023D87C3C00E4B696 /* Assets.swift */,
+				8F3BD9FD23D878A600DE541C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8F7648C623DAD3F300C25DDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FF0081023D9D14F002B5D8A /* gifs */,
+				8F454BD423D87F7300E4B696 /* Colors.xcassets */,
+				8F454BD323D87F7300E4B696 /* Images.xcassets */,
+				8F3BD9F823D878A600DE541C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8FEDA77323D9C6AB00DF127D /* SubscribeScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,12 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F3BDA0023D878A600DE541C /* Build configuration list for PBXNativeTarget "MyFonts" */;
 			buildPhases = (
-				F07019FD8614619F805A5914 /* [CP] Check Pods Manifest.lock */,
+				C0823585B532BE323C354F4A /* [CP] Check Pods Manifest.lock */,
 				8F3BD9E823D878A500DE541C /* Sources */,
 				8F3BD9E923D878A500DE541C /* Frameworks */,
 				8F3BD9EA23D878A500DE541C /* Resources */,
 				8F3BDA1223D878C800DE541C /* Embed App Extensions */,
-				0E47F31780686192F2E94D3F /* [CP] Embed Pods Frameworks */,
+				17D131E5983580DF248CEAC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F3BDA0F23D878C800DE541C /* Build configuration list for PBXNativeTarget "MyKeyboard" */;
 			buildPhases = (
-				ADB54BAB8818311E8F278417 /* [CP] Check Pods Manifest.lock */,
+				A6F7DFAE8197A65217B76864 /* [CP] Check Pods Manifest.lock */,
 				8F3BDA0323D878C800DE541C /* Sources */,
 				8F3BDA0423D878C800DE541C /* Frameworks */,
 				8F3BDA0523D878C800DE541C /* Resources */,
@@ -362,7 +403,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E47F31780686192F2E94D3F /* [CP] Embed Pods Frameworks */ = {
+		17D131E5983580DF248CEAC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +420,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFonts/Pods-MyFonts-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADB54BAB8818311E8F278417 /* [CP] Check Pods Manifest.lock */ = {
+		A6F7DFAE8197A65217B76864 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +442,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F07019FD8614619F805A5914 /* [CP] Check Pods Manifest.lock */ = {
+		C0823585B532BE323C354F4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,8 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */,
 				8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */,
 				8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */,
+				8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */,
+				8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
 				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
 				8F3BD9F223D878A500DE541C /* SceneDelegate.swift in Sources */,
@@ -606,13 +650,13 @@
 		};
 		8F3BDA0123D878A600DE541C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE96F19AB24D1CA3DD5CEDD7 /* Pods-MyFonts.debug.xcconfig */;
+			baseConfigurationReference = 49F43F5C1F6432AFCF71415D /* Pods-MyFonts.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJM6H6LPAD;
-				INFOPLIST_FILE = MyFonts/Info.plist;
+				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,13 +670,13 @@
 		};
 		8F3BDA0223D878A600DE541C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51FF1FF01A6BB87F3962AC72 /* Pods-MyFonts.release.xcconfig */;
+			baseConfigurationReference = 5DFA6F933E8F89B9482B3FD6 /* Pods-MyFonts.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJM6H6LPAD;
-				INFOPLIST_FILE = MyFonts/Info.plist;
+				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +690,7 @@
 		};
 		8F3BDA1023D878C800DE541C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6893AAF9EB5C45D76383BFD /* Pods-MyKeyboard.debug.xcconfig */;
+			baseConfigurationReference = EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJM6H6LPAD;
@@ -666,7 +710,7 @@
 		};
 		8F3BDA1123D878C800DE541C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63F12F0D921C870675DCCF71 /* Pods-MyKeyboard.release.xcconfig */;
+			baseConfigurationReference = 7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJM6H6LPAD;
