@@ -153,7 +153,7 @@
 		08CADB6F89D4401E0C7246DDEE2DFD39 /* HorizontalKeyboardComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalKeyboardComponent.swift; path = Sources/KeyboardKit/Components/HorizontalKeyboardComponent.swift; sourceTree = "<group>"; };
 		09F6D13DEB228267AB4A7B908EE4FAC7 /* Pods-MyKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyKeyboard.modulemap"; sourceTree = "<group>"; };
 		0C6C38F80DFDA289F6137CF273709AE9 /* AudioFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioFeedback.swift; path = Sources/KeyboardKit/Audio/AudioFeedback.swift; sourceTree = "<group>"; };
-		0D1D36A888B9795CD0B3A886087BA283 /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyKeyboard.framework; path = "Pods-MyKeyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1D36A888B9795CD0B3A886087BA283 /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10348E23F40F409EC4E7457A6CE4FDA1 /* KeyboardButtonRowComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardButtonRowComponent.swift; path = Sources/KeyboardKit/Components/KeyboardButtonRowComponent.swift; sourceTree = "<group>"; };
 		13297D7AD7B6CD6EAC0DB673CEBC0F98 /* UITextDocumentProxy+CurrentWord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextDocumentProxy+CurrentWord.swift"; path = "Sources/KeyboardKit/Extensions/UITextDocumentProxy+CurrentWord.swift"; sourceTree = "<group>"; };
 		16310709725A8D3E5376852B7010E1AC /* UPCarouselFlowLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UPCarouselFlowLayout-Info.plist"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		1B1FD5DF0E20A86C24869EE0CF014710 /* UPCarouselFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UPCarouselFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		1B238B0D33F7D04DEF69BD49578BF7BD /* Pods-MyFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFonts.debug.xcconfig"; sourceTree = "<group>"; };
 		1FE8C1F4EA730335219A2B987B90439C /* HapticFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HapticFeedback.swift; path = Sources/KeyboardKit/Haptics/HapticFeedback.swift; sourceTree = "<group>"; };
-		207E43C7D6DC1DE919A6B160C82118B9 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UPCarouselFlowLayout.framework; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207E43C7D6DC1DE919A6B160C82118B9 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		210B814A499B57803B7BB84DF536D0C2 /* KeyboardActionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardActionRow.swift; path = Sources/KeyboardKit/Actions/KeyboardActionRow.swift; sourceTree = "<group>"; };
 		219F8D2DBFF5586D7B59565FCB3B3BD6 /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadow.swift"; path = "Sources/KeyboardKit/Shadow/UIView+Shadow.swift"; sourceTree = "<group>"; };
 		258DA525B7243C687706A242D34424F2 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = Sources/KeyboardKit/Shadow/Shadow.swift; sourceTree = "<group>"; };
@@ -212,22 +212,22 @@
 		7899057AF466A16581DEAEE32CCF9738 /* UIColor+TappableClear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+TappableClear.swift"; path = "Sources/KeyboardKit/Extensions/UIColor+TappableClear.swift"; sourceTree = "<group>"; };
 		78FC7024D6FC184D05AA289FDC2A01C6 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
 		7A61C07039CEDBF75AB6A2B348F32869 /* KeyboardButtonRowCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardButtonRowCollectionView.swift; path = Sources/KeyboardKit/Views/KeyboardButtonRowCollectionView.swift; sourceTree = "<group>"; };
-		7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		810432D11B424C7EBBD14EFFA8457389 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeyboardKit.framework; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810432D11B424C7EBBD14EFFA8457389 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8301C14DC0D7D66BC5D4198BEED3FF44 /* UIStackView+Subviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Subviews.swift"; path = "Sources/KeyboardKit/Extensions/UIStackView+Subviews.swift"; sourceTree = "<group>"; };
 		88B43F8C93E7040FB4076659B87124BA /* ShimmerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShimmerSwift-Info.plist"; sourceTree = "<group>"; };
 		894326D58101202DAD222C18E9E75B84 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = UPCarouselFlowLayout/UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		8C767637DA46670316EBD643C11AA91A /* AutocompleteBugFixTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteBugFixTimer.swift; path = Sources/KeyboardKit/Deprecated/AutocompleteBugFixTimer.swift; sourceTree = "<group>"; };
 		8D335F17D6E93C58C5A1FB1F5227FC16 /* KeyboardToolbarComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardToolbarComponent.swift; path = Sources/KeyboardKit/Components/KeyboardToolbarComponent.swift; sourceTree = "<group>"; };
 		8FE94A105DD07DF74FB10EF7CC1CD043 /* KeyboardKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeyboardKit.modulemap; sourceTree = "<group>"; };
-		93027197DCE144EF9A5DDF15E6C717AA /* ShimmerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShimmerSwift.framework; path = ShimmerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93027197DCE144EF9A5DDF15E6C717AA /* ShimmerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShimmerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F84B4E4632B603B41E43F43CFFBEEB /* UIView+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Visibility.swift"; path = "Sources/KeyboardKit/Extensions/UIView+Visibility.swift"; sourceTree = "<group>"; };
 		9A7D3B67279FE76DDC1EAFB852A7A5AA /* UIView+RepeatingAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RepeatingAction.swift"; path = "Sources/KeyboardKit/Gestures/UIView+RepeatingAction.swift"; sourceTree = "<group>"; };
-		9B17A2D2DB5B7D890E7719CEF9728D07 /* Pods_MyFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyFonts.framework; path = "Pods-MyFonts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B17A2D2DB5B7D890E7719CEF9728D07 /* Pods_MyFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B680A0114720166AD5D682BFA332665 /* StandardKeyboardActionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardKeyboardActionHandler.swift; path = Sources/KeyboardKit/Actions/StandardKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		9C620DE1AE0B6696917BD9035775D4BD /* KeyboardStackViewComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStackViewComponent.swift; path = Sources/KeyboardKit/Components/KeyboardStackViewComponent.swift; sourceTree = "<group>"; };
 		9D6431FE750FF8FB06AE2E07EC1B6C0A /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E74E69C249B9389AD4D4D2812CBC3AC /* UPCarouselFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UPCarouselFlowLayout.modulemap; sourceTree = "<group>"; };
 		A1040656D171DB8EB96BDED50F188E26 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 		A1612D5D5FD31DED63942E45F13281FA /* KeyboardButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardButtonView.swift; path = Sources/KeyboardKit/Views/KeyboardButtonView.swift; sourceTree = "<group>"; };
@@ -329,7 +329,6 @@
 				47200E1A47796235E99F6ED92CB347B6 /* ShimmeringView.swift */,
 				91C7BA37EDB699F976A72CD7835C27AA /* Support Files */,
 			);
-			name = ShimmerSwift;
 			path = ShimmerSwift;
 			sourceTree = "<group>";
 		};
@@ -414,7 +413,6 @@
 				CE1A4EC439DE228E97B97FC38B891F8B /* VerticalKeyboardComponent.swift */,
 				E09D528BC91D9F383F326365FA57966E /* Support Files */,
 			);
-			name = KeyboardKit;
 			path = KeyboardKit;
 			sourceTree = "<group>";
 		};
@@ -476,7 +474,6 @@
 				894326D58101202DAD222C18E9E75B84 /* UPCarouselFlowLayout.swift */,
 				C72DA51BD714AC5FDDA672B74E8CE25B /* Support Files */,
 			);
-			name = UPCarouselFlowLayout;
 			path = UPCarouselFlowLayout;
 			sourceTree = "<group>";
 		};
@@ -489,7 +486,6 @@
 				A1040656D171DB8EB96BDED50F188E26 /* UIImageView+SwiftyGif.swift */,
 				1E9674CB5E8B716EF0144C3FB267735D /* Support Files */,
 			);
-			name = SwiftyGif;
 			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
@@ -755,6 +751,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					5E17C38B9D32C429A1EC461038461FF9 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";

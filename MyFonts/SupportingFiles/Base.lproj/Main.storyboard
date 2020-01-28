@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ok-qq-Wiq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -233,6 +234,59 @@
             </objects>
             <point key="canvasLocation" x="-1516" y="709"/>
         </scene>
+        <!--InitialVC-->
+        <scene sceneID="hA8-rk-UWk">
+            <objects>
+                <viewController id="3Ok-qq-Wiq" customClass="InitialVC" customModule="MyFonts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qri-TT-obE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-GY-ADI">
+                                <rect key="frame" x="40" y="164" width="334" height="119.5"/>
+                                <string key="text">• Go To Settings 🛠
+• General 📣
+• Keyboards ⌨
+• Add New Keyboard 👈
+• Select My Fonts Keyboard ✅</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE9-eC-c0n">
+                                <rect key="frame" x="106" y="363.5" width="202" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="la7-kv-qW7"/>
+                                    <constraint firstAttribute="width" secondItem="OE9-eC-c0n" secondAttribute="height" multiplier="101:30" id="v1l-dq-QwB"/>
+                                </constraints>
+                                <state key="normal" title="Go To Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapOpenSettings:" destination="3Ok-qq-Wiq" eventType="touchUpInside" id="ICD-EO-uvo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VIL-GY-ADI" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="40" id="7gO-3v-Mtg"/>
+                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="VIL-GY-ADI" secondAttribute="bottom" constant="80" id="SdX-p1-JYB"/>
+                            <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="VIL-GY-ADI" secondAttribute="trailing" constant="40" id="UB2-St-ZB4"/>
+                            <constraint firstItem="VIL-GY-ADI" firstAttribute="top" secondItem="0eN-pg-h9y" secondAttribute="top" constant="120" id="kqc-FY-axw"/>
+                            <constraint firstItem="VIL-GY-ADI" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="rBK-aW-1ej"/>
+                            <constraint firstItem="OE9-eC-c0n" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="upE-Da-WgB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0eN-pg-h9y"/>
+                    </view>
+                    <connections>
+                        <outlet property="settingsButton" destination="OE9-eC-c0n" id="Rg6-pR-x74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKf-zf-6XF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.94202898550725" y="720.53571428571422"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -264,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-843" y="-4"/>
+            <point key="canvasLocation" x="-209" y="-15"/>
         </scene>
     </scenes>
     <resources>

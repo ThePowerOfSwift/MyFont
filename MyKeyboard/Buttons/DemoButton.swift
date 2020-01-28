@@ -30,7 +30,24 @@ class DemoButton: KeyboardButtonView {
         textLabel?.textColor = action.tintColor(in: viewController)
         buttonView?.tintColor = action.tintColor(in: viewController)
         width = action.buttonWidth(for: distribution)
-        applyShadow(.standardButtonShadow)
+        
+        // Mark - TODO Test Performence
+        if isiPhone6sOrLater() == true {
+            applyShadow(.standardButtonShadow)
+        }
+    }
+    
+    // Mark - TODO Move Somewhere
+    
+    private func isiPhone6sOrLater() -> Bool {
+        if UIDevice().type == .iPhone4 ||
+            UIDevice().type == .iPhone4S ||
+            UIDevice().type == .iPhone5 ||
+            UIDevice().type == .iPhone5S ||
+            UIDevice().type == .iPhone6 {
+            return false
+        }
+        return true
     }
     
     @IBOutlet weak var buttonView: UIView? {
@@ -100,7 +117,7 @@ private extension KeyboardAction {
         case .numeric: return "123"
         case .symbolic: return "#+="
         case .alpabetic(_, let index): return FontKeyboard.ViewModel.keyboards[index].title
-    
+            
         default: return "?default?"
         }
     }

@@ -115,15 +115,49 @@ public extension KeyboardAction {
      the texst document proxy when the action is triggered.
      */
     var standardTextDocumentProxyAction: ((UITextDocumentProxy?) -> Void)? {
+        // Mark - TODO Test Performence
         switch self {
-        case .backspace: return { proxy in proxy?.deleteBackward() }
-        case .character(let char): return { proxy in proxy?.insertText(char) }
-        case .moveCursorBackward: return { proxy in proxy?.adjustTextPosition(byCharacterOffset: -1) }
-        case .moveCursorForward: return { proxy in proxy?.adjustTextPosition(byCharacterOffset: -1) }
-        case .newLine: return { proxy in proxy?.insertText("\n") }
-        case .space: return { proxy in proxy?.insertText(" ") }
+        case .backspace: return { proxy in
+            DispatchQueue.main.async {
+                proxy?.deleteBackward()
+            }
+            }
+        case .character(let char): return { proxy in
+            DispatchQueue.main.async {
+                proxy?.insertText(char)
+            }
+            
+            }
+        case .moveCursorBackward: return { proxy in
+            DispatchQueue.main.async {
+                proxy?.adjustTextPosition(byCharacterOffset: -1)
+            }
+            
+            
+            }
+        case .moveCursorForward: return { proxy in
+            
+            DispatchQueue.main.async {
+                proxy?.insertText(" ")
+            }
+            
+            }
+        case .newLine: return { proxy in
+            DispatchQueue.main.async {
+                proxy?.insertText("\n")
+            }
+            
+            }
+        case .space: return { proxy in
+            DispatchQueue.main.async {
+                proxy?.insertText(" ")
+            }
+            
+            
+            }
         case .tab: return { proxy in proxy?.insertText("\t") }
         default: return nil
         }
+        
     }
 }
