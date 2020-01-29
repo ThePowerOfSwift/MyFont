@@ -39,6 +39,7 @@
 		8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */; };
 		8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */; };
 		8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B997023D9B90F0093C072 /* SubscribeButton.xib */; };
+		8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F929F7823E17C33006417DF /* EmojiKeyboard.swift */; };
 		8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCC23DF21A10046F477 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* InitialVC.swift */; };
@@ -107,6 +108,7 @@
 		8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontsViewController.swift; sourceTree = "<group>"; };
 		8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontCell.swift; sourceTree = "<group>"; };
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
+		8F929F7823E17C33006417DF /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
 		8FE04FC823DEDBA10046F477 /* DevicyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicyType.swift; sourceTree = "<group>"; };
 		8FE04FCB23DF21A10046F477 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				8F454BC123D87B8000E4B696 /* KeyboardViewController+Buttons.swift */,
 				8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */,
 				8F3BDA0B23D878C800DE541C /* Info.plist */,
+				8F929F7823E17C33006417DF /* EmojiKeyboard.swift */,
 			);
 			path = MyKeyboard;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				8F454BD223D87C5300E4B696 /* Assets.swift in Sources */,
 				8F454BCD23D87C1100E4B696 /* DemoButton.swift in Sources */,
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
+				8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */,
 				8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */,
 				8F454BBC23D87A6600E4B696 /* KeyboardViewController+Setup.swift in Sources */,
 				8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */,

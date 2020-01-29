@@ -39,16 +39,33 @@ extension KeyboardViewController {
     }
     
     func setupAlphabeticKeyboard(uppercased: Bool = false, index: Int) {
-        
+       if index == 21 {
+           setupEmojiKeyboard()
+           return
+       }
         AlphabeticKeyboard.characters = FontKeyboard.ViewModel.keyboards[index].characters
         if let upperCasedFont = FontKeyboard.ViewModel.keyboards[index].upperCharacters {
             AlphabeticKeyboard.upperCasedCharacters = upperCasedFont
         } else {
             AlphabeticKeyboard.upperCasedCharacters = []
         }
+        
+
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
+    }
+    
+    private func setupEmojiKeyboard() {
+        let keyboard = EmojiKeyboard(in: self)
+        let isLandscape = view.frame.width > 400
+        let rowsPerPage = isLandscape ? 4 : 3
+        let buttonsPerRow = isLandscape ? 5 : 4
+        let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
+        let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
+        let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
+        keyboardStackView.addArrangedSubview(view)
+        keyboardStackView.addArrangedSubview(bottom)
     }
     
     private func addFontToolbar(index: Int) {
