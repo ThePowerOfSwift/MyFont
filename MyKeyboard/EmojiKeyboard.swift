@@ -12,9 +12,7 @@ import KeyboardKit
 struct EmojiKeyboard: DemoKeyboard {
     
     init(in viewController: KeyboardViewController) {
-        self.bottomActions = EmojiKeyboard.bottomActions(
-            leftmost: EmojiKeyboard.switchAction,
-            for: viewController)
+        self.bottomActions = EmojiKeyboard.EmojiActions
     }
     
     var actions: [KeyboardAction] = [
@@ -45,6 +43,14 @@ struct EmojiKeyboard: DemoKeyboard {
 private extension EmojiKeyboard {
     
     static var switchAction: KeyboardAction {
-        .switchToKeyboard(.alphabetic(uppercased: false))
+        .none
+    }
+    
+    static var EmojiActions: KeyboardActionRow {
+        if isLatestPhone() {
+            return [.backspace, .space, .newLine]
+        } else {
+            return [.switchKeyboard, .space, .backspace, .newLine]
+        }
     }
 }

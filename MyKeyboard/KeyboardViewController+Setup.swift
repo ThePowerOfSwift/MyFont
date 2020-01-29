@@ -90,7 +90,7 @@ extension KeyboardViewController {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.insertArrangedSubview(view, at: 0)
-        //        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
+        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: false)
     }
     
     func setupNumericKeyboard() {
