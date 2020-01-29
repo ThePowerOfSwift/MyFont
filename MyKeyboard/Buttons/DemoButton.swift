@@ -117,7 +117,7 @@ private extension KeyboardAction {
         case .numeric: return "123"
         case .symbolic: return "#+="
         case .alpabetic(_, let index): return FontKeyboard.ViewModel.keyboards[index].title
-            
+        case .settings: return "☰"
         default: return "?default?"
         }
     }

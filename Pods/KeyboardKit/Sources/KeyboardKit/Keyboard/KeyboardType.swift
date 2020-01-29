@@ -20,6 +20,7 @@ public enum KeyboardType: Equatable {
     case
     alphabetic(uppercased: Bool),
     alpabetic(uppercased: Bool, index: Int),
+    settings,
     numeric,
     symbolic,
     email,
