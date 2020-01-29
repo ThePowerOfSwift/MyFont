@@ -39,10 +39,11 @@ extension KeyboardViewController {
     }
     
     func setupAlphabeticKeyboard(uppercased: Bool = false, index: Int) {
-       if index == 21 {
-           setupEmojiKeyboard()
-           return
-       }
+
+        if FontKeyboard.ViewModel.keyboards[index].characters[1].count == 0 {
+            setupEmojiKeyboard(index: index)
+            return
+        }
         AlphabeticKeyboard.characters = FontKeyboard.ViewModel.keyboards[index].characters
         if let upperCasedFont = FontKeyboard.ViewModel.keyboards[index].upperCharacters {
             AlphabeticKeyboard.upperCasedCharacters = upperCasedFont
@@ -56,11 +57,16 @@ extension KeyboardViewController {
         keyboardStackView.addArrangedSubviews(rows)
     }
     
-    private func setupEmojiKeyboard() {
-        let keyboard = EmojiKeyboard(in: self)
+    private func setupEmojiKeyboard(index: Int) {
+        var keyboard = EmojiKeyboard(in: self)
+        keyboard.actions = []
         let isLandscape = view.frame.width > 400
         let rowsPerPage = isLandscape ? 4 : 3
         let buttonsPerRow = isLandscape ? 5 : 4
+        for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards[index].characters[0].count, by: 1) {
+            let char = KeyboardAction.character(FontKeyboard.ViewModel.keyboards[1].characters[0][i])
+            keyboard.actions.append(char)
+        }
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)

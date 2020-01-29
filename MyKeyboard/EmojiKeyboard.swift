@@ -17,7 +17,7 @@ struct EmojiKeyboard: DemoKeyboard {
             for: viewController)
     }
     
-    let actions: [KeyboardAction] = [
+    var actions: [KeyboardAction] = [
         .character("(* ^ ω ^)"),
         .character("(o^▽^o)"),
         .character("ヽ(・∀・)ﾉ"),
