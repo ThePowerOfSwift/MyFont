@@ -30,7 +30,6 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        shimmerView.frame = subscribeButton.frame
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
     }
