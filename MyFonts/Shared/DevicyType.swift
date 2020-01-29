@@ -154,3 +154,13 @@ public extension UIDevice {
         return Model.unrecognized
     }
 }
+
+
+func isLatestPhone() -> Bool {
+    switch UIDevice().type {
+    case  .iPhoneXR, .iPhoneX, .iPhoneXS, . iPhoneXSmax, .iPhone11ProMax, .iPhone11Pro:
+        return true
+    default:
+        return false
+    }
+}

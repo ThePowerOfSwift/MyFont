@@ -20,10 +20,10 @@ protocol DemoKeyboard {}
 extension DemoKeyboard {
     
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
-        let actions = [leftmost, .switchKeyboard, .space, .newLine]
-//        let isEmoji = vc.keyboardType == .emojis
-//        let isImage = vc.keyboardType == .images
-//        let includeImageActions = !isEmoji && !isImage
+        var actions = [leftmost, .switchKeyboard, .space, .newLine]
+        if isLatestPhone() {
+           actions = [leftmost, .none, .space, .none,.newLine]
+        }
         return actions
     }
 }
@@ -48,3 +48,5 @@ private extension Collection where Element == KeyboardAction {
             .filter { $0 != .switchToKeyboard(.images) }
     }
 }
+
+

@@ -49,7 +49,6 @@ extension KeyboardViewController {
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
-        //        addFontToolbar(index: index)
     }
     
     private func addFontToolbar(index: Int) {
@@ -60,7 +59,7 @@ extension KeyboardViewController {
         }
         
         let rowsPerPage = 1
-        let buttonsPerRow = 3
+        let buttonsPerRow = 4
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }
         keyboardStackView.insertArrangedSubview(view, at: 0)
