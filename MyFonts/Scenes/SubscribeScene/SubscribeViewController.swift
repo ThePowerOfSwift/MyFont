@@ -21,17 +21,23 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
             subscribeButton.clipsToBounds = true
         }
     }
-        
+    
+    @IBOutlet var shimmeringView: ShimmeringView!
+    @IBOutlet var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let shimmerView = ShimmeringView(frame: subscribeButton.frame)
-        view.addSubview(shimmerView)
-        shimmerView.contentView = subscribeButton
-        shimmerView.isShimmering = true
+//        shimmerView.frame = subscribeButton.frame
+        shimmeringView.contentView = subscribeButton
+        shimmeringView.isShimmering = true
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {

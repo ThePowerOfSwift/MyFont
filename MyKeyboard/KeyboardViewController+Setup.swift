@@ -96,15 +96,15 @@ extension KeyboardViewController {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
-        if !isLatestPhone() {
+        if isLatestPhone() {
             keyboardStackView.addArrangedSubview(switchKeyboard)
         }
+        
     }
     
     private func addFontToolbar(index: Int) {
         var fontsToAdd: [KeyboardAction] = []
         let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
-//        fontsToAdd[0] = settingsKeyboard
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let keyBoard = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             fontsToAdd.append(keyBoard)
@@ -117,7 +117,7 @@ extension KeyboardViewController {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.insertArrangedSubview(view, at: 0)
-        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: false)
+//        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: false)
     }
     
     func setupNumericKeyboard() {
