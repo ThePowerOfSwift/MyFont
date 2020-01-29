@@ -64,6 +64,8 @@ extension KeyboardViewController {
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
         keyboardStackView.addArrangedSubview(bottom)
     }
@@ -79,6 +81,8 @@ extension KeyboardViewController {
         let buttonsPerRow = 4
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
         keyboardStackView.insertArrangedSubview(view, at: 0)
         //        view.scrollToItem(at: IndexPath(row: index, section: 0), at: .right, animated: true)
     }
