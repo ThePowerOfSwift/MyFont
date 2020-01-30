@@ -13,8 +13,16 @@ import ShimmerSwift
 class ShowroomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var shimmeringView: ShimmeringView!
-    @IBOutlet var customFontsLabel: UILabel!
-    @IBOutlet var greatFontsLabel: UILabel!
+    @IBOutlet var customFontsLabel: UILabel! {
+        didSet {
+            customFontsLabel.textColor = LABEL_MAIN_COLOR
+        }
+    }
+    @IBOutlet var greatFontsLabel: UILabel! {
+        didSet {
+            greatFontsLabel.textColor = LABEL_MAIN_COLOR
+        }
+    }
     @IBOutlet var fontCollectionView: UICollectionView! {
         didSet {
             fontCollectionView.backgroundColor = UIColor.clear
@@ -24,6 +32,7 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         didSet {
             continueButton.layer.cornerRadius = continueButton.frame.height/4
             continueButton.clipsToBounds = true
+            continueButton.backgroundColor = BUTTON_MAIN_COLOR
         }
     }
     
@@ -31,8 +40,8 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         shimmeringView.contentView = continueButton
         shimmeringView.isShimmering = true
         shimmeringView.shimmerAnimationOpacity = 0.8
@@ -59,7 +68,9 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     @IBAction func onTapContinue(_ sender: Any) {
-        
+        let subscribeViewController = storyboard?.instantiateViewController(withIdentifier: "SubscribeViewController") as! SubscribeViewController
+        subscribeViewController.modalPresentationStyle = .fullScreen
+        self.present(subscribeViewController, animated: true, completion: nil)
     }
     
 }

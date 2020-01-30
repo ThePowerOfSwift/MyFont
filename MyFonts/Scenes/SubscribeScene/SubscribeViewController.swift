@@ -27,9 +27,9 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
     }
