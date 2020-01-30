@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InitialVC: UIViewController {
+class SuccessViewController: UIViewController {
     
     
     @IBOutlet var settingsButton: UIButton! {

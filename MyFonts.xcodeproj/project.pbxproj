@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3562061EB11B795ED6AE9FF2 /* Pods_MyKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */; };
 		3BD4F045B96CF1BF34EDDAC6 /* Pods_MyFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */; };
+		8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */; };
+		8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF323E2B84200EA9277 /* ShowroomCell.swift */; };
 		8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9EF23D878A500DE541C /* AppDelegate.swift */; };
 		8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F323D878A500DE541C /* ViewController.swift */; };
 		8F3BD9F723D878A500DE541C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F523D878A500DE541C /* Main.storyboard */; };
@@ -42,7 +44,7 @@
 		8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F929F7823E17C33006417DF /* EmojiKeyboard.swift */; };
 		8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
-		8FE04FCC23DF21A10046F477 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* InitialVC.swift */; };
+		8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */; };
 		8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */; };
 		8FF0081423D9D231002B5D8A /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081123D9D230002B5D8A /* gif1.gif */; };
 		8FF0081523D9D231002B5D8A /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081223D9D230002B5D8A /* gif2.gif */; };
@@ -79,6 +81,8 @@
 		4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFA6F933E8F89B9482B3FD6 /* Pods-MyFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.release.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.release.xcconfig"; sourceTree = "<group>"; };
 		7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.release.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomViewController.swift; sourceTree = "<group>"; };
+		8F111DF323E2B84200EA9277 /* ShowroomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomCell.swift; sourceTree = "<group>"; };
 		8F3BD9EC23D878A500DE541C /* MyFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BD9EF23D878A500DE541C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F3BD9F323D878A500DE541C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +114,7 @@
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
 		8F929F7823E17C33006417DF /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
 		8FE04FC823DEDBA10046F477 /* DevicyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicyType.swift; sourceTree = "<group>"; };
-		8FE04FCB23DF21A10046F477 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		8FF0081123D9D230002B5D8A /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
 		8FF0081223D9D230002B5D8A /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
@@ -158,6 +162,23 @@
 				4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F111DEF23E2B6EE00EA9277 /* SuccessScene */ = {
+			isa = PBXGroup;
+			children = (
+				8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */,
+			);
+			path = SuccessScene;
+			sourceTree = "<group>";
+		};
+		8F111DF023E2B72E00EA9277 /* ShowroomScene */ = {
+			isa = PBXGroup;
+			children = (
+				8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */,
+				8F111DF323E2B84200EA9277 /* ShowroomCell.swift */,
+			);
+			path = ShowroomScene;
 			sourceTree = "<group>";
 		};
 		8F3BD9E323D878A500DE541C = {
@@ -241,9 +262,10 @@
 		8F7648C323DAD35E00C25DDF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8F111DF023E2B72E00EA9277 /* ShowroomScene */,
+				8F111DEF23E2B6EE00EA9277 /* SuccessScene */,
 				8F7648C423DAD36900C25DDF /* UserFonts */,
 				8FEDA77323D9C6AB00DF127D /* SubscribeScene */,
-				8FE04FCB23DF21A10046F477 /* InitialVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -478,6 +500,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */,
+				8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */,
 				8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */,
 				8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */,
 				8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */,
@@ -485,7 +509,7 @@
 				8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */,
 				8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
-				8FE04FCC23DF21A10046F477 /* InitialVC.swift in Sources */,
+				8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */,
 				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
 				8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */,
 				8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,

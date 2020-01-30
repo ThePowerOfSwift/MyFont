@@ -283,6 +283,32 @@
             </objects>
             <point key="canvasLocation" x="-2271.0144927536235" y="-15.401785714285714"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="CRl-cS-l3g">
+            <objects>
+                <viewController id="zu5-rb-Joz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XdS-7i-Eju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends2" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-Yx-8j7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gi9-Yx-8j7" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" id="Bxk-QE-fu7"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="Gi9-Yx-8j7" secondAttribute="trailing" id="m0U-Tz-xkY"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="bottom" secondItem="Gi9-Yx-8j7" secondAttribute="bottom" id="mjj-vr-erv"/>
+                            <constraint firstItem="Gi9-Yx-8j7" firstAttribute="top" secondItem="Ttq-a8-BMD" secondAttribute="top" id="rcz-io-sUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ttq-a8-BMD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1G-po-2Ir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4396" y="419"/>
+        </scene>
         <!--User Fonts View Controller-->
         <scene sceneID="0aW-4h-Dbt">
             <objects>
@@ -298,10 +324,10 @@
             </objects>
             <point key="canvasLocation" x="-2196" y="656"/>
         </scene>
-        <!--InitialVC-->
+        <!--Success View Controller-->
         <scene sceneID="hA8-rk-UWk">
             <objects>
-                <viewController id="3Ok-qq-Wiq" customClass="InitialVC" customModule="MyFonts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ok-qq-Wiq" customClass="SuccessViewController" customModule="MyFonts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qri-TT-obE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,6 +413,7 @@
     </scenes>
     <resources>
         <image name="checkmark" catalog="system" width="64" height="56"/>
+        <image name="friends2" width="4928" height="3264"/>
         <image name="ic_lock" width="256" height="256"/>
     </resources>
 </document>
