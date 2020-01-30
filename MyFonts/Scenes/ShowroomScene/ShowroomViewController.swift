@@ -10,26 +10,52 @@ import Foundation
 import UIKit
 import ShimmerSwift
 
-class ShowroomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ShowroomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-//    @IBOutlet var shimmeringView: ShimmeringView!
+    @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var customFontsLabel: UILabel!
     @IBOutlet var greatFontsLabel: UILabel!
-    @IBOutlet var fontCollectionView: UICollectionView!
-    @IBOutlet var continueButton: UIButton!
+    @IBOutlet var fontCollectionView: UICollectionView! {
+        didSet {
+            fontCollectionView.backgroundColor = UIColor.clear
+        }
+    }
+    @IBOutlet var continueButton: UIButton! {
+        didSet {
+            continueButton.layer.cornerRadius = continueButton.frame.height/4
+            continueButton.clipsToBounds = true
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        shimmeringView.contentView = continueButton
+        shimmeringView.isShimmering = true
+        shimmeringView.shimmerAnimationOpacity = 0.8
+        shimmeringView.shimmerSpeed = 330
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showroomCell", for: indexPath) as! ShowroomCell
-        cell.setup()
+        cell.setup(index: indexPath.row)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+        let size:CGFloat = (collectionView.frame.size.width - space) / 2.0
+        return CGSize(width: size, height: size)
+        
     }
     
     @IBAction func onTapContinue(_ sender: Any) {

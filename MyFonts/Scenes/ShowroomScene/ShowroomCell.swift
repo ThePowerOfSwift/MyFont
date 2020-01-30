@@ -11,6 +11,8 @@ import UIKit
 
 class ShowroomCell: UICollectionViewCell {
     
+    @IBOutlet var imageView: UIImageView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -19,8 +21,8 @@ class ShowroomCell: UICollectionViewCell {
         super.init(coder: coder)
     }
     
-    func setup() {
-        
+    func setup(index: Int) {
+//        imageView.image = UIImage(contentsOfFile: "keyboard1")
     }
     
 }
