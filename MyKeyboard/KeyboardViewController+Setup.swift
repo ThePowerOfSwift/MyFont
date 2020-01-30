@@ -8,6 +8,7 @@
 
 import KeyboardKit
 import UIKit
+import ShimmerSwift
 
 extension KeyboardViewController {
     
@@ -34,6 +35,7 @@ extension KeyboardViewController {
         case .numeric: setupNumericKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         case .settings:
+            shimmerView.isHidden = true
             allKeyboardsView()
             return
         default: return
@@ -54,10 +56,14 @@ extension KeyboardViewController {
             AlphabeticKeyboard.upperCasedCharacters = []
         }
         
-
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
+        if index > 3 {
+            shimmerView.isHidden = false
+        } else {
+            shimmerView.isHidden = true
+        }
     }
     
     private func setupEmojiKeyboard(index: Int) {
@@ -77,6 +83,11 @@ extension KeyboardViewController {
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
         keyboardStackView.addArrangedSubview(bottom)
+    }
+    
+    private func lockKeyboard() {
+        // Setup ShimmeringView
+        
     }
     
     private func allKeyboardsView() {

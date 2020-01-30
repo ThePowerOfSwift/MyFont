@@ -13,6 +13,8 @@
 		8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF323E2B84200EA9277 /* ShowroomCell.swift */; };
 		8F111DF623E2C85700EA9277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF523E2C85700EA9277 /* Constants.swift */; };
 		8F111DF823E2C89100EA9277 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF723E2C89100EA9277 /* Extensions.swift */; };
+		8F111DF923E2CE5B00EA9277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF523E2C85700EA9277 /* Constants.swift */; };
+		8F111DFA23E2CE7200EA9277 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF723E2C89100EA9277 /* Extensions.swift */; };
 		8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9EF23D878A500DE541C /* AppDelegate.swift */; };
 		8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F323D878A500DE541C /* ViewController.swift */; };
 		8F3BD9F723D878A500DE541C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F523D878A500DE541C /* Main.storyboard */; };
@@ -535,12 +537,14 @@
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
 				8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */,
 				8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */,
+				8F111DF923E2CE5B00EA9277 /* Constants.swift in Sources */,
 				8F454BBC23D87A6600E4B696 /* KeyboardViewController+Setup.swift in Sources */,
 				8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */,
 				8F454BC623D87BA400E4B696 /* SymbolicKeyboard.swift in Sources */,
 				8F454BC223D87B8000E4B696 /* KeyboardViewController+Buttons.swift in Sources */,
 				8F454BBA23D87A4800E4B696 /* DemoKeyboardActionHandler.swift in Sources */,
 				8F454BCF23D87C1100E4B696 /* DemoAutocompleteLabel.swift in Sources */,
+				8F111DFA23E2CE7200EA9277 /* Extensions.swift in Sources */,
 				8F454BDD23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
 				8F3BDA0A23D878C800DE541C /* KeyboardViewController.swift in Sources */,
 			);
