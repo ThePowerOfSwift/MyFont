@@ -24,7 +24,9 @@ class SubscribeCell: UICollectionViewCell {
     
     public func setup(index: Int) {
         do {
-            try media.setGifImage(UIImage(gifName: "gif\(index).gif"))
+//            try media.setImage(UIImage(named: "keyboard1")!)
+            try media.image = UIImage(named: "keyboard1")!
+//            try media.setGifImage(UIImage(gifName: "gif\(index).gif"))
         } catch {
             print(error)
         }

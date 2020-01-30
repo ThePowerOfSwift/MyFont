@@ -19,7 +19,6 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j1U-i1-Soj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="310"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.047058823530000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="j1U-i1-Soj" secondAttribute="height" multiplier="207:155" id="VJg-lO-hxL"/>
                                 </constraints>
@@ -273,6 +272,7 @@
                         <viewLayoutGuide key="safeArea" id="EeT-KT-4h1"/>
                     </view>
                     <connections>
+                        <outlet property="collectionVIew" destination="j1U-i1-Soj" id="QQA-e2-tLA"/>
                         <outlet property="collectionViewLayout" destination="Xck-KN-gZz" id="zRu-Dt-wnq"/>
                         <outlet property="scrollView" destination="lvJ-KH-7TJ" id="Me6-Kv-iAI"/>
                         <outlet property="shimmeringView" destination="hzg-xY-pYz" id="IiK-Gl-36w"/>

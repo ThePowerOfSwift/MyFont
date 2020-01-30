@@ -14,7 +14,16 @@ import ShimmerSwift
 
 class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet var collectionViewLayout: UPCarouselFlowLayout!
+    @IBOutlet var collectionViewLayout: UPCarouselFlowLayout! {
+        didSet {
+            collectionViewLayout.itemSize = CGSize(width: 200, height: 200)
+        }
+    }
+    @IBOutlet var collectionVIew: UICollectionView! {
+        didSet {
+            collectionVIew.backgroundColor = UIColor.clear
+        }
+    }
     @IBOutlet var subscribeButton: UIButton! {
         didSet {
             subscribeButton.layer.cornerRadius = subscribeButton.frame.height/2
