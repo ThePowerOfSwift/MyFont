@@ -84,21 +84,21 @@ extension KeyboardViewController {
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
         let rowsPerPage = isLandscape ? 4 : 4
-        let buttonsPerRow = isLandscape ? 5 : 5
+        let buttonsPerRow = isLandscape ? 5 : 4
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let kb = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             keyboard.actions.append(kb)
         }
         
+        if !isLatestPhone() {
+            keyboard.actions.insert(KeyboardAction.switchKeyboard, at: 0)
+        }
+        
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
-        let switchKeyboard = buttonRow(for: [KeyboardAction.switchKeyboard], distribution: .fillProportionally)
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
-        if isLatestPhone() {
-            keyboardStackView.addArrangedSubview(switchKeyboard)
-        }
         
     }
     
@@ -110,7 +110,8 @@ extension KeyboardViewController {
             fontsToAdd.append(keyBoard)
         }
         fontsToAdd.insert(settingsKeyboard, at: 0)
-        let rowsPerPage = 1
+        fontsToAdd.insert(KeyboardAction.switchKeyboard, at: 0)
+        let rowsPerPage = 2
         let buttonsPerRow = 4
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }

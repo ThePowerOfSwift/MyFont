@@ -20,7 +20,7 @@ protocol DemoKeyboard {}
 extension DemoKeyboard {
     
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
-        var actions = [leftmost, .switchKeyboard, .space, .newLine]
+        var actions = [leftmost, .space, .newLine]
         if isLatestPhone() {
            actions = [leftmost, .none, .space, .none,.newLine]
         }
