@@ -66,7 +66,7 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height)
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {
