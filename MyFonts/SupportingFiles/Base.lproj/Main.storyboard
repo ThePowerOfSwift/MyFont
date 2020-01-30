@@ -283,31 +283,86 @@
             </objects>
             <point key="canvasLocation" x="-2271.0144927536235" y="-15.401785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Showroom View Controller-->
         <scene sceneID="CRl-cS-l3g">
             <objects>
-                <viewController id="zu5-rb-Joz" sceneMemberID="viewController">
+                <viewController id="zu5-rb-Joz" customClass="ShowroomViewController" customModule="MyFonts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XdS-7i-Eju">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends2" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-Yx-8j7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Fonts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-7l-ern">
+                                <rect key="frame" x="20" y="53" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great variety of fonts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-xF-Qo9">
+                                <rect key="frame" x="20" y="82" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-rS-23z">
+                                <rect key="frame" x="0.0" y="167" width="414" height="442"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LKB-lc-ktX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="showroomCell" id="YAC-XV-cn7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jWw-P3-CTk">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m77-56-lL4">
+                                <rect key="frame" x="176" y="663" width="62" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.047058823530000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.98053020239999999" green="0.97201794389999996" blue="0.9960828424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Gi9-Yx-8j7" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" id="Bxk-QE-fu7"/>
-                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="Gi9-Yx-8j7" secondAttribute="trailing" id="m0U-Tz-xkY"/>
-                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="bottom" secondItem="Gi9-Yx-8j7" secondAttribute="bottom" id="mjj-vr-erv"/>
-                            <constraint firstItem="Gi9-Yx-8j7" firstAttribute="top" secondItem="Ttq-a8-BMD" secondAttribute="top" id="rcz-io-sUx"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="bottom" secondItem="m77-56-lL4" secondAttribute="bottom" constant="169" id="1vw-k7-a8L"/>
+                            <constraint firstItem="m77-56-lL4" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="176" id="2H0-bT-JEk"/>
+                            <constraint firstItem="0LE-xF-Qo9" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="20" id="7Gp-dL-DcT"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="DXi-rS-23z" secondAttribute="trailing" id="8CO-Fc-ceR"/>
+                            <constraint firstItem="DXi-rS-23z" firstAttribute="top" secondItem="0LE-xF-Qo9" secondAttribute="bottom" constant="64" id="8IH-Vl-VAS"/>
+                            <constraint firstItem="DXi-rS-23z" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" id="BqF-vT-j8w"/>
+                            <constraint firstItem="m77-56-lL4" firstAttribute="top" secondItem="DXi-rS-23z" secondAttribute="bottom" constant="54" id="MG4-FP-hEc"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="0LE-xF-Qo9" secondAttribute="trailing" constant="20" id="OwU-zs-0lN"/>
+                            <constraint firstItem="0LE-xF-Qo9" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="SMa-Hc-sZ9"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="s3v-7l-ern" secondAttribute="trailing" constant="20" id="VxF-OA-yae"/>
+                            <constraint firstItem="s3v-7l-ern" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="20" id="Ybc-kF-GlN"/>
+                            <constraint firstItem="m77-56-lL4" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="cKq-9Y-JUW"/>
+                            <constraint firstItem="0LE-xF-Qo9" firstAttribute="top" secondItem="s3v-7l-ern" secondAttribute="bottom" constant="8" id="ka0-ab-VIe"/>
+                            <constraint firstItem="DXi-rS-23z" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="oXI-4h-Ael"/>
+                            <constraint firstItem="s3v-7l-ern" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="pdt-bx-eTP"/>
+                            <constraint firstItem="s3v-7l-ern" firstAttribute="top" secondItem="Ttq-a8-BMD" secondAttribute="top" constant="9" id="qZB-vc-exv"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="m77-56-lL4" secondAttribute="trailing" constant="176" id="zB0-jk-RrA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ttq-a8-BMD"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="m77-56-lL4" id="Ntq-4f-UuR"/>
+                        <outlet property="customFontsLabel" destination="s3v-7l-ern" id="M2z-hr-rWn"/>
+                        <outlet property="fontCollectionView" destination="DXi-rS-23z" id="gI2-CD-GJ4"/>
+                        <outlet property="greatFontsLabel" destination="0LE-xF-Qo9" id="TVA-D9-doN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1G-po-2Ir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4396" y="419"/>
+            <point key="canvasLocation" x="-4397.1014492753629" y="418.52678571428572"/>
         </scene>
         <!--User Fonts View Controller-->
         <scene sceneID="0aW-4h-Dbt">
@@ -413,7 +468,6 @@
     </scenes>
     <resources>
         <image name="checkmark" catalog="system" width="64" height="56"/>
-        <image name="friends2" width="4928" height="3264"/>
         <image name="ic_lock" width="256" height="256"/>
     </resources>
 </document>

@@ -12,7 +12,7 @@ import ShimmerSwift
 
 class ShowroomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet var shimmeringView: ShimmeringView!
+//    @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var customFontsLabel: UILabel!
     @IBOutlet var greatFontsLabel: UILabel!
     @IBOutlet var fontCollectionView: UICollectionView!
