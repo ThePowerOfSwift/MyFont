@@ -16,6 +16,7 @@ class SuccessViewController: UIViewController {
         didSet {
             settingsButton.layer.cornerRadius = settingsButton.frame.height/2
             settingsButton.clipsToBounds = true
+            settingsButton.backgroundColor = BUTTON_MAIN_COLOR
         }
     }
     

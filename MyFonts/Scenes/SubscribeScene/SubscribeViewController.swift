@@ -49,7 +49,9 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {
-        
+        let successViewController = storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
+        successViewController.modalPresentationStyle = .fullScreen
+        self.present(successViewController, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
