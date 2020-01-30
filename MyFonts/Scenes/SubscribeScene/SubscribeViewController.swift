@@ -33,14 +33,35 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var subscriptionTOSTextView: UITextView! {
+        didSet {
+            subscriptionTOSTextView.text = SubsribtionTOS
+        }
+    }
+    
+    @IBOutlet var subscriptionOfferLabel: UILabel! {
+        didSet {
+            subscriptionOfferLabel.text = SubscriptionOffer
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
+        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
+    }
+    
+    var step = 0
+    
+    @objc func autoScroll() {
+        step = step + 1
+        collectionVIew.scrollToItem(at: IndexPath(row: step%3, section: 0), at: .centeredHorizontally, animated: true)
     }
     
     override func viewDidLayoutSubviews() {

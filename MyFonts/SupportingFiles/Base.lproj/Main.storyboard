@@ -35,7 +35,7 @@
                                             <real key="value" value="0.80000000000000004"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="sideItemShift">
-                                            <real key="value" value="1"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </collectionViewFlowLayout>
@@ -207,14 +207,14 @@
                                                 <rect key="frame" x="60" y="293" width="294" height="40"/>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="20" y="343" width="374" height="147"/>
+                                                <rect key="frame" x="10" y="343" width="394" height="147"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="147" id="I2L-Jj-qpm"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -227,7 +227,7 @@
                                             <constraint firstItem="Usl-19-rsh" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="Axq-Bv-AUr"/>
                                             <constraint firstAttribute="trailing" secondItem="hzg-xY-pYz" secondAttribute="trailing" constant="60" id="Bxw-xX-FfC"/>
                                             <constraint firstAttribute="trailing" secondItem="zyY-cP-a5b" secondAttribute="trailing" constant="20" id="FIZ-tV-byE"/>
-                                            <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="20" id="FLw-oi-Tmm"/>
+                                            <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="10" id="FLw-oi-Tmm"/>
                                             <constraint firstItem="hzg-xY-pYz" firstAttribute="width" secondItem="Usl-19-rsh" secondAttribute="width" id="GJo-5z-HuC"/>
                                             <constraint firstItem="hzg-xY-pYz" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="60" id="Ktb-q3-HqW"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="PHv-3Z-AcZ"/>
@@ -241,7 +241,7 @@
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="top" secondItem="hzg-xY-pYz" secondAttribute="bottom" constant="10" id="cWQ-oc-7i8"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="top" secondItem="Xrm-N7-QA5" secondAttribute="top" constant="40" id="dvm-Cf-tF8"/>
                                             <constraint firstItem="Usl-19-rsh" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="60" id="l6h-G3-Bj8"/>
-                                            <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="20" id="nH7-gD-8A1"/>
+                                            <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="10" id="nH7-gD-8A1"/>
                                             <constraint firstItem="hzg-xY-pYz" firstAttribute="top" secondItem="IU7-Ha-cc3" secondAttribute="bottom" constant="8" id="xNK-aA-Uhi"/>
                                         </constraints>
                                     </view>
@@ -277,6 +277,8 @@
                         <outlet property="scrollView" destination="lvJ-KH-7TJ" id="Me6-Kv-iAI"/>
                         <outlet property="shimmeringView" destination="hzg-xY-pYz" id="IiK-Gl-36w"/>
                         <outlet property="subscribeButton" destination="Usl-19-rsh" id="ifC-Lj-gIt"/>
+                        <outlet property="subscriptionOfferLabel" destination="IU7-Ha-cc3" id="36O-Z7-KiB"/>
+                        <outlet property="subscriptionTOSTextView" destination="fDO-Kz-Fm2" id="Y9L-2O-QBY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sp-AL-Q5l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

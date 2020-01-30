@@ -22,6 +22,7 @@
 		8F3BD9FC23D878A600DE541C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9FA23D878A600DE541C /* LaunchScreen.storyboard */; };
 		8F3BDA0A23D878C800DE541C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */; };
 		8F3BDA0E23D878C800DE541C /* MyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F3BDA0723D878C800DE541C /* MyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */; };
 		8F454BBA23D87A4800E4B696 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */; };
 		8F454BBC23D87A6600E4B696 /* KeyboardViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */; };
 		8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */; };
@@ -99,6 +100,7 @@
 		8F3BDA0723D878C800DE541C /* MyKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8F3BDA0B23D878C800DE541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeModel.swift; sourceTree = "<group>"; };
 		8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Setup.swift"; sourceTree = "<group>"; };
 		8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */,
 				8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */,
+				8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */,
 			);
 			path = SubscribeScene;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			files = (
 				8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */,
 				8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */,
+				8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */,
 				8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */,
 				8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */,
 				8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */,
