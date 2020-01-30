@@ -23,6 +23,10 @@
 		8F3BDA0A23D878C800DE541C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */; };
 		8F3BDA0E23D878C800DE541C /* MyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F3BDA0723D878C800DE541C /* MyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */; };
+		8F40700223E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
+		8F40700323E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
+		8F40700523E2FD0400A83874 /* MerchantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700423E2FD0400A83874 /* MerchantManager.swift */; };
+		8F40700623E2FD0400A83874 /* MerchantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700423E2FD0400A83874 /* MerchantManager.swift */; };
 		8F454BBA23D87A4800E4B696 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */; };
 		8F454BBC23D87A6600E4B696 /* KeyboardViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */; };
 		8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */; };
@@ -101,6 +105,10 @@
 		8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8F3BDA0B23D878C800DE541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeModel.swift; sourceTree = "<group>"; };
+		8F406FFE23E2F6DD00A83874 /* MyFonts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFonts.entitlements; sourceTree = "<group>"; };
+		8F406FFF23E2F78D00A83874 /* MyKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyKeyboard.entitlements; sourceTree = "<group>"; };
+		8F40700123E2F83D00A83874 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		8F40700423E2FD0400A83874 /* MerchantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantManager.swift; sourceTree = "<group>"; };
 		8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Setup.swift"; sourceTree = "<group>"; };
 		8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 		8F3BD9EE23D878A500DE541C /* MyFonts */ = {
 			isa = PBXGroup;
 			children = (
+				8F406FFE23E2F6DD00A83874 /* MyFonts.entitlements */,
 				8F7648C323DAD35E00C25DDF /* Scenes */,
 				8F454BD923D8837F00E4B696 /* Shared */,
 				8F7648C523DAD37A00C25DDF /* SupportingFiles */,
@@ -223,6 +232,7 @@
 		8F3BDA0823D878C800DE541C /* MyKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8F406FFF23E2F78D00A83874 /* MyKeyboard.entitlements */,
 				8F454BC923D87C1100E4B696 /* Buttons */,
 				8F454BC723D87BBC00E4B696 /* DemoKeyboard.swift */,
 				8F454BBF23D87B4F00E4B696 /* AlphabeticKeyboard.swift */,
@@ -239,6 +249,15 @@
 			path = MyKeyboard;
 			sourceTree = "<group>";
 		};
+		8F40700023E2F82800A83874 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8F40700123E2F83D00A83874 /* PersistencyManager.swift */,
+				8F40700423E2FD0400A83874 /* MerchantManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		8F454BC923D87C1100E4B696 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +272,7 @@
 		8F454BD923D8837F00E4B696 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8F40700023E2F82800A83874 /* Managers */,
 				8F454BDA23D8838900E4B696 /* Models */,
 				8FE04FC823DEDBA10046F477 /* DevicyType.swift */,
 				8F111DF523E2C85700EA9277 /* Constants.swift */,
@@ -522,8 +542,10 @@
 				8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
 				8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */,
+				8F40700523E2FD0400A83874 /* MerchantManager.swift in Sources */,
 				8F111DF823E2C89100EA9277 /* Extensions.swift in Sources */,
 				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
+				8F40700223E2F83D00A83874 /* PersistencyManager.swift in Sources */,
 				8F111DF623E2C85700EA9277 /* Constants.swift in Sources */,
 				8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */,
 				8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
@@ -538,6 +560,7 @@
 				8F454BC423D87B9400E4B696 /* NumericKeyboard.swift in Sources */,
 				8F454BD223D87C5300E4B696 /* Assets.swift in Sources */,
 				8F454BCD23D87C1100E4B696 /* DemoButton.swift in Sources */,
+				8F40700623E2FD0400A83874 /* MerchantManager.swift in Sources */,
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
 				8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */,
 				8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */,
@@ -547,6 +570,7 @@
 				8F454BC623D87BA400E4B696 /* SymbolicKeyboard.swift in Sources */,
 				8F454BC223D87B8000E4B696 /* KeyboardViewController+Buttons.swift in Sources */,
 				8F454BBA23D87A4800E4B696 /* DemoKeyboardActionHandler.swift in Sources */,
+				8F40700323E2F83D00A83874 /* PersistencyManager.swift in Sources */,
 				8F454BCF23D87C1100E4B696 /* DemoAutocompleteLabel.swift in Sources */,
 				8F111DFA23E2CE7200EA9277 /* Extensions.swift in Sources */,
 				8F454BDD23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
@@ -704,6 +728,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
@@ -726,6 +751,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
@@ -746,6 +772,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
@@ -768,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
