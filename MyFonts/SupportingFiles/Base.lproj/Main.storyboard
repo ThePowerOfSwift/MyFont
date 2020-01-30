@@ -329,6 +329,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.98053020239999999" green="0.97201794389999996" blue="0.9960828424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapContinue:" destination="zu5-rb-Joz" eventType="touchUpInside" id="bzU-nM-s1u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
