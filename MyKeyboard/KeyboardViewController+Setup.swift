@@ -115,14 +115,13 @@ extension KeyboardViewController {
     
     private func addFontToolbar(index: Int) {
         var fontsToAdd: [KeyboardAction] = []
-        let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
+//        let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let keyBoard = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             fontsToAdd.append(keyBoard)
         }
-        fontsToAdd.insert(settingsKeyboard, at: 0)
-        fontsToAdd.insert(KeyboardAction.switchKeyboard, at: 0)
-        let rowsPerPage = 2
+//        fontsToAdd.insert(settingsKeyboard, at: 0)
+        let rowsPerPage = 1
         let buttonsPerRow = 4
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }

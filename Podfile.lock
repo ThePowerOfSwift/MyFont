@@ -2,12 +2,14 @@ PODS:
   - KeyboardKit (2.6.0)
   - ShimmerSwift (2.1.1)
   - SwiftyGif (5.2.0)
+  - SwiftyStoreKit (0.15.0)
   - UPCarouselFlowLayout (1.1.2)
 
 DEPENDENCIES:
   - KeyboardKit
   - ShimmerSwift
   - SwiftyGif
+  - SwiftyStoreKit
   - UPCarouselFlowLayout
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - KeyboardKit
     - ShimmerSwift
     - SwiftyGif
+    - SwiftyStoreKit
     - UPCarouselFlowLayout
 
 SPEC CHECKSUMS:
   KeyboardKit: 66fd5dcd26780f8b2e6ebac7bc0cfd31e58ea182
   ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
   SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 9039a6e9a1c7221e7c8a0ade836d571b44048e71
+PODFILE CHECKSUM: b2caf6dd2534a680932fc1fccb284d1fde21ec1e
 
 COCOAPODS: 1.8.4

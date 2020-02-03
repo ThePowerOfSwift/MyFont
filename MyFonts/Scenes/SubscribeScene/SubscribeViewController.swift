@@ -70,6 +70,14 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {
+        purchase1Month()
+    }
+    
+    private func purchase1Month() {
+        MerchantManager.shared.purchase1MonthIAP()
+    }
+    
+    private func goToFinalVC() {
         let successViewController = storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
         successViewController.modalPresentationStyle = .fullScreen
         self.present(successViewController, animated: true, completion: nil)

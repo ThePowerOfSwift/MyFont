@@ -30,7 +30,7 @@ class DemoButton: KeyboardButtonView {
         textLabel?.textColor = action.tintColor(in: viewController)
         buttonView?.tintColor = action.tintColor(in: viewController)
         width = action.buttonWidth(for: distribution)
-        
+
         // Mark - TODO Test Performence
         if isiPhone6sOrLater() == true {
             applyShadow(.standardButtonShadow)

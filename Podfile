@@ -10,6 +10,7 @@ target 'MyFonts' do
   pod 'ShimmerSwift'
   pod "UPCarouselFlowLayout"
   pod 'SwiftyGif'
+  pod 'SwiftyStoreKit'
 
 end
 
@@ -20,5 +21,6 @@ target 'MyKeyboard' do
   # Pods for MyKeyboard
   pod 'KeyboardKit'
   pod 'ShimmerSwift'
+  pod 'SwiftyStoreKit'
 
 end
