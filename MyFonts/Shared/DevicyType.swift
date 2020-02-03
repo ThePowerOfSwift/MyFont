@@ -164,3 +164,14 @@ func isLatestPhone() -> Bool {
         return false
     }
 }
+
+func isiPhone6sOrLater() -> Bool {
+    if UIDevice().type == .iPhone4 ||
+        UIDevice().type == .iPhone4S ||
+        UIDevice().type == .iPhone5 ||
+        UIDevice().type == .iPhone5S ||
+        UIDevice().type == .iPhone6 {
+        return false
+    }
+    return true
+}
