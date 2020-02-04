@@ -75,6 +75,9 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     private func purchase1Month() {
         MerchantManager.shared.purchase1MonthIAP()
+        RebeloperStore.purchase("autoRenewableWeekly") { (result) in
+            print(result)
+        }
     }
     
     private func goToFinalVC() {

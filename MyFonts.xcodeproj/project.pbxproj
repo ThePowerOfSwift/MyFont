@@ -51,6 +51,12 @@
 		8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */; };
 		8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B997023D9B90F0093C072 /* SubscribeButton.xib */; };
 		8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F929F7823E17C33006417DF /* EmojiKeyboard.swift */; };
+		8F9E229723E99E0100842E99 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9E229623E99E0100842E99 /* StoreKit.framework */; };
+		8FC3611B23E97478006EF455 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611623E97478006EF455 /* InAppPurchase.swift */; };
+		8FC3611C23E97478006EF455 /* DocumentSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611723E97478006EF455 /* DocumentSerializable.swift */; };
+		8FC3611D23E97478006EF455 /* RebeloperStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611823E97478006EF455 /* RebeloperStore.swift */; };
+		8FC3611E23E97478006EF455 /* RegisteredPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611923E97478006EF455 /* RegisteredPurchase.swift */; };
+		8FC3611F23E97478006EF455 /* RebeloperStoreSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */; };
 		8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */; };
@@ -59,6 +65,8 @@
 		8FF0081523D9D231002B5D8A /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081223D9D230002B5D8A /* gif2.gif */; };
 		8FF0081623D9D231002B5D8A /* gif0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081323D9D231002B5D8A /* gif0.gif */; };
 		8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */; };
+		8FF190CE23E9730F0059AD3C /* RebeloperStorePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF190C823E9730E0059AD3C /* RebeloperStorePro.swift */; };
+		8FF190D123E9730F0059AD3C /* OSStatus+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF190CB23E9730F0059AD3C /* OSStatus+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +137,12 @@
 		8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontCell.swift; sourceTree = "<group>"; };
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
 		8F929F7823E17C33006417DF /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		8F9E229623E99E0100842E99 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8FC3611623E97478006EF455 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
+		8FC3611723E97478006EF455 /* DocumentSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSerializable.swift; sourceTree = "<group>"; };
+		8FC3611823E97478006EF455 /* RebeloperStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebeloperStore.swift; sourceTree = "<group>"; };
+		8FC3611923E97478006EF455 /* RegisteredPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteredPurchase.swift; sourceTree = "<group>"; };
+		8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebeloperStoreSetup.swift; sourceTree = "<group>"; };
 		8FE04FC823DEDBA10046F477 /* DevicyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicyType.swift; sourceTree = "<group>"; };
 		8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +150,8 @@
 		8FF0081223D9D230002B5D8A /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
 		8FF0081323D9D231002B5D8A /* gif0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif0.gif; sourceTree = "<group>"; };
 		8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCell.swift; sourceTree = "<group>"; };
+		8FF190C823E9730E0059AD3C /* RebeloperStorePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebeloperStorePro.swift; sourceTree = "<group>"; };
+		8FF190CB23E9730F0059AD3C /* OSStatus+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OSStatus+.swift"; sourceTree = "<group>"; };
 		AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD4F045B96CF1BF34EDDAC6 /* Pods_MyFonts.framework in Frameworks */,
+				8F9E229723E99E0100842E99 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +191,7 @@
 		2F7FB72810B1F5B3A70C1DA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F9E229623E99E0100842E99 /* StoreKit.framework */,
 				AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */,
 				4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */,
 			);
@@ -252,6 +270,7 @@
 		8F40700023E2F82800A83874 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8FF190C723E972FE0059AD3C /* Store */,
 				8F40700123E2F83D00A83874 /* PersistencyManager.swift */,
 				8F40700423E2FD0400A83874 /* MerchantManager.swift */,
 			);
@@ -334,6 +353,27 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8FC3611423E97464006EF455 /* RebeloperStorePro */ = {
+			isa = PBXGroup;
+			children = (
+				8FF190CB23E9730F0059AD3C /* OSStatus+.swift */,
+				8FF190C823E9730E0059AD3C /* RebeloperStorePro.swift */,
+			);
+			path = RebeloperStorePro;
+			sourceTree = "<group>";
+		};
+		8FC3611523E97478006EF455 /* RebeloperStoreBasic */ = {
+			isa = PBXGroup;
+			children = (
+				8FC3611623E97478006EF455 /* InAppPurchase.swift */,
+				8FC3611723E97478006EF455 /* DocumentSerializable.swift */,
+				8FC3611823E97478006EF455 /* RebeloperStore.swift */,
+				8FC3611923E97478006EF455 /* RegisteredPurchase.swift */,
+				8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */,
+			);
+			path = RebeloperStoreBasic;
+			sourceTree = "<group>";
+		};
 		8FEDA77323D9C6AB00DF127D /* SubscribeScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +392,15 @@
 				8FF0081223D9D230002B5D8A /* gif2.gif */,
 			);
 			path = gifs;
+			sourceTree = "<group>";
+		};
+		8FF190C723E972FE0059AD3C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8FC3611523E97478006EF455 /* RebeloperStoreBasic */,
+				8FC3611423E97464006EF455 /* RebeloperStorePro */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,24 +580,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC3611F23E97478006EF455 /* RebeloperStoreSetup.swift in Sources */,
 				8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */,
 				8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */,
 				8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */,
 				8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */,
 				8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */,
 				8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */,
+				8FF190D123E9730F0059AD3C /* OSStatus+.swift in Sources */,
+				8FC3611D23E97478006EF455 /* RebeloperStore.swift in Sources */,
 				8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */,
 				8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */,
 				8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
 				8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */,
 				8F40700523E2FD0400A83874 /* MerchantManager.swift in Sources */,
+				8FC3611E23E97478006EF455 /* RegisteredPurchase.swift in Sources */,
 				8F111DF823E2C89100EA9277 /* Extensions.swift in Sources */,
 				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
 				8F40700223E2F83D00A83874 /* PersistencyManager.swift in Sources */,
+				8FC3611C23E97478006EF455 /* DocumentSerializable.swift in Sources */,
+				8FC3611B23E97478006EF455 /* InAppPurchase.swift in Sources */,
 				8F111DF623E2C85700EA9277 /* Constants.swift in Sources */,
 				8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */,
 				8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
+				8FF190CE23E9730F0059AD3C /* RebeloperStorePro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +714,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -712,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -729,7 +785,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.5;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
@@ -738,8 +795,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fontkeyboards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Development Profile - Master";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -752,7 +810,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.5;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
@@ -761,8 +820,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fontkeyboards;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Development Profile - Master";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -773,7 +833,8 @@
 			baseConfigurationReference = EFE660515A894EBB85D54709 /* Pods-MyKeyboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.5;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyKeyboard/Info.plist;
@@ -783,8 +844,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fontkeyboards.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Extension Development Profile - Master";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -796,7 +858,8 @@
 			baseConfigurationReference = 7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.5;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyKeyboard/Info.plist;
@@ -806,8 +869,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fontkeyboards.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Extension Development Profile - Master";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

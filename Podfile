@@ -11,7 +11,10 @@ target 'MyFonts' do
   pod "UPCarouselFlowLayout"
   pod 'SwiftyGif'
   pod 'SwiftyStoreKit'
-
+  pod 'KeychainSwift'
+  pod 'DuckUI'
+  pod 'ReactiveKit'
+  pod 'TPInAppReceipt'
 end
 
 target 'MyKeyboard' do
