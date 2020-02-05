@@ -12,8 +12,8 @@ import StoreKit
 final class AppReviewManager {
 
     static let shared = AppReviewManager()
-    private let minimumReviewWorthyActionCount = 50
-    private let minimumDaysElapsed = 10
+    private let minimumReviewWorthyActionCount = 30
+    private let minimumDaysElapsed = 5
     func requestReviewIfAppropriate() {
         
         guard PersistencyManager.shared.updateReviewWorthyActions() > minimumReviewWorthyActionCount else {  return }
