@@ -73,9 +73,21 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         purchaseWeeklySubscription()
     }
     
+    @IBAction func onRestoreTap(_ sender: UIButton) {
+        restorePurchases()
+    }
+    
     private func purchaseWeeklySubscription() {
         
         RebeloperStore.purchase("autoRenewableWeekly") { (result) in
+            if result == true {
+                PersistencyManager.shared.setSubscriptionActive(withDate: Date())
+            }
+        }
+    }
+    
+    private func restorePurchases() {
+        RebeloperStore.restorePurchases { (result) in
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
             }
