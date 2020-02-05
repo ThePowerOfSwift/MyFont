@@ -51,7 +51,7 @@ class SubscribeViewController: UIViewController {
     }
     @IBOutlet var titleLabel: UILabel! {
         didSet {
-            titleLabel.text = "𝔽𝕆ℕ𝕋 𝔸ℂℂ𝔼𝕊𝕊"
+            titleLabel.text = SubscribeModel.Title
         }
     }
     private var subscribeViewModel = SubscribeModel()

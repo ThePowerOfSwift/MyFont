@@ -10,6 +10,7 @@ import Foundation
 
 
 struct SubscribeModel {
+    static let Title = NSLocalizedString("subscribe.title", comment: "Font Access")
     let SubsribtionTOS: String = NSLocalizedString("subscribe.tos", comment: "")
     var SubscriptionOffer: String
     

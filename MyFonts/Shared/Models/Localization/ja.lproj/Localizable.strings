@@ -5,6 +5,7 @@
   Created by Irakli on 2/5/20.
   Copyright © 2020 Irakli. All rights reserved.
 */
+// Subscribe Scene
 "subscribe.tos" = "This subscription automatically renews for 11.99$/month at the end of 3-day trial period. Payment will be charged to your Apple ID account at the confirmation purchase. Subscription automatically renews unless it is cancelled at least 24 hours prior to the end of the current period. You can manage and cancel subscriptions by going to your account settings on the App Store after purchase";
 "subscribe.trial" = "Try 3 days for free";
 "subscribe.cancel" = "cancel anytime";
@@ -12,6 +13,7 @@
 "subscribe.offer.offer2" = "Exclusive fonts";
 "subscribe.offer.offer3" = "Tons of emojis & fonts";
 "subscribe.offer.offer4" = "No ads";
+"subscribe.title" = "𝔽𝕆ℕ𝕋 𝔸ℂℂ𝔼𝕊𝕊";
 // General Words
 "general.then" = "Then";
 "general.month" = "month";
