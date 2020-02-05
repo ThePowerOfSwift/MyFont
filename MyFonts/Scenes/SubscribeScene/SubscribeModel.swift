@@ -32,7 +32,3 @@ struct SubscribeModel {
     }
     
 }
-
-
-
-

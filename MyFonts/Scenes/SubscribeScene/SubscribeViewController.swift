@@ -12,7 +12,7 @@ import UPCarouselFlowLayout
 import ShimmerSwift
 
 
-class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SubscribeViewController: UIViewController {
     
     @IBOutlet var collectionViewLayout: UPCarouselFlowLayout! {
         didSet {
@@ -52,24 +52,11 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         }
     }
     
-    
+    private var scrollingStep = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        RebeloperStore.inAppPurchases.observe { (Event) in
-            switch Event {
-            case .next(let purchases):
-                for purchase in purchases {
-                    print(purchase.price)
-                    print(purchase)
-                    self.subscribeViewModel = SubscribeModel(localizedPrice: purchase.price)
-                    self.subscriptionOfferLabel.text = self.subscribeViewModel.SubscriptionOffer
-                }
-                print(purchases)
-            case .completed:
-                break
-            }
-        }
+        updateLocalizedIAP()
     }
     
     
@@ -80,12 +67,6 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
     }
     
-    var step = 0
-    
-    @objc func autoScroll() {
-        step = step + 1
-        collectionVIew.scrollToItem(at: IndexPath(row: step%3, section: 0), at: .centeredHorizontally, animated: true)
-    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -98,7 +79,7 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @IBAction func onRestoreTap(_ sender: UIButton) {
         
-//        restorePurchases()
+        //        restorePurchases()
     }
     
     @IBAction func onPrivacyPolicyTap(_ sender: UIButton) {
@@ -107,6 +88,29 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @IBAction func onTermsofServiceTap(_ sender: UIButton) {
         
+    }
+    
+    private func goToFinalVC() {
+        let successViewController = storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
+        successViewController.modalPresentationStyle = .fullScreen
+        self.present(successViewController, animated: true, completion: nil)
+    }
+    
+}
+
+// MARK: In App Purchases
+
+extension SubscribeViewController {
+    
+    private func updateLocalizedIAP() {
+        _ = RebeloperStore.inAppPurchases.observeNext { (purchases) in
+            for purchase in purchases {
+                print(purchase.price)
+                print(purchase)
+                self.subscribeViewModel = SubscribeModel(localizedPrice: purchase.price)
+                self.subscriptionOfferLabel.text = self.subscribeViewModel.SubscriptionOffer
+            }
+        }
     }
     
     private func purchaseWeeklySubscription() {
@@ -125,11 +129,13 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
             }
         }
     }
+}
+
+extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private func goToFinalVC() {
-        let successViewController = storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
-        successViewController.modalPresentationStyle = .fullScreen
-        self.present(successViewController, animated: true, completion: nil)
+    @objc func autoScroll() {
+        scrollingStep = scrollingStep + 1
+        collectionVIew.scrollToItem(at: IndexPath(row: scrollingStep%3, section: 0), at: .centeredHorizontally, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -141,5 +147,4 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.setup(index: indexPath.row)
         return cell
     }
-    
 }

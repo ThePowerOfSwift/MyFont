@@ -87,8 +87,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qho-lz-5IE">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Cl-nD-gmC">
-                                                                <rect key="frame" x="40" y="11.5" width="32" height="17.5"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Cl-nD-gmC">
+                                                                <rect key="frame" x="40" y="13.5" width="32" height="14"/>
                                                                 <color key="tintColor" red="0.88361614939999999" green="0.076415576040000002" blue="0.36862832309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="32" id="VAR-n2-ooY"/>
