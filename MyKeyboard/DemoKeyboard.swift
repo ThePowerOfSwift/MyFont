@@ -22,9 +22,9 @@ extension DemoKeyboard {
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
         let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
         var actions = [leftmost, .switchKeyboard, .space, settingsKeyboard, .newLine]
-//        if isLatestPhone() {
-           actions = [leftmost,settingsKeyboard, .space,KeyboardAction.character("."),.newLine]
-//        }
+        if isLatestPhone() {
+            actions = [leftmost,settingsKeyboard, .space,KeyboardAction.character("."),.newLine]
+        }
         return actions
     }
 }

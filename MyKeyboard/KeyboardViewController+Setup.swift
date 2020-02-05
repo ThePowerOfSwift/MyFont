@@ -49,6 +49,11 @@ extension KeyboardViewController {
             setupEmojiKeyboard(index: index)
             return
         }
+        
+        if index > 0 {
+            AppReviewManager.shared.requestReviewIfAppropriate()
+        }
+        
         AlphabeticKeyboard.characters = FontKeyboard.ViewModel.keyboards[index].characters
         if let upperCasedFont = FontKeyboard.ViewModel.keyboards[index].upperCharacters {
             AlphabeticKeyboard.upperCasedCharacters = upperCasedFont

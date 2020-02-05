@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3562061EB11B795ED6AE9FF2 /* Pods_MyKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */; };
 		3BD4F045B96CF1BF34EDDAC6 /* Pods_MyFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB3330C9E2569E89C854A18 /* Pods_MyFonts.framework */; };
+		8F0BC92923EB01C600946BA1 /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0BC92823EB01C600946BA1 /* AppReviewManager.swift */; };
+		8F0BC92A23EB01C600946BA1 /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0BC92823EB01C600946BA1 /* AppReviewManager.swift */; };
 		8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */; };
 		8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF323E2B84200EA9277 /* ShowroomCell.swift */; };
 		8F111DF623E2C85700EA9277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF523E2C85700EA9277 /* Constants.swift */; };
@@ -96,6 +98,7 @@
 		4B709CB8BB8889A95822DDA5 /* Pods_MyKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFA6F933E8F89B9482B3FD6 /* Pods-MyFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFonts.release.xcconfig"; path = "Target Support Files/Pods-MyFonts/Pods-MyFonts.release.xcconfig"; sourceTree = "<group>"; };
 		7B4D7CBB3AD348DA5F1DA78E /* Pods-MyKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKeyboard.release.xcconfig"; path = "Target Support Files/Pods-MyKeyboard/Pods-MyKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		8F0BC92823EB01C600946BA1 /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
 		8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomViewController.swift; sourceTree = "<group>"; };
 		8F111DF323E2B84200EA9277 /* ShowroomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomCell.swift; sourceTree = "<group>"; };
 		8F111DF523E2C85700EA9277 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 		8F40700023E2F82800A83874 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8F0BC92823EB01C600946BA1 /* AppReviewManager.swift */,
 				8FF190C723E972FE0059AD3C /* Store */,
 				8F40700123E2F83D00A83874 /* PersistencyManager.swift */,
 			);
@@ -598,6 +602,7 @@
 				8FC3611B23E97478006EF455 /* InAppPurchase.swift in Sources */,
 				8F111DF623E2C85700EA9277 /* Constants.swift in Sources */,
 				8FF0081823D9D25F002B5D8A /* SubscribeCell.swift in Sources */,
+				8F0BC92923EB01C600946BA1 /* AppReviewManager.swift in Sources */,
 				8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */,
 				8FF190CE23E9730F0059AD3C /* RebeloperStorePro.swift in Sources */,
 			);
@@ -612,6 +617,7 @@
 				8F454BD223D87C5300E4B696 /* Assets.swift in Sources */,
 				8F454BCD23D87C1100E4B696 /* DemoButton.swift in Sources */,
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
+				8F0BC92A23EB01C600946BA1 /* AppReviewManager.swift in Sources */,
 				8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */,
 				8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */,
 				8F111DF923E2CE5B00EA9277 /* Constants.swift in Sources */,
