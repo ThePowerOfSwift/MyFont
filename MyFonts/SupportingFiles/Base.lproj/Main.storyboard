@@ -195,8 +195,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usl-19-rsh">
-                                                <rect key="frame" x="60" y="235" width="294" height="30"/>
+                                                <rect key="frame" x="40" y="235" width="334" height="50"/>
                                                 <color key="backgroundColor" red="0.88361614939999999" green="0.076415576040000002" blue="0.36862832309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qlf-4D-3jk"/>
+                                                </constraints>
                                                 <state key="normal" title="Continue">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -205,10 +208,10 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzg-xY-pYz" userLabel="ShimmeringView" customClass="ShimmeringView" customModule="ShimmerSwift">
-                                                <rect key="frame" x="60" y="233" width="294" height="40"/>
+                                                <rect key="frame" x="40" y="233" width="334" height="60"/>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="10" y="283" width="394" height="147"/>
+                                                <rect key="frame" x="10" y="303" width="394" height="147"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="147" id="I2L-Jj-qpm"/>
@@ -219,7 +222,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-9Z-Pab">
-                                                <rect key="frame" x="0.0" y="430" width="414" height="27"/>
+                                                <rect key="frame" x="0.0" y="450" width="414" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-Dd-aMm">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="27"/>
@@ -257,17 +260,17 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0A8-9Z-Pab" secondAttribute="trailing" id="2nd-OS-tDk"/>
-                                            <constraint firstAttribute="trailing" secondItem="Usl-19-rsh" secondAttribute="trailing" constant="60" id="6Om-fM-Ssl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Usl-19-rsh" secondAttribute="trailing" constant="40" id="6Om-fM-Ssl"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="40" id="7K3-EL-iIn"/>
                                             <constraint firstAttribute="trailing" secondItem="u6b-DO-v70" secondAttribute="trailing" constant="40" id="8TX-tp-wAs"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="top" secondItem="fDO-Kz-Fm2" secondAttribute="bottom" id="9ur-Oi-oT0"/>
                                             <constraint firstItem="IU7-Ha-cc3" firstAttribute="top" secondItem="zyY-cP-a5b" secondAttribute="bottom" constant="20" id="AZ9-CX-1C8"/>
                                             <constraint firstItem="Usl-19-rsh" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="Axq-Bv-AUr"/>
-                                            <constraint firstAttribute="trailing" secondItem="hzg-xY-pYz" secondAttribute="trailing" constant="60" id="Bxw-xX-FfC"/>
+                                            <constraint firstAttribute="trailing" secondItem="hzg-xY-pYz" secondAttribute="trailing" constant="40" id="Bxw-xX-FfC"/>
                                             <constraint firstAttribute="trailing" secondItem="zyY-cP-a5b" secondAttribute="trailing" constant="40" id="FIZ-tV-byE"/>
                                             <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="10" id="FLw-oi-Tmm"/>
                                             <constraint firstItem="hzg-xY-pYz" firstAttribute="width" secondItem="Usl-19-rsh" secondAttribute="width" id="GJo-5z-HuC"/>
-                                            <constraint firstItem="hzg-xY-pYz" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="60" id="Ktb-q3-HqW"/>
+                                            <constraint firstItem="hzg-xY-pYz" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="40" id="Ktb-q3-HqW"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="PHv-3Z-AcZ"/>
                                             <constraint firstItem="zyY-cP-a5b" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="PkI-54-x9z"/>
                                             <constraint firstItem="zyY-cP-a5b" firstAttribute="top" secondItem="u6b-DO-v70" secondAttribute="bottom" constant="8" id="R1z-je-lQg"/>
@@ -279,7 +282,7 @@
                                             <constraint firstItem="Usl-19-rsh" firstAttribute="top" secondItem="IU7-Ha-cc3" secondAttribute="bottom" constant="10" id="Wjc-Fd-pti"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="top" secondItem="hzg-xY-pYz" secondAttribute="bottom" constant="10" id="cWQ-oc-7i8"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="top" secondItem="Xrm-N7-QA5" secondAttribute="top" id="dvm-Cf-tF8"/>
-                                            <constraint firstItem="Usl-19-rsh" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="60" id="l6h-G3-Bj8"/>
+                                            <constraint firstItem="Usl-19-rsh" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="40" id="l6h-G3-Bj8"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="10" id="nH7-gD-8A1"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="uSK-zG-EcH"/>
                                             <constraint firstItem="hzg-xY-pYz" firstAttribute="top" secondItem="IU7-Ha-cc3" secondAttribute="bottom" constant="8" id="xNK-aA-Uhi"/>

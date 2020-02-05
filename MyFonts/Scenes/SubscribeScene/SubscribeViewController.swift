@@ -26,22 +26,23 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     @IBOutlet var subscribeButton: UIButton! {
         didSet {
-            subscribeButton.layer.cornerRadius = subscribeButton.frame.height/2
+            subscribeButton.layer.cornerRadius = subscribeButton.frame.height/4
             subscribeButton.clipsToBounds = true
         }
     }
     
+    private var subscribeViewModel = SubscribeModel()
     @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var subscriptionTOSTextView: UITextView! {
         didSet {
-            subscriptionTOSTextView.text = SubsribtionTOS
+            subscriptionTOSTextView.text = subscribeViewModel.SubsribtionTOS
         }
     }
     
     @IBOutlet var subscriptionOfferLabel: UILabel! {
         didSet {
-            subscriptionOfferLabel.text = SubscriptionOffer
+            subscriptionOfferLabel.text = subscribeViewModel.SubscriptionOffer
         }
     }
     
@@ -51,8 +52,24 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         }
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        RebeloperStore.inAppPurchases.observe { (Event) in
+            switch Event {
+            case .next(let purchases):
+                for purchase in purchases {
+                    print(purchase.price)
+                    print(purchase)
+                    self.subscribeViewModel = SubscribeModel(localizedPrice: purchase.price)
+                    self.subscriptionOfferLabel.text = self.subscribeViewModel.SubscriptionOffer
+                }
+                print(purchases)
+            case .completed:
+                break
+            }
+        }
     }
     
     
