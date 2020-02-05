@@ -108,8 +108,6 @@ extension SubscribeViewController {
     private func updateLocalizedIAP() {
         _ = RebeloperStore.inAppPurchases.observeNext { (purchases) in
             for purchase in purchases {
-                print(purchase.price)
-                print(purchase)
                 self.subscribeViewModel = SubscribeModel(localizedPrice: purchase.price)
                 self.subscriptionOfferLabel.text = self.subscribeViewModel.SubscriptionOffer
             }
