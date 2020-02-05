@@ -12,8 +12,8 @@ import StoreKit
 final class AppReviewManager {
 
     static let shared = AppReviewManager()
-    private let minimumReviewWorthyActionCount = 101
-    
+    private let minimumReviewWorthyActionCount = 50
+    private let minimumDaysElapsed = 10
     func requestReviewIfAppropriate() {
         
         guard PersistencyManager.shared.updateReviewWorthyActions() > minimumReviewWorthyActionCount else {  return }
@@ -26,7 +26,7 @@ final class AppReviewManager {
         
         guard let purchaseDate = PersistencyManager.shared.purchaseDate() else { return }
         let daysFromPurchase =  Calendar.current.dateComponents([.day], from: Date(), to: purchaseDate).day
-        guard daysFromPurchase ?? 0 > 14 else { return }
+        guard daysFromPurchase ?? 0 > minimumDaysElapsed else { return }
         
         SKStoreReviewController.requestReview()
         
