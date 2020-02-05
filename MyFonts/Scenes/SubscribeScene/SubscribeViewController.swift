@@ -45,6 +45,12 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         }
     }
     
+    @IBOutlet var titleLabel: UILabel! {
+        didSet {
+            titleLabel.text = "𝔽𝕆ℕ𝕋 𝔸ℂℂ𝔼𝕊𝕊"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -66,7 +72,7 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + 100)
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {
@@ -74,7 +80,16 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     @IBAction func onRestoreTap(_ sender: UIButton) {
-        restorePurchases()
+        
+//        restorePurchases()
+    }
+    
+    @IBAction func onPrivacyPolicyTap(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func onTermsofServiceTap(_ sender: UIButton) {
+        
     }
     
     private func purchaseWeeklySubscription() {
