@@ -11,9 +11,9 @@ import UIKit
 import UPCarouselFlowLayout
 import ShimmerSwift
 
-
 class SubscribeViewController: UIViewController {
     
+    // MARK: Outlets & Properties
     @IBOutlet var collectionViewLayout: UPCarouselFlowLayout! {
         didSet {
             collectionViewLayout.itemSize = CGSize(width: 200, height: 200)
@@ -24,14 +24,19 @@ class SubscribeViewController: UIViewController {
             collectionVIew.backgroundColor = UIColor.clear
         }
     }
+    
+    @IBOutlet var tableView: UITableView! {
+        didSet {
+
+        }
+    }
+    
     @IBOutlet var subscribeButton: UIButton! {
         didSet {
             subscribeButton.layer.cornerRadius = subscribeButton.frame.height/4
             subscribeButton.clipsToBounds = true
         }
     }
-    
-    private var subscribeViewModel = SubscribeModel()
     @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var subscriptionTOSTextView: UITextView! {
@@ -39,26 +44,24 @@ class SubscribeViewController: UIViewController {
             subscriptionTOSTextView.text = subscribeViewModel.SubsribtionTOS
         }
     }
-    
     @IBOutlet var subscriptionOfferLabel: UILabel! {
         didSet {
             subscriptionOfferLabel.text = subscribeViewModel.SubscriptionOffer
         }
     }
-    
     @IBOutlet var titleLabel: UILabel! {
         didSet {
             titleLabel.text = "𝔽𝕆ℕ𝕋 𝔸ℂℂ𝔼𝕊𝕊"
         }
     }
-    
+    private var subscribeViewModel = SubscribeModel()
     private var scrollingStep = 0
     
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLocalizedIAP()
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -67,12 +70,12 @@ class SubscribeViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
     }
     
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + 100)
     }
     
+    // MARK: Actions
     @IBAction func onSubscribeTap(_ sender: UIButton) {
         purchaseWeeklySubscription()
     }
@@ -138,6 +141,7 @@ extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDat
         collectionVIew.scrollToItem(at: IndexPath(row: scrollingStep%3, section: 0), at: .centeredHorizontally, animated: true)
     }
     
+    // todo change
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         3
     }
@@ -145,6 +149,24 @@ extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! SubscribeCell
         cell.setup(index: indexPath.row)
+        return cell
+    }
+}
+
+extension SubscribeViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        SubscribeModel.Offer.Offers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "offerCell") as! OfferCell
+        let offerConfig = SubscribeModel.Offer.Offers[indexPath.row]
+        cell.setup(image: offerConfig.icon, text: offerConfig.title)
         return cell
     }
 }

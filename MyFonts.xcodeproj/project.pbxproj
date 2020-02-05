@@ -50,6 +50,7 @@
 		8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */; };
 		8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */; };
 		8F78AF8E23EB3467002AE831 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F78AF9023EB3467002AE831 /* Localizable.strings */; };
+		8F78AF9323EB3F6F002AE831 /* offerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F78AF9223EB3F6F002AE831 /* offerCell.swift */; };
 		8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B997023D9B90F0093C072 /* SubscribeButton.xib */; };
 		8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F929F7823E17C33006417DF /* EmojiKeyboard.swift */; };
 		8F9E229723E99E0100842E99 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9E229623E99E0100842E99 /* StoreKit.framework */; };
@@ -138,6 +139,7 @@
 		8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFontCell.swift; sourceTree = "<group>"; };
 		8F78AF8F23EB3467002AE831 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F78AF9123EB34F1002AE831 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F78AF9223EB3F6F002AE831 /* offerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offerCell.swift; sourceTree = "<group>"; };
 		8F7B997023D9B90F0093C072 /* SubscribeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeButton.xib; sourceTree = "<group>"; };
 		8F929F7823E17C33006417DF /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
 		8F9E229623E99E0100842E99 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -392,6 +394,7 @@
 				8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */,
 				8FF0081723D9D25F002B5D8A /* SubscribeCell.swift */,
 				8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */,
+				8F78AF9223EB3F6F002AE831 /* offerCell.swift */,
 			);
 			path = SubscribeScene;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F78AF9323EB3F6F002AE831 /* offerCell.swift in Sources */,
 				8FC3611F23E97478006EF455 /* RebeloperStoreSetup.swift in Sources */,
 				8F111DF223E2B75500EA9277 /* ShowroomViewController.swift in Sources */,
 				8F111DF423E2B84200EA9277 /* ShowroomCell.swift in Sources */,

@@ -31,4 +31,16 @@ struct SubscribeModel {
         SubscriptionOffer = trialoffer + "." + "\n " + then + "9.99$" + "/" + month + ", " + cancel
     }
     
+    struct Offer {
+        var icon: String
+        var title: String
+        
+        static let Offers: [Offer] = [
+            Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.noads", comment: "")),
+            Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.noads", comment: "")),
+            Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.noads", comment: "")),
+            Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.noads", comment: ""))
+        ]
+    }
+    
 }
