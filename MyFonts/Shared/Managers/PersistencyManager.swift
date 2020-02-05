@@ -17,7 +17,7 @@ final class PersistencyManager {
     
     private let userDefaults = UserDefaults.init(suiteName: "group.com.atomicbird.demonotes")
     
-    func savePurchaseDate(date: Date) {
+    func setSubscriptionActive(withDate date: Date) {
         
         userDefaults?.setValue(date, forKey: purchaseDateKey)
     }

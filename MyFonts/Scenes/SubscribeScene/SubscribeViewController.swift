@@ -49,7 +49,7 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
         super.viewDidLoad()
     }
     
-        
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         shimmeringView.contentView = subscribeButton
@@ -70,13 +70,15 @@ class SubscribeViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     @IBAction func onSubscribeTap(_ sender: UIButton) {
-        purchase1Month()
+        purchaseWeeklySubscription()
     }
     
-    private func purchase1Month() {
-        MerchantManager.shared.purchase1MonthIAP()
+    private func purchaseWeeklySubscription() {
+        
         RebeloperStore.purchase("autoRenewableWeekly") { (result) in
-            print(result)
+            if result == true {
+                PersistencyManager.shared.setSubscriptionActive(withDate: Date())
+            }
         }
     }
     

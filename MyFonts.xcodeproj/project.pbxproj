@@ -25,8 +25,6 @@
 		8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */; };
 		8F40700223E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
 		8F40700323E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
-		8F40700523E2FD0400A83874 /* MerchantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700423E2FD0400A83874 /* MerchantManager.swift */; };
-		8F40700623E2FD0400A83874 /* MerchantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700423E2FD0400A83874 /* MerchantManager.swift */; };
 		8F454BBA23D87A4800E4B696 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */; };
 		8F454BBC23D87A6600E4B696 /* KeyboardViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */; };
 		8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */; };
@@ -116,7 +114,6 @@
 		8F406FFE23E2F6DD00A83874 /* MyFonts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFonts.entitlements; sourceTree = "<group>"; };
 		8F406FFF23E2F78D00A83874 /* MyKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyKeyboard.entitlements; sourceTree = "<group>"; };
 		8F40700123E2F83D00A83874 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
-		8F40700423E2FD0400A83874 /* MerchantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantManager.swift; sourceTree = "<group>"; };
 		8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Setup.swift"; sourceTree = "<group>"; };
 		8F454BBD23D87A9D00E4B696 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -272,7 +269,6 @@
 			children = (
 				8FF190C723E972FE0059AD3C /* Store */,
 				8F40700123E2F83D00A83874 /* PersistencyManager.swift */,
-				8F40700423E2FD0400A83874 /* MerchantManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -594,7 +590,6 @@
 				8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
 				8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */,
-				8F40700523E2FD0400A83874 /* MerchantManager.swift in Sources */,
 				8FC3611E23E97478006EF455 /* RegisteredPurchase.swift in Sources */,
 				8F111DF823E2C89100EA9277 /* Extensions.swift in Sources */,
 				8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */,
@@ -616,7 +611,6 @@
 				8F454BC423D87B9400E4B696 /* NumericKeyboard.swift in Sources */,
 				8F454BD223D87C5300E4B696 /* Assets.swift in Sources */,
 				8F454BCD23D87C1100E4B696 /* DemoButton.swift in Sources */,
-				8F40700623E2FD0400A83874 /* MerchantManager.swift in Sources */,
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
 				8F929F7923E17C33006417DF /* EmojiKeyboard.swift in Sources */,
 				8F454BBE23D87A9D00E4B696 /* KeyboardManager.swift in Sources */,

@@ -23,7 +23,10 @@ class KeyboardViewController: KeyboardInputViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupKeyboard()
-        setupLock()
+        guard PersistencyManager.shared.isSubscriptionActive() == true else {
+            setupLock()
+            return
+        }
     }
     
     private func setupLock() {
