@@ -13,7 +13,7 @@ final class AppReviewManager {
 
     static let shared = AppReviewManager()
     private let minimumReviewWorthyActionCount = 30
-    private let minimumDaysElapsed = 5
+    private let minimumDaysElapsed = 2
     func requestReviewIfAppropriate() {
         
         guard PersistencyManager.shared.updateReviewWorthyActions() > minimumReviewWorthyActionCount else {  return }
