@@ -465,10 +465,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gHe-4k-FsU">
-                                <rect key="frame" x="20" y="190" width="374" height="128"/>
+                                <rect key="frame" x="20" y="190" width="374" height="320"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="Bt8-Re-5rN"/>
+                                    <constraint firstAttribute="height" constant="320" id="Bt8-Re-5rN"/>
                                 </constraints>
                                 <string key="text">• Go To Settings 🛠
 
@@ -484,7 +484,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE9-eC-c0n">
-                                <rect key="frame" x="106" y="373.5" width="202" height="60"/>
+                                <rect key="frame" x="106" y="690" width="202" height="60"/>
                                 <color key="backgroundColor" red="0.88361614939999999" green="0.076415576040000002" blue="0.36862832309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="la7-kv-qW7"/>
@@ -497,13 +497,30 @@
                                     <action selector="onTapOpenSettings:" destination="3Ok-qq-Wiq" eventType="touchUpInside" id="ICD-EO-uvo"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKa-5t-40v">
+                                <rect key="frame" x="182.5" y="366" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchDarkMode:" destination="3Ok-qq-Wiq" eventType="valueChanged" id="0uG-Sj-8hp"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Dark Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-8o-1CA">
+                                <rect key="frame" x="20" y="371" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="QKa-5t-40v" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="3C1-uw-tr4"/>
+                            <constraint firstItem="JqL-8o-1CA" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="5xB-kU-0xA"/>
                             <constraint firstItem="pao-tC-skw" firstAttribute="top" secondItem="0eN-pg-h9y" secondAttribute="top" constant="54" id="84w-1E-imD"/>
-                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="gHe-4k-FsU" secondAttribute="bottom" constant="55.5" id="9VA-Ur-9AQ"/>
+                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="gHe-4k-FsU" secondAttribute="bottom" constant="180" id="9VA-Ur-9AQ"/>
+                            <constraint firstItem="QKa-5t-40v" firstAttribute="top" secondItem="gHe-4k-FsU" secondAttribute="bottom" constant="-144" id="E1V-fE-9Tg"/>
+                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="QKa-5t-40v" secondAttribute="bottom" constant="293" id="FCk-al-8fD"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="top" secondItem="pao-tC-skw" secondAttribute="bottom" constant="50" id="INk-wf-I7m"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="MRX-DL-pYN"/>
+                            <constraint firstItem="QKa-5t-40v" firstAttribute="centerY" secondItem="JqL-8o-1CA" secondAttribute="centerY" id="Ph8-V0-Dgh"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="Q1X-Y3-qi3"/>
                             <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="gHe-4k-FsU" secondAttribute="trailing" constant="20" id="bqF-e5-qa9"/>
                             <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="pao-tC-skw" secondAttribute="trailing" constant="20" id="giC-AX-fPm"/>
