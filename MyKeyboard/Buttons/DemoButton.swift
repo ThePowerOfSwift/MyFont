@@ -32,6 +32,9 @@ class DemoButton: KeyboardButtonView {
         width = action.buttonWidth(for: distribution)
         if action == KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: KeyboardManager.sharedInstance.currentIndex)) {
             buttonView?.backgroundColor = Asset.Colors.lightButton.color
+//            if buttonView?.backgroundColor == Asset.Colors.darkSystemButton.color {
+            textLabel?.textColor = Asset.Colors.lightSystemButtonText.color
+//            }
         }
         // Mark - TODO Test Performence
         if isiPhone6sOrLater() == true {

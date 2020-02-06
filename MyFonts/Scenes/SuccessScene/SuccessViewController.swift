@@ -14,9 +14,9 @@ class SuccessViewController: UIViewController {
     @IBOutlet var darkmodeSwitch: UISwitch! {
         didSet {
             if PersistencyManager.shared.isDarkModeSet() {
-                darkmodeSwitch.isEnabled = PersistencyManager.shared.isDarkmodeActive()
+                darkmodeSwitch.isOn = PersistencyManager.shared.isDarkmodeActive()
             } else {
-                darkmodeSwitch.isEnabled = self.traitCollection.userInterfaceStyle == .dark ? true : false
+                darkmodeSwitch.isOn = self.traitCollection.userInterfaceStyle == .dark ? true : false
                 PersistencyManager.shared.setDarkmode(active: darkmodeSwitch.isEnabled)
             }
         }
@@ -36,9 +36,4 @@ class SuccessViewController: UIViewController {
     @IBAction func onTapOpenSettings(_ sender: Any) {
         UIApplication.shared.open(URL(string:"App-Prefs:root=General&path=Keyboard/KEYBOARDS")!, options: [:], completionHandler: nil)
     }
-    
-    @IBAction func onSwitchDarkMode(_ sender: Any) {
-        PersistencyManager.shared.setDarkmode(active: darkmodeSwitch.isEnabled)
-    }
-    
 }

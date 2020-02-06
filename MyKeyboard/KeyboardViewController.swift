@@ -14,10 +14,10 @@ class KeyboardViewController: KeyboardInputViewController {
 
     var shimmerView: ShimmeringView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         keyboardActionHandler = DemoKeyboardActionHandler(inputViewController: self)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zu5-rb-Joz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ok-qq-Wiq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -240,6 +240,17 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="4zK-2q-Xku"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="2Ax-Ns-bhk"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-N0-Uj3" userLabel="settingsButton">
+                                <rect key="frame" x="362" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e8C-N0-Uj3" secondAttribute="height" multiplier="1:1" id="EMG-ag-UdZ"/>
+                                    <constraint firstAttribute="height" constant="32" id="drA-dc-Qcc"/>
+                                </constraints>
+                                <state key="normal" image="circle.grid.2x2" catalog="system"/>
+                                <connections>
+                                    <action selector="onTapSettings:" destination="VNn-MM-PXL" eventType="touchUpInside" id="p0d-To-yLD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -247,7 +258,9 @@
                             <constraint firstItem="EeT-KT-4h1" firstAttribute="bottom" secondItem="lvJ-KH-7TJ" secondAttribute="bottom" id="Erz-08-yad"/>
                             <constraint firstItem="lvJ-KH-7TJ" firstAttribute="leading" secondItem="EeT-KT-4h1" secondAttribute="leading" id="HIa-P1-Zzj"/>
                             <constraint firstItem="lvJ-KH-7TJ" firstAttribute="top" secondItem="j1U-i1-Soj" secondAttribute="bottom" id="J6h-Ry-Iaa"/>
+                            <constraint firstItem="EeT-KT-4h1" firstAttribute="trailing" secondItem="e8C-N0-Uj3" secondAttribute="trailing" constant="20" id="KCS-mq-gUg"/>
                             <constraint firstItem="j1U-i1-Soj" firstAttribute="top" secondItem="EeT-KT-4h1" secondAttribute="top" id="LN8-gR-ZRf"/>
+                            <constraint firstItem="e8C-N0-Uj3" firstAttribute="top" secondItem="EeT-KT-4h1" secondAttribute="top" id="QUc-78-qmV"/>
                             <constraint firstItem="EeT-KT-4h1" firstAttribute="trailing" secondItem="lvJ-KH-7TJ" secondAttribute="trailing" id="l3h-Pr-XNV"/>
                             <constraint firstItem="EeT-KT-4h1" firstAttribute="trailing" secondItem="j1U-i1-Soj" secondAttribute="trailing" id="swV-UO-4lv"/>
                         </constraints>
@@ -257,6 +270,7 @@
                         <outlet property="collectionVIew" destination="j1U-i1-Soj" id="QQA-e2-tLA"/>
                         <outlet property="collectionViewLayout" destination="Xck-KN-gZz" id="zRu-Dt-wnq"/>
                         <outlet property="scrollView" destination="lvJ-KH-7TJ" id="Me6-Kv-iAI"/>
+                        <outlet property="settingsButton" destination="e8C-N0-Uj3" id="ecc-SS-N4z"/>
                         <outlet property="shimmeringView" destination="hzg-xY-pYz" id="IiK-Gl-36w"/>
                         <outlet property="subscribeButton" destination="Usl-19-rsh" id="ifC-Lj-gIt"/>
                         <outlet property="subscriptionOfferLabel" destination="IU7-Ha-cc3" id="36O-Z7-KiB"/>
@@ -481,30 +495,13 @@
                                     <action selector="onTapOpenSettings:" destination="3Ok-qq-Wiq" eventType="touchUpInside" id="ICD-EO-uvo"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKa-5t-40v">
-                                <rect key="frame" x="182.5" y="366" width="51" height="31"/>
-                                <connections>
-                                    <action selector="onSwitchDarkMode:" destination="3Ok-qq-Wiq" eventType="valueChanged" id="0uG-Sj-8hp"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• Dark Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-8o-1CA">
-                                <rect key="frame" x="20" y="371" width="96" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QKa-5t-40v" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="3C1-uw-tr4"/>
-                            <constraint firstItem="JqL-8o-1CA" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="5xB-kU-0xA"/>
                             <constraint firstItem="pao-tC-skw" firstAttribute="top" secondItem="0eN-pg-h9y" secondAttribute="top" constant="54" id="84w-1E-imD"/>
                             <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="gHe-4k-FsU" secondAttribute="bottom" constant="180" id="9VA-Ur-9AQ"/>
-                            <constraint firstItem="QKa-5t-40v" firstAttribute="top" secondItem="gHe-4k-FsU" secondAttribute="bottom" constant="-144" id="E1V-fE-9Tg"/>
-                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="QKa-5t-40v" secondAttribute="bottom" constant="293" id="FCk-al-8fD"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="top" secondItem="pao-tC-skw" secondAttribute="bottom" constant="50" id="INk-wf-I7m"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="MRX-DL-pYN"/>
-                            <constraint firstItem="QKa-5t-40v" firstAttribute="centerY" secondItem="JqL-8o-1CA" secondAttribute="centerY" id="Ph8-V0-Dgh"/>
                             <constraint firstItem="gHe-4k-FsU" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="Q1X-Y3-qi3"/>
                             <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="gHe-4k-FsU" secondAttribute="trailing" constant="20" id="bqF-e5-qa9"/>
                             <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="pao-tC-skw" secondAttribute="trailing" constant="20" id="giC-AX-fPm"/>
@@ -558,6 +555,7 @@
     </scenes>
     <resources>
         <image name="checkmark.seal" catalog="system" width="64" height="60"/>
+        <image name="circle.grid.2x2" catalog="system" width="64" height="56"/>
         <image name="ic_lock" width="256" height="256"/>
         <image name="keyboard1" width="150" height="77"/>
         <namedColor name="lightSystemButton">

@@ -37,31 +37,7 @@ final class PersistencyManager {
         return userDefaults?.value(forKey: purchaseDateKey) as? Date
     }
     
-    func setDarkmode(active: Bool) {
-        
-        if let _ = userDefaults?.bool(forKey: darkmodeKey) {
-            userDefaults?.set(active, forKey: darkmodeKey)
-        }
-    }
-    
-    func isDarkmodeActive() -> Bool {
-        
-        if let isDarkMode = userDefaults?.bool(forKey: darkmodeKey) {
-            return isDarkMode
-        } else {
-            return false
-        }
-    }
-    
-    func isDarkModeSet() -> Bool {
-        
-        if let _ = userDefaults?.bool(forKey: darkmodeKey) {
-            return true
-        } else {
-            return false
-        }
-    }
-    
+
     func latestReviewedVersion() -> Int? {
         if let versioNumber = userDefaults?.integer(forKey: ratedVersionNumberKey) {
             return versioNumber
@@ -87,3 +63,29 @@ final class PersistencyManager {
 
 }
 
+
+
+//func setDarkmode(active: Bool) {
+//
+//    if let _ = userDefaults?.bool(forKey: darkmodeKey) {
+//        userDefaults?.set(active, forKey: darkmodeKey)
+//    }
+//}
+//
+//func isDarkmodeActive() -> Bool {
+//
+//    if let isDarkMode = userDefaults?.bool(forKey: darkmodeKey) {
+//        return isDarkMode
+//    } else {
+//        return false
+//    }
+//}
+//
+//func isDarkModeSet() -> Bool {
+//
+//    if let _ = userDefaults?.bool(forKey: darkmodeKey) {
+//        return true
+//    } else {
+//        return false
+//    }
+//}

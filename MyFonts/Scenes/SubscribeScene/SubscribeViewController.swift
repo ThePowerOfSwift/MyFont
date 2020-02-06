@@ -37,6 +37,11 @@ class SubscribeViewController: UIViewController {
             subscribeButton.clipsToBounds = true
         }
     }
+    @IBOutlet var settingsButton: UIButton! {
+        didSet {
+            settingsButton.tintColor = BUTTON_MAIN_COLOR
+        }
+    }
     @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var subscriptionTOSTextView: UITextView! {
@@ -91,6 +96,10 @@ class SubscribeViewController: UIViewController {
     
     @IBAction func onTermsofServiceTap(_ sender: UIButton) {
         
+    }
+    
+    @IBAction func onTapSettings(_ sender: UIButton) {
+        goToFinalVC()
     }
     
     private func goToFinalVC() {
