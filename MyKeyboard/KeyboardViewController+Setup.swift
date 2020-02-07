@@ -99,8 +99,8 @@ extension KeyboardViewController {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
-        let rowsPerPage = isLandscape ? 4 : 4
-        let buttonsPerRow = 2
+        let rowsPerPage = 3
+        let buttonsPerRow = 4
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let kb = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             keyboard.actions.append(kb)
@@ -110,7 +110,7 @@ extension KeyboardViewController {
             keyboard.actions.insert(KeyboardAction.switchKeyboard, at: 0)
         }
         
-        let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
+        let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: view.frame.height/4, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
