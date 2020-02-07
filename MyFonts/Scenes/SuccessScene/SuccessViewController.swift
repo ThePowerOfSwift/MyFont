@@ -11,16 +11,6 @@ import UIKit
 
 class SuccessViewController: UIViewController {
     
-    @IBOutlet var darkmodeSwitch: UISwitch! {
-        didSet {
-            if PersistencyManager.shared.isDarkModeSet() {
-                darkmodeSwitch.isOn = PersistencyManager.shared.isDarkmodeActive()
-            } else {
-                darkmodeSwitch.isOn = self.traitCollection.userInterfaceStyle == .dark ? true : false
-                PersistencyManager.shared.setDarkmode(active: darkmodeSwitch.isEnabled)
-            }
-        }
-    }
     @IBOutlet var settingsButton: UIButton! {
         didSet {
             settingsButton.layer.cornerRadius = settingsButton.frame.height/2

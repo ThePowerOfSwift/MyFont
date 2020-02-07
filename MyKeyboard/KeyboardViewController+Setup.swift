@@ -100,7 +100,7 @@ extension KeyboardViewController {
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
         let rowsPerPage = isLandscape ? 4 : 4
-        let buttonsPerRow = isLandscape ? 5 : 4
+        let buttonsPerRow = 2
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let kb = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             keyboard.actions.append(kb)
