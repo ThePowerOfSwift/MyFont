@@ -16,21 +16,15 @@ struct SubscribeModel {
     var SubscriptionOffer: String
     
     init(localizedPrice: String) {
-        let trialoffer = NSLocalizedString("subscribe.trial", comment: "Try 3 days for free")
-        let then = NSLocalizedString("general.then", comment: "then")
-        let month = NSLocalizedString("general.month", comment: "month")
-        let cancel = NSLocalizedString("subscribe.cancel", comment: "cancel anytime")
-        
-        SubscriptionOffer = trialoffer + "." + "\n " + then + " \(localizedPrice)" + "/" + month + ", " + cancel
+        let localizedString = NSLocalizedString("subscripe.offer.trial", comment: "")
+        let formattedLocalizedString = String(format: localizedString, localizedPrice)
+        SubscriptionOffer = formattedLocalizedString
     }
     
     init() {
-        let trialoffer = NSLocalizedString("subscribe.trial", comment: "Try 3 days for free")
-        let then = NSLocalizedString("general.then", comment: "then")
-        let month = NSLocalizedString("general.month", comment: "month")
-        let cancel = NSLocalizedString("subscribe.cancel", comment: "cancel anytime")
-        
-        SubscriptionOffer = trialoffer + "." + "\n " + then + "9.99$" + "/" + month + ", " + cancel
+        let localizedString = NSLocalizedString("subscripe.offer.trial", comment: "")
+        let formattedLocalizedString = String(format: localizedString, "7.99$")
+        SubscriptionOffer = formattedLocalizedString
     }
     
     struct Offer {

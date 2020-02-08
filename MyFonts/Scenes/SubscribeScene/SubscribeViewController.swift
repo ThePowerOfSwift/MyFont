@@ -35,6 +35,7 @@ class SubscribeViewController: UIViewController {
         didSet {
             subscribeButton.layer.cornerRadius = subscribeButton.frame.height/4
             subscribeButton.clipsToBounds = true
+            subscribeButton.setTitle(NSLocalizedString("subscribe.purchasebutton.title", comment: "Try for Free"), for: .normal)
         }
     }
     @IBOutlet var settingsButton: UIButton! {
