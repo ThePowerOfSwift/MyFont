@@ -99,7 +99,7 @@ extension KeyboardViewController {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
-        let rowsPerPage = 3
+        let rowsPerPage = 4
         let buttonsPerRow = 4
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let kb = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
