@@ -32,10 +32,13 @@ class DemoButton: KeyboardButtonView {
         width = action.buttonWidth(for: distribution)
         if action == KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: KeyboardManager.sharedInstance.currentIndex)) {
             buttonView?.backgroundColor = Asset.Colors.lightButton.color
-//            if buttonView?.backgroundColor == Asset.Colors.darkSystemButton.color {
             textLabel?.textColor = Asset.Colors.lightSystemButtonText.color
-//            }
         }
+        
+        if action == KeyboardAction.switchToKeyboard(.settings) {
+        DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image }
+        }
+        
         // Mark - TODO Test Performence
         if isiPhone6sOrLater() == true {
             applyShadow(.standardButtonShadow)
@@ -110,7 +113,7 @@ private extension KeyboardAction {
         case .numeric: return "123"
         case .symbolic: return "#+="
         case .alpabetic(_, let index): return FontKeyboard.ViewModel.keyboards[index].title
-        case .settings: return "☰"
+        case .settings: return ""
         default: return "?default?"
         }
     }
