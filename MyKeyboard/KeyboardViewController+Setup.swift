@@ -75,7 +75,7 @@ extension KeyboardViewController {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
-        let rowsPerPage = isLandscape ? 4 : 4
+        let rowsPerPage = isLandscape ? 5 : 5
         let buttonsPerRow = isLandscape ? 9 : 9
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards[index].characters[0].count, by: 1) {
             let char = KeyboardAction.character(FontKeyboard.ViewModel.keyboards[1].characters[0][i])
@@ -87,7 +87,7 @@ extension KeyboardViewController {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
-        keyboardStackView.addArrangedSubview(bottom)
+//        keyboardStackView.addArrangedSubview(bottom)
     }
     
     private func lockKeyboard() {
