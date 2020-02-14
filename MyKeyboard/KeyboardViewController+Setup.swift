@@ -36,7 +36,7 @@ extension KeyboardViewController {
         case .symbolic: setupSymbolicKeyboard()
         case .settings:
             shimmerView?.isHidden = true
-            allKeyboardsView()
+            addSettingsKeyboard()
             return
         default: return
         }
@@ -82,20 +82,14 @@ extension KeyboardViewController {
             keyboard.actions.append(char)
         }
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
-        let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
-//        let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
+        let view = KeyboardButtonRowCollectionView(id:"",actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = true
         keyboardStackView.addArrangedSubview(view)
-//        keyboardStackView.addArrangedSubview(bottom)
     }
     
-    private func lockKeyboard() {
-        // Setup ShimmeringView
-        
-    }
     
-    private func allKeyboardsView() {
+    private func addSettingsKeyboard() {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
 //        let isLandscape = view.frame.width > 400
@@ -106,35 +100,26 @@ extension KeyboardViewController {
             keyboard.actions.append(kb)
         }
         
-//        if !isLatestPhone() {
-//            keyboard.actions.insert(KeyboardAction.switchKeyboard, at: 0)
-//        }
-        
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: view.frame.height/4, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
-        let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
+        let view = KeyboardButtonRowCollectionView(id:"SettingsKeyboard",actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.addArrangedSubview(view)
-        
     }
     
     private func addFontToolbar(index: Int) {
         var fontsToAdd: [KeyboardAction] = []
-//        let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {
             let keyBoard = KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: i))
             fontsToAdd.append(keyBoard)
         }
-//        fontsToAdd.insert(settingsKeyboard, at: 0)
         let rowsPerPage = 1
         let buttonsPerRow = 4
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
-        let view = KeyboardButtonRowCollectionView(actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }
+        let view = KeyboardButtonRowCollectionView(id:"FontToolbar",actions: fontsToAdd, configuration: config) { [unowned self] in return self.button(for: $0) }
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         keyboardStackView.insertArrangedSubview(view, at: 0)
-        
-        
     }
     
     func setupNumericKeyboard() {

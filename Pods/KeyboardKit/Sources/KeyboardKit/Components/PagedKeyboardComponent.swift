@@ -39,6 +39,10 @@ public extension PagedKeyboardComponent {
     
     func restoreCurrentPageIndex() {
         guard canRestorePageIndex else { return }
+        guard id != "" else {
+            currentPageIndex = 0
+            return 
+        }
         let index = UserDefaults.standard.integer(forKey: settingsKey)
         guard index != currentPageIndex else { return }
         guard index < numberOfPages else { return }
