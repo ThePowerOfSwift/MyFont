@@ -24,7 +24,7 @@ class KeyboardViewController: KeyboardInputViewController {
         super.viewWillAppear(animated)
         setupKeyboard()
         guard PersistencyManager.shared.isSubscriptionActive() == true else {
-            setupLock()
+//            setupLock()
             return
         }
     }
