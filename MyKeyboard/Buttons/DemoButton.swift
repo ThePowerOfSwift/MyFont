@@ -117,13 +117,13 @@ private extension KeyboardAction {
         default: return "?default?"
         }
     }
-    
+    // MARK: TODO Fix Numeric button width bug
     var buttonWidth: CGFloat {
         switch self {
         case .none: return 10
         case .shift, .shiftDown, .backspace: return 60
         case .space: return 100
-        case .switchToKeyboard(.symbolic): return 60        
+        case .switchToKeyboard(.symbolic): return 60
         case .switchToKeyboard: return 25
         case .switchKeyboard: return 25
         
