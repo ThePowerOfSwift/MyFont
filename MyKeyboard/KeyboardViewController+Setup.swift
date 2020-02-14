@@ -35,7 +35,7 @@ extension KeyboardViewController {
         case .numeric: setupNumericKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         case .settings:
-            shimmerView.isHidden = true
+            shimmerView?.isHidden = true
             allKeyboardsView()
             return
         default: return
@@ -65,9 +65,9 @@ extension KeyboardViewController {
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
         if index > 3 {
-            shimmerView.isHidden = false
+            shimmerView?.isHidden = false
         } else {
-            shimmerView.isHidden = true
+            shimmerView?.isHidden = true
         }
     }
     
