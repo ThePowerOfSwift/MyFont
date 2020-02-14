@@ -76,16 +76,16 @@ extension KeyboardViewController {
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
         let rowsPerPage = isLandscape ? 5 : 5
-        let buttonsPerRow = isLandscape ? 9 : 9
+        let buttonsPerRow = isLandscape ? 7 : 7
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards[index].characters[0].count, by: 1) {
-            let char = KeyboardAction.character(FontKeyboard.ViewModel.keyboards[1].characters[0][i])
+            let char = KeyboardAction.character(FontKeyboard.ViewModel.keyboards[index].characters[0][i])
             keyboard.actions.append(char)
         }
         let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
         let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
-        let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
+//        let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
         view.showsVerticalScrollIndicator = false
-        view.showsHorizontalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = true
         keyboardStackView.addArrangedSubview(view)
 //        keyboardStackView.addArrangedSubview(bottom)
     }
@@ -98,7 +98,7 @@ extension KeyboardViewController {
     private func allKeyboardsView() {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
-        let isLandscape = view.frame.width > 400
+//        let isLandscape = view.frame.width > 400
         let rowsPerPage = 4
         let buttonsPerRow = 4
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards.count, by: 1) {

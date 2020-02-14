@@ -36,7 +36,7 @@ class DemoButton: KeyboardButtonView {
         }
         
         if action == KeyboardAction.switchToKeyboard(.settings) {
-        DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image }
+            DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image }
         }
         
         // Mark - TODO Test Performence
@@ -123,6 +123,8 @@ private extension KeyboardAction {
         case .none: return 10
         case .shift, .shiftDown, .backspace: return 60
         case .space: return 100
+        case .switchToKeyboard: return 25
+        case .switchKeyboard: return 25
         default: return 50
         }
     }

@@ -129,6 +129,7 @@ extension SubscribeViewController {
         RebeloperStore.purchase("autoRenewableWeekly") { (result) in
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
+                self.goToFinalVC()
             }
         }
     }
@@ -137,6 +138,7 @@ extension SubscribeViewController {
         RebeloperStore.restorePurchases { (result) in
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
+                self.goToFinalVC()
             }
         }
     }
