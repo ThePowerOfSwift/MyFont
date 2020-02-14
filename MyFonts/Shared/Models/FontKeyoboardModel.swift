@@ -116,7 +116,7 @@ struct FontKeyboard {
                  ["Z̸","X̸","C̸","V̸","B̸","N̸","M̸"]],
                          
                          id: 5),
-            UserKeyboard(title: "f̰̃õ̰ñ̰t̰̃",
+            UserKeyboard(title: "m̰̃õ̰ṵ̃s̰̃t̰̃ã̰c̰̃h̰̃ḛ̃",
                          characters: [["q̰̃","w̰̃","ḛ̃","r̰̃","t̰̃","ỹ̰","ṵ̃","ḭ̃","õ̰","p̰̃"],
                                       ["ã̰","s̰̃","d̰̃","f̰̃","g̰̃","h̰̃","j̰̃","k̰̃","l̰̃"],
                                       ["z̰̃","x̰̃","c̰̃","ṽ̰","b̰̃","ñ̰","m̰̃"]],
@@ -125,7 +125,7 @@ struct FontKeyboard {
                  ["Ã̰","S̰̃","D̰̃","F̰̃","G̰̃","H̰̃","J̰̃","K̰̃","L̰̃"],
                  ["Z̰̃","X̰̃","C̰̃","Ṽ̰","B̰̃","Ñ̰","M̰̃"]],
                          id: 5),
-            UserKeyboard(title: "f̾o̾n̾t̾",
+            UserKeyboard(title: "r̾o̾a̾s̾t̾e̾d̾",
                          characters: [["q̾","w̾","e̾","r̾","t̾","y̾","u̾","i̾","o̾","p̾"],
                                       ["a̾","s̾","d̾","f̾","g̾","h̾","j̾","k̾","l̾"],
                                       ["z̾","x̾","c̾","v̾","b̾","n̾","m̾"]],

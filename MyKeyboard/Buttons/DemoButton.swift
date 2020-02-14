@@ -123,8 +123,10 @@ private extension KeyboardAction {
         case .none: return 10
         case .shift, .shiftDown, .backspace: return 60
         case .space: return 100
+        case .switchToKeyboard(.symbolic): return 60        
         case .switchToKeyboard: return 25
         case .switchKeyboard: return 25
+        
         default: return 50
         }
     }
