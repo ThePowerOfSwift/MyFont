@@ -7,7 +7,7 @@
  */
 
 // Subscribe Scene
-"subscribe.tos" = "This subscription automatically renews for 11.99$/month at the end of 3-day trial period. Payment will be charged to your Apple ID account at the confirmation purchase. Subscription automatically renews unless it is cancelled at least 24 hours prior to the end of the current period. You can manage and cancel subscriptions by going to your account settings on the App Store after purchase";
+"subscribe.tos" = "You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.";
 
 "subscripe.offer.trial" = "Try 3 days for free.\n Then %@/week, cancel anytime.";
 "subscribe.offer.offer1" = "インスタ可愛くしましょう！"; // Make your Insta Cute
