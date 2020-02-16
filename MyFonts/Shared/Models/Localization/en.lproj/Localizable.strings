@@ -11,9 +11,10 @@
 
 "subscripe.offer.trial" = "Try 3 days for free.\n Then %@/week, cancel anytime.";
 "subscribe.offer.offer1" = "インスタ可愛くしましょう！"; // Make your Insta Cute
-"subscribe.offer.offer2" = "+1001 ユニークなシンボル"; //+30 fonts
-"subscribe.offer.offer3" = "色んなSNSで使えます"; //available in all social apps
-"subscribe.offer.offer4" = "No ads";
-"subscribe.title" = "無料でVIPに参加"; // JOIN VIP FOR FREE
+"subscribe.offer.offer2" = "+1001 ユニークなシンボル"; //+1001 symbols
+"subscribe.offer.offer3" = "フォロワー増やす機会です！"; //available in all social apps
+"subscribe.offer.offer4" = "友達の中でも目立つチャンス！"; //STAND OUT AMONG YOUR FRIENDS
+//"subscribe.title" = "無料で𝕍𝕀ℙに参加"; // JOIN VIP FOR FREE
+"subscribe.title" = "無料で𝕍𝕀ℙに参加"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
 "subscribe.purchasebutton.title" = "Try for Free";
 

@@ -35,7 +35,7 @@ struct SubscribeModel {
             Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.offer1", comment: "")),
             Offer(icon: "ic_allfonts", title: NSLocalizedString("subscribe.offer.offer2", comment: "")),
             Offer(icon: "ic_likes", title: NSLocalizedString("subscribe.offer.offer3", comment: "")),
-            Offer(icon: "ic_instagram", title: NSLocalizedString("subscribe.offer.offer4", comment: ""))
+            Offer(icon: "ic_apps", title: NSLocalizedString("subscribe.offer.offer4", comment: ""))
         ]
     }
     

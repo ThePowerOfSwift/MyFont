@@ -61,6 +61,14 @@ class SubscribeViewController: UIViewController {
             titleLabel.textColor = BUTTON_MAIN_COLOR
         }
     }
+    @IBOutlet var titleImages: [UIImageView]! {
+        didSet {
+            for imageView in titleImages! {
+                imageView.image = UIImage(named: "diamond")?.withRenderingMode(.alwaysTemplate)
+                imageView.tintColor = BUTTON_MAIN_COLOR
+            }
+        }
+    }
     private var subscribeViewModel = SubscribeModel()
     private var scrollingStep = 0
     

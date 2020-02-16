@@ -75,26 +75,26 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrm-N7-QA5" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="YmI-0Z-4UF">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="diamond" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-Gj-KYy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="48"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 参加" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-DO-v70">
-                                                        <rect key="frame" x="123.5" y="0.0" width="167" height="48"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="xbT-7K-oh5">
-                                                        <rect key="frame" x="290.5" y="0.0" width="123.5" height="48"/>
-                                                    </imageView>
-                                                </subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="diamond" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-Gj-KYy">
+                                                <rect key="frame" x="70" y="8" width="32" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="6TY-qo-Lg6"/>
+                                                    <constraint firstAttribute="height" constant="32" id="Vfm-QX-Ubo"/>
+                                                    <constraint firstAttribute="width" secondItem="6Kf-Gj-KYy" secondAttribute="height" multiplier="1:1" id="fAr-TB-fYO"/>
                                                 </constraints>
-                                            </stackView>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN VIP FOR FREE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-DO-v70">
+                                                <rect key="frame" x="102" y="9" width="195" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="cSD-JX-vMa">
+                                                <rect key="frame" x="297" y="8" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="JtI-ow-d2W"/>
+                                                    <constraint firstAttribute="width" secondItem="cSD-JX-vMa" secondAttribute="height" multiplier="1:1" id="Mt7-wu-I7N"/>
+                                                </constraints>
+                                            </imageView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PUb-Lp-fbO">
                                                 <rect key="frame" x="0.0" y="58" width="414" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -227,26 +227,31 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="6Kf-Gj-KYy" firstAttribute="top" secondItem="Xrm-N7-QA5" secondAttribute="top" constant="8" id="2La-h1-Xhj"/>
                                             <constraint firstItem="WRj-1p-Bf4" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="40" id="2fm-VH-u0f"/>
                                             <constraint firstAttribute="trailing" secondItem="0A8-9Z-Pab" secondAttribute="trailing" id="2nd-OS-tDk"/>
                                             <constraint firstItem="WRj-1p-Bf4" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="31f-EV-k5Z"/>
+                                            <constraint firstItem="u6b-DO-v70" firstAttribute="leading" secondItem="6Kf-Gj-KYy" secondAttribute="trailing" id="3tG-XG-lsb"/>
+                                            <constraint firstItem="cSD-JX-vMa" firstAttribute="centerY" secondItem="6Kf-Gj-KYy" secondAttribute="centerY" id="5ZU-Yb-BCr"/>
+                                            <constraint firstItem="u6b-DO-v70" firstAttribute="centerY" secondItem="6Kf-Gj-KYy" secondAttribute="centerY" id="6jb-Vy-DFJ"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="top" secondItem="fDO-Kz-Fm2" secondAttribute="bottom" id="9ur-Oi-oT0"/>
-                                            <constraint firstItem="PUb-Lp-fbO" firstAttribute="top" secondItem="YmI-0Z-4UF" secondAttribute="bottom" constant="10" id="DLf-wo-2dC"/>
                                             <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="10" id="FLw-oi-Tmm"/>
+                                            <constraint firstItem="6Kf-Gj-KYy" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="70" id="GaP-SC-08Y"/>
+                                            <constraint firstItem="cSD-JX-vMa" firstAttribute="leading" secondItem="u6b-DO-v70" secondAttribute="trailing" id="Jja-xk-fdF"/>
                                             <constraint firstAttribute="trailing" secondItem="WRj-1p-Bf4" secondAttribute="trailing" constant="40" id="P0y-fq-Hn2"/>
                                             <constraint firstItem="WRj-1p-Bf4" firstAttribute="top" secondItem="IU7-Ha-cc3" secondAttribute="bottom" constant="10" id="RpY-3C-VR1"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="top" secondItem="Xrm-N7-QA5" secondAttribute="top" constant="58" id="Rt7-pL-FfA"/>
                                             <constraint firstItem="IU7-Ha-cc3" firstAttribute="top" secondItem="PUb-Lp-fbO" secondAttribute="bottom" constant="40" id="Sei-tb-Vjb"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="Su7-C3-yVL"/>
+                                            <constraint firstItem="PUb-Lp-fbO" firstAttribute="top" secondItem="6Kf-Gj-KYy" secondAttribute="bottom" constant="18" id="UG6-KF-yJL"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="top" secondItem="WRj-1p-Bf4" secondAttribute="bottom" constant="18" id="UL6-xN-Hus"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" id="Uk0-Va-iWP"/>
-                                            <constraint firstAttribute="trailing" secondItem="YmI-0Z-4UF" secondAttribute="trailing" id="dJh-uF-6g4"/>
                                             <constraint firstAttribute="trailing" secondItem="PUb-Lp-fbO" secondAttribute="trailing" id="dnm-UW-V9e"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="g3j-uv-rKd"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="10" id="nH7-gD-8A1"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" id="qMS-zQ-awO"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="uSK-zG-EcH"/>
-                                            <constraint firstItem="YmI-0Z-4UF" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" id="waL-jW-5G7"/>
+                                            <constraint firstAttribute="trailing" secondItem="cSD-JX-vMa" secondAttribute="trailing" constant="85" id="vJG-m8-b9V"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -299,6 +304,8 @@
                         <outlet property="subscriptionTOSTextView" destination="fDO-Kz-Fm2" id="Y9L-2O-QBY"/>
                         <outlet property="tableView" destination="PUb-Lp-fbO" id="iAh-3j-nXv"/>
                         <outlet property="titleLabel" destination="u6b-DO-v70" id="hfC-wu-lwC"/>
+                        <outletCollection property="titleImages" destination="6Kf-Gj-KYy" collectionClass="NSMutableArray" id="M4B-SC-AVF"/>
+                        <outletCollection property="titleImages" destination="cSD-JX-vMa" collectionClass="NSMutableArray" id="ZUB-qd-xAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sp-AL-Q5l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -577,7 +584,7 @@
     </scenes>
     <resources>
         <image name="circle.grid.2x2" catalog="system" width="64" height="56"/>
-        <image name="diamond" width="256" height="256"/>
+        <image name="diamond" width="21.333333969116211" height="21.333333969116211"/>
         <image name="ic_instagram" width="21.333333969116211" height="21.333333969116211"/>
         <image name="ic_lock" width="256" height="256"/>
         <image name="keyboard1" width="150" height="77"/>
