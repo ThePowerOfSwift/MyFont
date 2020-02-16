@@ -58,6 +58,7 @@ class SubscribeViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel! {
         didSet {
             titleLabel.text = SubscribeModel.Title
+            titleLabel.textColor = BUTTON_MAIN_COLOR
         }
     }
     private var subscribeViewModel = SubscribeModel()
