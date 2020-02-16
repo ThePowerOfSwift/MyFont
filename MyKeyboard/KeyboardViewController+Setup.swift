@@ -33,6 +33,7 @@ extension KeyboardViewController {
             KeyboardManager.sharedInstance.currentIndex = index
             setupAlphabeticKeyboard(uppercased: uppercased, index: index)
         case .numeric: setupNumericKeyboard()
+        case .numericFix: setupNumericFixKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         case .settings:
             shimmerView?.isHidden = true
@@ -127,6 +128,12 @@ extension KeyboardViewController {
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
     }
+    
+    func setupNumericFixKeyboard() {
+           let keyboard = NumericKeyboardFix(in: self)
+           let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
+           keyboardStackView.addArrangedSubviews(rows)
+       }
     
     func setupSymbolicKeyboard() {
         let keyboard = SymbolicKeyboard(in: self)

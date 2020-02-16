@@ -111,6 +111,7 @@ private extension KeyboardAction {
         case .emojis: return "🙂"
         case .images: return "🖼️"
         case .numeric: return "123"
+        case .numericFix: return "123"
         case .symbolic: return "#+="
         case .alpabetic(_, let index): return FontKeyboard.ViewModel.keyboards[index].title
         case .settings: return ""
@@ -124,9 +125,9 @@ private extension KeyboardAction {
         case .shift, .shiftDown, .backspace: return 60
         case .space: return 100
         case .switchToKeyboard(.symbolic): return 60
+        case .switchToKeyboard(.numericFix): return 60
         case .switchToKeyboard: return 25
         case .switchKeyboard: return 25
-        
         default: return 50
         }
     }

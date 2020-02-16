@@ -22,6 +22,7 @@ public enum KeyboardType: Equatable {
     alpabetic(uppercased: Bool, index: Int),
     settings,
     numeric,
+    numericFix,
     symbolic,
     email,
     emojis,

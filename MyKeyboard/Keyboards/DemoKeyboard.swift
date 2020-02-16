@@ -21,7 +21,7 @@ extension DemoKeyboard {
     
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
         let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
-        var actions = [leftmost,settingsKeyboard, .space, .newLine]
+        var actions = [leftmost,.switchKeyboard, settingsKeyboard, .space, .newLine]
         if isLatestPhone() {
             actions = [leftmost, settingsKeyboard, .space, .newLine]
         }

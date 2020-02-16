@@ -59,6 +59,7 @@
 		8FC3611D23E97478006EF455 /* RebeloperStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611823E97478006EF455 /* RebeloperStore.swift */; };
 		8FC3611E23E97478006EF455 /* RegisteredPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611923E97478006EF455 /* RegisteredPurchase.swift */; };
 		8FC3611F23E97478006EF455 /* RebeloperStoreSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */; };
+		8FD6231423F9206300AC4297 /* NumericKeyboardFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6231323F9206300AC4297 /* NumericKeyboardFix.swift */; };
 		8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */; };
@@ -148,6 +149,7 @@
 		8FC3611823E97478006EF455 /* RebeloperStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebeloperStore.swift; sourceTree = "<group>"; };
 		8FC3611923E97478006EF455 /* RegisteredPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteredPurchase.swift; sourceTree = "<group>"; };
 		8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebeloperStoreSetup.swift; sourceTree = "<group>"; };
+		8FD6231323F9206300AC4297 /* NumericKeyboardFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericKeyboardFix.swift; sourceTree = "<group>"; };
 		8FE04FC823DEDBA10046F477 /* DevicyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicyType.swift; sourceTree = "<group>"; };
 		8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
@@ -255,12 +257,10 @@
 		8F3BDA0823D878C800DE541C /* MyKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8FD6231223F91E6600AC4297 /* SupportingFiles */,
+				8FD6231123F91E5100AC4297 /* Keyboards */,
 				8F406FFF23E2F78D00A83874 /* MyKeyboard.entitlements */,
 				8F454BC923D87C1100E4B696 /* Buttons */,
-				8F454BC723D87BBC00E4B696 /* DemoKeyboard.swift */,
-				8F454BBF23D87B4F00E4B696 /* AlphabeticKeyboard.swift */,
-				8F454BC323D87B9400E4B696 /* NumericKeyboard.swift */,
-				8F454BC523D87BA400E4B696 /* SymbolicKeyboard.swift */,
 				8F454BB923D87A4800E4B696 /* DemoKeyboardActionHandler.swift */,
 				8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */,
 				8F454BBB23D87A6600E4B696 /* KeyboardViewController+Setup.swift */,
@@ -386,6 +386,25 @@
 				8FC3611A23E97478006EF455 /* RebeloperStoreSetup.swift */,
 			);
 			path = RebeloperStoreBasic;
+			sourceTree = "<group>";
+		};
+		8FD6231123F91E5100AC4297 /* Keyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F454BC723D87BBC00E4B696 /* DemoKeyboard.swift */,
+				8F454BBF23D87B4F00E4B696 /* AlphabeticKeyboard.swift */,
+				8F454BC323D87B9400E4B696 /* NumericKeyboard.swift */,
+				8F454BC523D87BA400E4B696 /* SymbolicKeyboard.swift */,
+				8FD6231323F9206300AC4297 /* NumericKeyboardFix.swift */,
+			);
+			path = Keyboards;
+			sourceTree = "<group>";
+		};
+		8FD6231223F91E6600AC4297 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		8FEDA77323D9C6AB00DF127D /* SubscribeScene */ = {
@@ -632,6 +651,7 @@
 			files = (
 				8F454BC023D87B4F00E4B696 /* AlphabeticKeyboard.swift in Sources */,
 				8F454BC423D87B9400E4B696 /* NumericKeyboard.swift in Sources */,
+				8FD6231423F9206300AC4297 /* NumericKeyboardFix.swift in Sources */,
 				8F454BD223D87C5300E4B696 /* Assets.swift in Sources */,
 				8F454BCD23D87C1100E4B696 /* DemoButton.swift in Sources */,
 				8F454BC823D87BBD00E4B696 /* DemoKeyboard.swift in Sources */,
