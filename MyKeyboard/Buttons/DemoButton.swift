@@ -31,8 +31,7 @@ class DemoButton: KeyboardButtonView {
         buttonView?.tintColor = action.tintColor(in: viewController)
         width = action.buttonWidth(for: distribution)
         if action == KeyboardAction.switchToKeyboard(.alpabetic(uppercased: false, index: KeyboardManager.sharedInstance.currentIndex)) {
-            buttonView?.backgroundColor = Asset.Colors.lightButton.color
-            textLabel?.textColor = Asset.Colors.lightSystemButtonText.color
+            buttonView?.backgroundColor = Asset.Colors.background.color
         }
         
         if action == KeyboardAction.switchToKeyboard(.settings) {
