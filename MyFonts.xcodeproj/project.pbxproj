@@ -63,6 +63,7 @@
 		8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCA23DEDC420046F477 /* DevicyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FC823DEDBA10046F477 /* DevicyType.swift */; };
 		8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */; };
+		8FE22F9B23FAEB8500B651D8 /* ShowroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE22F9A23FAEB8500B651D8 /* ShowroomModel.swift */; };
 		8FEDA77223D9C64C00DF127D /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */; };
 		8FF0081423D9D231002B5D8A /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081123D9D230002B5D8A /* gif1.gif */; };
 		8FF0081523D9D231002B5D8A /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0081223D9D230002B5D8A /* gif2.gif */; };
@@ -152,6 +153,7 @@
 		8FD6231323F9206300AC4297 /* NumericKeyboardFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericKeyboardFix.swift; sourceTree = "<group>"; };
 		8FE04FC823DEDBA10046F477 /* DevicyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicyType.swift; sourceTree = "<group>"; };
 		8FE04FCB23DF21A10046F477 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		8FE22F9A23FAEB8500B651D8 /* ShowroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomModel.swift; sourceTree = "<group>"; };
 		8FEDA77123D9C64C00DF127D /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		8FF0081123D9D230002B5D8A /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
 		8FF0081223D9D230002B5D8A /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				8F111DF123E2B75500EA9277 /* ShowroomViewController.swift */,
 				8F111DF323E2B84200EA9277 /* ShowroomCell.swift */,
+				8FE22F9A23FAEB8500B651D8 /* ShowroomModel.swift */,
 			);
 			path = ShowroomScene;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				8FC3611D23E97478006EF455 /* RebeloperStore.swift in Sources */,
 				8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */,
 				8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */,
+				8FE22F9B23FAEB8500B651D8 /* ShowroomModel.swift in Sources */,
 				8FE04FC923DEDBA10046F477 /* DevicyType.swift in Sources */,
 				8F454BD123D87C3C00E4B696 /* Assets.swift in Sources */,
 				8FE04FCC23DF21A10046F477 /* SuccessViewController.swift in Sources */,

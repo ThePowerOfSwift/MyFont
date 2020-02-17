@@ -11,7 +11,13 @@ import UIKit
 
 class ShowroomCell: UICollectionViewCell {
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView! {
+        didSet {
+            imageView.layer.cornerRadius = 8
+            imageView.layer.borderColor = BUTTON_MAIN_COLOR.cgColor
+            imageView.layer.borderWidth = 1
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,8 +27,8 @@ class ShowroomCell: UICollectionViewCell {
         super.init(coder: coder)
     }
     
-    func setup(index: Int) {
-//        imageView.image = UIImage(contentsOfFile: "keyboard1")
+    func setup(image: String) {
+        imageView.image = UIImage(named: image)
     }
     
 }

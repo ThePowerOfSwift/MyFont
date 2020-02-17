@@ -49,12 +49,12 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return ShowroomModel.KeyboardImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showroomCell", for: indexPath) as! ShowroomCell
-        cell.setup(index: indexPath.row)
+        cell.setup(image: ShowroomModel.KeyboardImages[indexPath.row])
         return cell
     }
     
