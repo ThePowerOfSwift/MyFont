@@ -592,7 +592,7 @@
         <image name="keyboard0" width="658" height="374"/>
         <image name="keyboard1" width="658" height="374"/>
         <namedColor name="lightSystemButton">
-            <color red="0.66666666666666663" green="0.68627450980392157" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

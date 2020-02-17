@@ -17,6 +17,7 @@ class KeyboardViewController: KeyboardInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = Asset.Colors.background.color
         keyboardActionHandler = DemoKeyboardActionHandler(inputViewController: self)
     }
     

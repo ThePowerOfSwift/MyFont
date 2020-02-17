@@ -42,6 +42,7 @@ extension KeyboardViewController {
         default: return
         }
         addFontToolbar(index: KeyboardManager.sharedInstance.currentIndex)
+        
     }
     
     func setupAlphabeticKeyboard(uppercased: Bool = false, index: Int) {
