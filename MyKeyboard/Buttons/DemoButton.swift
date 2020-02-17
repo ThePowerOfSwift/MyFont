@@ -35,7 +35,9 @@ class DemoButton: KeyboardButtonView {
         }
         
         if action == KeyboardAction.switchToKeyboard(.settings) {
-            DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image }
+            DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image.withRenderingMode(.alwaysTemplate)
+                self.image?.tintColor = Asset.Colors.lightButtonText.color
+            }
             buttonView?.layer.borderWidth = 0.3
             buttonView?.layer.borderColor = Asset.Colors.lightButtonText.color.cgColor
         }
