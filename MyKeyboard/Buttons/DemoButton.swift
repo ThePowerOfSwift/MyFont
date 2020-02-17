@@ -36,11 +36,16 @@ class DemoButton: KeyboardButtonView {
         
         if action == KeyboardAction.switchToKeyboard(.settings) {
             DispatchQueue.main.async { self.image?.image = Asset.Images.Buttons.settings.image }
+            buttonView?.layer.borderWidth = 0.3
+            buttonView?.layer.borderColor = Asset.Colors.lightButtonText.color.cgColor
         }
         
         // Mark - TODO Test Performence
         if isiPhone6sOrLater() == true {
-            applyShadow(.standardButtonShadow)
+            applyShadow(Shadow(alpha: 0.5, blur: 4, color: Asset.Colors.lightButtonText.color, spread: 0, x: 0, y: 0))
+        } else {
+            buttonView?.layer.borderWidth = 0.3
+            buttonView?.layer.borderColor = Asset.Colors.lightButtonText.color.cgColor
         }
     }
     
