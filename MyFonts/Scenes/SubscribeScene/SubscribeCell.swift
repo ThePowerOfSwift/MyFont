@@ -12,7 +12,13 @@ import SwiftyGif
 
 class SubscribeCell: UICollectionViewCell {
     
-    @IBOutlet var media: UIImageView!
+    @IBOutlet var media: UIImageView! {
+        didSet {
+            media.layer.cornerRadius = 8
+            media.layer.borderWidth = 1
+            media.layer.borderColor = BUTTON_MAIN_COLOR.cgColor
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

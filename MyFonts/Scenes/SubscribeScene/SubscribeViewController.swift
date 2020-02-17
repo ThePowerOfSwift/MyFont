@@ -16,7 +16,8 @@ class SubscribeViewController: UIViewController {
     // MARK: Outlets & Properties
     @IBOutlet var collectionViewLayout: UPCarouselFlowLayout! {
         didSet {
-            collectionViewLayout.itemSize = CGSize(width: 200, height: 200)
+//            collectionViewLayout.itemSize = CGSize(width: 200, height: 200)
+            collectionViewLayout.spacingMode = UPCarouselFlowLayoutSpacingMode.fixed(spacing: 20)
         }
     }
     @IBOutlet var collectionVIew: UICollectionView! {
@@ -76,6 +77,7 @@ class SubscribeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLocalizedIAP()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,11 +85,18 @@ class SubscribeViewController: UIViewController {
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
         Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
+        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + 100)
+    }
+    
+    override func viewWillLayoutSubviews() {
+//        collectionViewLayout.itemSize = CGSize(width: view.frame.width, height: 100)
+//        collectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 100, bottom: 0, right: 100)
+        
     }
     
     // MARK: Actions
@@ -158,6 +167,7 @@ extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDat
     @objc func autoScroll() {
         scrollingStep = scrollingStep + 1
         collectionVIew.scrollToItem(at: IndexPath(row: scrollingStep%3, section: 0), at: .centeredHorizontally, animated: true)
+        
     }
     
     // todo change
@@ -165,6 +175,7 @@ extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDat
         3
     }
     
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! SubscribeCell
         cell.setup(index: indexPath.row)
