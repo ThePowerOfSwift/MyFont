@@ -13,14 +13,16 @@ import ShimmerSwift
 class ShowroomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var shimmeringView: ShimmeringView!
-    @IBOutlet var customFontsLabel: UILabel! {
+    @IBOutlet var titleLabel: UILabel! {
         didSet {
-            customFontsLabel.textColor = LABEL_MAIN_COLOR
+            titleLabel.text = NSLocalizedString("ShowroomModel.Title", comment: "")
+            titleLabel.textColor = LABEL_MAIN_COLOR
         }
     }
-    @IBOutlet var greatFontsLabel: UILabel! {
+    @IBOutlet var descriptionLabel: UILabel! {
         didSet {
-            greatFontsLabel.textColor = LABEL_MAIN_COLOR
+            descriptionLabel.text = NSLocalizedString("ShowroomModel.Description", comment: "")
+            descriptionLabel.textColor = LABEL_MAIN_COLOR
         }
     }
     @IBOutlet var fontCollectionView: UICollectionView! {
@@ -36,6 +38,11 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
+    private lazy var imageAspect:CGFloat = {
+        return aspectOf(image: "keyboard0")
+    }()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -46,6 +53,13 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         shimmeringView.isShimmering = true
         shimmeringView.shimmerAnimationOpacity = 0.8
         shimmeringView.shimmerSpeed = 330
+    }
+    
+    private func aspectOf(image:String) -> CGFloat {
+        let image = UIImage(named: image)
+        let width = image!.size.width
+        let height = image!.size.height
+        return CGFloat(width/height)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -60,10 +74,8 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
-        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
-        let size:CGFloat = (collectionView.frame.size.width - space) / 2.0
-        return CGSize(width: size, height: size)
+        let width = (view.frame.width / 2) - 40
+        return CGSize(width: width, height: width/imageAspect)
         
     }
     
@@ -72,5 +84,4 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         subscribeViewController.modalPresentationStyle = .fullScreen
         self.present(subscribeViewController, animated: true, completion: nil)
     }
-    
 }

@@ -18,3 +18,7 @@
 "subscribe.title" = "無料で𝕍𝕀ℙに参加"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
 "subscribe.purchasebutton.title" = "Try for Free";
 
+// MARK: Showroom
+
+"showroom.title" = "Fontspace";
+"showroom.description" = "Stylish Creative and Unique Fonts";

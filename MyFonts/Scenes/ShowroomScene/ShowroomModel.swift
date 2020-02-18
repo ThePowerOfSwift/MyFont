@@ -9,7 +9,7 @@
 import Foundation
 
 struct ShowroomModel {
-    static let KeyboardImages:[String] = [
+    static let KeyboardImages = [
         "keyboard0",
         "keyboard1",
         "keyboard2",
@@ -17,4 +17,7 @@ struct ShowroomModel {
         "keyboard4",
         "keyboard5"
     ]
+    static let Title = "showroom.title"
+    static let Description = "showroom.description"
 }
+
