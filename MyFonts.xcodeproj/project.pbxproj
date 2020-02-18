@@ -848,7 +848,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -873,7 +873,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyFonts/MyFonts.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyFonts/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -896,7 +896,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -921,7 +921,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyKeyboard/MyKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 4QKPJH6AQ6;
 				INFOPLIST_FILE = MyKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
