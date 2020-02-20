@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F3BD9EB23D878A500DE541C"
-               BuildableName = "Fonts &amp; Emoji Keyboard.app"
+               BuildableName = "Fontspace.app"
                BlueprintName = "MyFonts"
                ReferencedContainer = "container:MyFonts.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F3BD9EB23D878A500DE541C"
-            BuildableName = "Fonts &amp; Emoji Keyboard.app"
+            BuildableName = "Fontspace.app"
             BlueprintName = "MyFonts"
             ReferencedContainer = "container:MyFonts.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F3BD9EB23D878A500DE541C"
-            BuildableName = "Fonts &amp; Emoji Keyboard.app"
+            BuildableName = "Fontspace.app"
             BlueprintName = "MyFonts"
             ReferencedContainer = "container:MyFonts.xcodeproj">
          </BuildableReference>

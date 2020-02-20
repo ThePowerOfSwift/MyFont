@@ -28,7 +28,7 @@ class SubscribeViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView! {
         didSet {
-
+            tableView.isScrollEnabled = false
         }
     }
     
@@ -49,6 +49,10 @@ class SubscribeViewController: UIViewController {
     @IBOutlet var subscriptionTOSTextView: UITextView! {
         didSet {
             subscriptionTOSTextView.text = subscribeViewModel.SubsribtionTOS
+            subscriptionTOSTextView.delaysContentTouches = false
+            subscriptionTOSTextView.translatesAutoresizingMaskIntoConstraints = true
+            subscriptionTOSTextView.isScrollEnabled = false
+            subscriptionTOSTextView.sizeToFit()
         }
     }
     @IBOutlet var subscriptionOfferLabel: UILabel! {
@@ -90,7 +94,12 @@ class SubscribeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + 100)
+        print("SCROLL VIEW CONTENT SIZE: \(scrollView.contentSize)")
+        print("MAIN VIEW HEIGHT: \(self.view.frame.height)")
+        print("COLLECTIONVIEW HEIGHT: \(collectionVIew.frame.height)")
+        print("TOSVIEW HEIGHT: \(subscriptionTOSTextView.frame.height)")
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + subscriptionTOSTextView.frame.height)
+        
     }
     
     override func viewWillLayoutSubviews() {
