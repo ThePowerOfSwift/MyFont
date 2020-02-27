@@ -9,6 +9,5 @@
 import Foundation
 import UIKit
 
-let LABEL_MAIN_COLOR = UIColor(hexString: "#1F1F1F")
-let BUTTON_MAIN_COLOR = UIColor(hexString: "#FF0F65")
-let THEME_MAIN_COLOR = UIColor(hexString: "#FF0F65")
+let LABEL_MAIN_COLOR = UIColor(hexString: "#58345F")
+let THEME_MAIN_COLOR = UIColor(hexString: "#FFC6CD")

@@ -11,14 +11,7 @@ import UIKit
 
 class ShowroomCell: UICollectionViewCell {
     
-    @IBOutlet var imageView: UIImageView! {
-        didSet {
-            imageView.layer.cornerRadius = 8
-            imageView.layer.borderColor = BUTTON_MAIN_COLOR.cgColor
-            imageView.layer.borderWidth = 1
-        }
-    }
-    
+    @IBOutlet var imageView: UIImageView!    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }

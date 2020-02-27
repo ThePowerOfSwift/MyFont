@@ -15,13 +15,13 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet var shimmeringView: ShimmeringView!
     @IBOutlet var titleLabel: UILabel! {
         didSet {
-            titleLabel.text = NSLocalizedString("ShowroomModel.Title", comment: "")
+            titleLabel.text = NSLocalizedString(ShowroomModel.Title, comment: "")
             titleLabel.textColor = LABEL_MAIN_COLOR
         }
     }
     @IBOutlet var descriptionLabel: UILabel! {
         didSet {
-            descriptionLabel.text = NSLocalizedString("ShowroomModel.Description", comment: "")
+            descriptionLabel.text = NSLocalizedString(ShowroomModel.Description, comment: "")
             descriptionLabel.textColor = LABEL_MAIN_COLOR
         }
     }
@@ -34,7 +34,8 @@ class ShowroomViewController: UIViewController, UICollectionViewDelegate, UIColl
         didSet {
             continueButton.layer.cornerRadius = continueButton.frame.height/4
             continueButton.clipsToBounds = true
-            continueButton.backgroundColor = BUTTON_MAIN_COLOR
+            continueButton.backgroundColor = THEME_MAIN_COLOR
+            continueButton.setTitle(NSLocalizedString("showroom.button.continue", comment: "continue"), for: .normal)
         }
     }
     

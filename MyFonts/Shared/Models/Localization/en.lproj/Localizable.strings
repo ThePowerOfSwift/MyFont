@@ -23,8 +23,8 @@
 // MARK: Showroom
 
 "showroom.title" = "Fontspace";
-"showroom.description" = "Stylish Creative and Unique Fonts";
-
+"showroom.description" = "オシャレなフォント+40";
+"showroom.button.continue" = "継続する";
 
 // MARK: Settings
 

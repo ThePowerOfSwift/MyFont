@@ -37,11 +37,12 @@ class SubscribeViewController: UIViewController {
             subscribeButton.layer.cornerRadius = subscribeButton.frame.height/4
             subscribeButton.clipsToBounds = true
             subscribeButton.setTitle(NSLocalizedString("subscribe.purchasebutton.title", comment: "Try for Free"), for: .normal)
+            subscribeButton.backgroundColor = THEME_MAIN_COLOR
         }
     }
     @IBOutlet var settingsButton: UIButton! {
         didSet {
-            settingsButton.tintColor = BUTTON_MAIN_COLOR
+            settingsButton.tintColor = THEME_MAIN_COLOR
         }
     }
     @IBOutlet var shimmeringView: ShimmeringView!
@@ -58,19 +59,20 @@ class SubscribeViewController: UIViewController {
     @IBOutlet var subscriptionOfferLabel: UILabel! {
         didSet {
             subscriptionOfferLabel.text = subscribeViewModel.SubscriptionOffer
+            subscriptionOfferLabel.textColor = LABEL_MAIN_COLOR
         }
     }
     @IBOutlet var titleLabel: UILabel! {
         didSet {
             titleLabel.text = SubscribeModel.Title
-            titleLabel.textColor = BUTTON_MAIN_COLOR
+            titleLabel.textColor = LABEL_MAIN_COLOR
         }
     }
     @IBOutlet var titleImages: [UIImageView]! {
         didSet {
             for imageView in titleImages! {
                 imageView.image = UIImage(named: "diamond")?.withRenderingMode(.alwaysTemplate)
-                imageView.tintColor = BUTTON_MAIN_COLOR
+                imageView.tintColor = THEME_MAIN_COLOR
             }
         }
     }
@@ -113,10 +115,6 @@ class SubscribeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        print("SCROLL VIEW CONTENT SIZE: \(scrollView.contentSize)")
-        print("MAIN VIEW HEIGHT: \(self.view.frame.height)")
-        print("COLLECTIONVIEW HEIGHT: \(collectionVIew.frame.height)")
-        print("TOSVIEW HEIGHT: \(subscriptionTOSTextView.frame.height)")
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + subscriptionTOSTextView.frame.height)
         
     }
@@ -132,6 +130,7 @@ class SubscribeViewController: UIViewController {
         purchaseWeeklySubscription()
     }
     
+    // MARK: TODO
     @IBAction func onRestoreTap(_ sender: UIButton) {
         
         //        restorePurchases()
@@ -170,6 +169,7 @@ extension SubscribeViewController {
         }
     }
     
+    // MARK: TODO change subscription
     private func purchaseWeeklySubscription() {
         
         RebeloperStore.purchase("autoRenewableWeekly") { (result) in
@@ -194,16 +194,14 @@ extension SubscribeViewController: UICollectionViewDelegate, UICollectionViewDat
     
     @objc func autoScroll() {
         scrollingStep = scrollingStep + 1
-        collectionVIew.scrollToItem(at: IndexPath(row: scrollingStep%3, section: 0), at: .centeredHorizontally, animated: true)
-        
+        collectionVIew.scrollToItem(at: IndexPath(row: scrollingStep%SubscribeModel.ShowroomKeyboardsAmount, section: 0), at: .centeredHorizontally, animated: true)
     }
     
     // todo change
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3
+        SubscribeModel.ShowroomKeyboardsAmount
     }
     
-
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! SubscribeCell
         cell.setup(index: indexPath.row)

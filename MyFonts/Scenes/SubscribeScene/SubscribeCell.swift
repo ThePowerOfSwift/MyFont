@@ -12,14 +12,7 @@ import SwiftyGif
 
 class SubscribeCell: UICollectionViewCell {
     
-    @IBOutlet var media: UIImageView! {
-        didSet {
-            media.layer.cornerRadius = 8
-            media.layer.borderWidth = 1
-            media.layer.borderColor = BUTTON_MAIN_COLOR.cgColor
-        }
-    }
-    
+    @IBOutlet var media: UIImageView!
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -31,7 +24,7 @@ class SubscribeCell: UICollectionViewCell {
     public func setup(index: Int) {
         do {
 //            try media.setImage(UIImage(named: "keyboard1")!)
-            try media.image = UIImage(named: "keyboard1")!
+            try media.image = UIImage(named: "keyboard\(index)")!
 //            try media.setGifImage(UIImage(gifName: "gif\(index).gif"))
         } catch {
             print(error)
@@ -39,4 +32,4 @@ class SubscribeCell: UICollectionViewCell {
     }
     
 }
-//"gif\(index).gif"
+

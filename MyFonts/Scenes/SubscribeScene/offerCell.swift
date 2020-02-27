@@ -13,10 +13,14 @@ class OfferCell: UITableViewCell {
     
     @IBOutlet var iconImageView: UIImageView! {
         didSet {
-            iconImageView.tintColor = BUTTON_MAIN_COLOR
+            iconImageView.tintColor = THEME_MAIN_COLOR
         }
     }
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel! {
+        didSet {
+            titleLabel.textColor = LABEL_MAIN_COLOR
+        }
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,5 +34,4 @@ class OfferCell: UITableViewCell {
         iconImageView.image = UIImage(named: image)?.withRenderingMode(.alwaysTemplate)
         titleLabel.text = NSLocalizedString(text, comment: "")
     }
-
 }
