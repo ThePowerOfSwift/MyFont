@@ -127,7 +127,7 @@ class SubscribeViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func onSubscribeTap(_ sender: UIButton) {
-        purchaseWeeklySubscription()
+        purchaseSubscription()
     }
     
     // MARK: TODO
@@ -170,9 +170,8 @@ extension SubscribeViewController {
     }
     
     // MARK: TODO change subscription
-    private func purchaseWeeklySubscription() {
-        
-        RebeloperStore.purchase("autoRenewableWeekly") { (result) in
+    private func purchaseSubscription() {
+        RebeloperStore.purchase("autoRenewableMonthly") { (result) in
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
                 self.goToFinalVC()
