@@ -1,18 +1,18 @@
-/* 
-  Localizable.strings
-  MyFonts
+/*
+ Localizable.strings
+ MyFonts
+ 
+ Created by Irakli on 2/5/20.
+ Copyright © 2020 Irakli. All rights reserved.
+ */
 
-  Created by Irakli on 2/5/20.
-  Copyright © 2020 Irakli. All rights reserved.
-*/
-// Subscribe Scene
-"subscribe.text.itunes" = "アプリの自動更新サブスクリプション利用する場合全てのフォント、絵文字使えることできます。購入はiTunesアカウントから可能です。毎月のサブスクリプションが更新される前に（24時間の間）自動更新をOffにしない限り自動的にアップグレードされサブスクリプションが更新されます。自動更新やサブスクリプション等の設定はアカウント設定から変更できます。購入されたサブスクリプションをキャンセルすることができません。サブスクリプションを購入するとすぐに、無料試用期間の未使用部分または期間は没収されます。";
+// MARK: Subscribe Scene
+"subscribe.text.itunes" = "アプリの自動更新サブスクリプション利用する場合全てのフォント、絵文字使えることできます。購入はiTunesアカウントから可能です。毎月のサブスクリプションが更新される前に（24時間の間）自動更新をOffにしない限り自動的にアップグレードされサブスクリプションが更新されます。自動更新やサブスクリプション等の設定はアカウント設定から変更できます。購入されたサブスクリプションをキャンセルすることができません。サブスクリプションを購入するとすぐに、無料試用期間の未使用部分または期間は没収されます";
 "subscripe.offer.trial" = "3日間無料使用\n その後月%@(キャンセルはいつでも可能)";
 "subscribe.offer.offer1" = "インスタ可愛くしましょう！"; // Make your Insta Cute
 "subscribe.offer.offer2" = "オシャレなフォント+40"; //+40  FANCY FONTS
 "subscribe.offer.offer3" = "色んなSNSで使えます！"; //available in all social apps
 "subscribe.offer.offer4" = "フォロワー増やす機会です！"; //ATTRACT MORE FOLLOWERS
-
 "subscribe.title" = "無料で𝕍𝕀ℙ会員になれる"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
 "subscribe.purchasebutton.title" = "無料で使用できる";
 "subscribe.button.tos" = "利用規約";
@@ -20,15 +20,17 @@
 "subscribe.button.restore" = "購入されたもの復す可能";
 
 // MARK: Showroom
-
 "showroom.title" = "Fontspace";
-"showroom.description" = "Stylish Creative and Unique Fonts";
+"showroom.description" = "+40フォント＆+200絵文字";
+"showroom.button.continue" = "継続する";
 
 // MARK: Settings
+"settings.title" = "簡単に設定できる! 🎉";
+"settings.tutorial.step1" = "• 設定 🛠";
+"settings.tutorial.step2" = "• 一般 📣";
+"settings.tutorial.step3" = "• キーボード ⌨";
+"settings.tutorial.step4" = "• キーボード追加 👈";
+"settings.tutorial.step5" = "• Fontspaceを選んでください ✅";
+"settings.button.configure" = "設定";
 
-"settings.title" = "Almost Set!";
-"settings.tutorial.step1" = "• Go To Settings 🛠";
-"settings.tutorial.step2" = "• General 📣";
-"settings.tutorial.step3" = "• Keyboards ⌨";
-"settings.tutorial.step4" = "• Add New Keyboard 👈";
-"settings.tutorial.step5" = "• Select Fontspace ✅";
+

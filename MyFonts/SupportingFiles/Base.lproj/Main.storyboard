@@ -324,14 +324,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-co-Sxn" userLabel="backgroundImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fontspace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-7l-ern">
-                                <rect key="frame" x="20" y="53" width="374" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fontspace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3v-7l-ern">
+                                <rect key="frame" x="40" y="53" width="334" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                 <color key="textColor" red="0.98053020239999999" green="0.97201794389999996" blue="0.9960828424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+40 Fancy Fonts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-xF-Qo9">
-                                <rect key="frame" x="20" y="103" width="374" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+40フォント＆+200絵文字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-xF-Qo9">
+                                <rect key="frame" x="40" y="103" width="334" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" red="0.98053020239999999" green="0.97201794389999996" blue="0.9960828424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -399,7 +399,7 @@
                         <constraints>
                             <constraint firstItem="Ttq-a8-BMD" firstAttribute="bottom" secondItem="m77-56-lL4" secondAttribute="bottom" constant="40" id="1vw-k7-a8L"/>
                             <constraint firstItem="m77-56-lL4" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="40" id="2H0-bT-JEk"/>
-                            <constraint firstItem="0LE-xF-Qo9" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="20" id="7Gp-dL-DcT"/>
+                            <constraint firstItem="0LE-xF-Qo9" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="40" id="7Gp-dL-DcT"/>
                             <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="DXi-rS-23z" secondAttribute="trailing" id="8CO-Fc-ceR"/>
                             <constraint firstItem="DXi-rS-23z" firstAttribute="top" secondItem="0LE-xF-Qo9" secondAttribute="bottom" constant="20" id="8IH-Vl-VAS"/>
                             <constraint firstItem="DXi-rS-23z" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" id="BqF-vT-j8w"/>
@@ -408,10 +408,10 @@
                             <constraint firstItem="m77-56-lL4" firstAttribute="top" secondItem="DXi-rS-23z" secondAttribute="bottom" constant="40" id="MG4-FP-hEc"/>
                             <constraint firstItem="CUd-if-PjM" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="40" id="Nwa-yW-hvO"/>
                             <constraint firstItem="qZa-co-Sxn" firstAttribute="trailing" secondItem="Ttq-a8-BMD" secondAttribute="trailing" id="O3T-i8-4V9"/>
-                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="0LE-xF-Qo9" secondAttribute="trailing" constant="20" id="OwU-zs-0lN"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="0LE-xF-Qo9" secondAttribute="trailing" constant="40" id="OwU-zs-0lN"/>
                             <constraint firstItem="0LE-xF-Qo9" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="SMa-Hc-sZ9"/>
-                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="s3v-7l-ern" secondAttribute="trailing" constant="20" id="VxF-OA-yae"/>
-                            <constraint firstItem="s3v-7l-ern" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="20" id="Ybc-kF-GlN"/>
+                            <constraint firstItem="Ttq-a8-BMD" firstAttribute="trailing" secondItem="s3v-7l-ern" secondAttribute="trailing" constant="40" id="VxF-OA-yae"/>
+                            <constraint firstItem="s3v-7l-ern" firstAttribute="leading" secondItem="Ttq-a8-BMD" secondAttribute="leading" constant="40" id="Ybc-kF-GlN"/>
                             <constraint firstItem="CUd-if-PjM" firstAttribute="top" secondItem="DXi-rS-23z" secondAttribute="bottom" constant="54" id="ZFu-tw-1Ry"/>
                             <constraint firstItem="m77-56-lL4" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="cKq-9Y-JUW"/>
                             <constraint firstItem="CUd-if-PjM" firstAttribute="centerX" secondItem="Ttq-a8-BMD" secondAttribute="centerX" id="kLA-eA-buo"/>
@@ -610,7 +610,7 @@
     <resources>
         <image name="circle.grid.2x2" catalog="system" width="64" height="56"/>
         <image name="diamond" width="21.333333969116211" height="21.333333969116211"/>
-        <image name="ic_instagram" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="ic_instagram" width="64" height="64"/>
         <image name="ic_tutorial_hint" width="270" height="126.66666412353516"/>
         <image name="keyboard0" width="326.66665649414062" height="189.66667175292969"/>
     </resources>

@@ -109,7 +109,7 @@ class SubscribeViewController: UIViewController {
         super.viewWillAppear(true)
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
-        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1.8, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
         
     }
     
