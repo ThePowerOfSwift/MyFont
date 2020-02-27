@@ -11,3 +11,6 @@ import UIKit
 
 let LABEL_MAIN_COLOR = UIColor(hexString: "#58345F")
 let THEME_MAIN_COLOR = UIColor(hexString: "#FFC6CD")
+//#FF6EC3 bright pink
+//#FFC6CD light pink
+//#58345F dark pink
