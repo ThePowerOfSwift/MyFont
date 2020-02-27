@@ -6,17 +6,20 @@
  Copyright © 2020 Irakli. All rights reserved.
  */
 
-// Subscribe Scene
+// MARK: Subscribe Scene
 "subscribe.tos" = "You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.";
 
-"subscripe.offer.trial" = "Try 3 days for free.\n Then %@/week, cancel anytime.";
+"subscripe.offer.trial" = "3日間無料使用\n その後月%@(キャンセルはいつでも可能)";
 "subscribe.offer.offer1" = "インスタ可愛くしましょう！"; // Make your Insta Cute
-"subscribe.offer.offer2" = "+1001 ユニークなシンボル"; //+1001 symbols
-"subscribe.offer.offer3" = "フォロワー増やす機会です！"; //available in all social apps
-"subscribe.offer.offer4" = "友達の中でも目立つチャンス！"; //STAND OUT AMONG YOUR FRIENDS
-//"subscribe.title" = "無料で𝕍𝕀ℙに参加"; // JOIN VIP FOR FREE
-"subscribe.title" = "無料で𝕍𝕀ℙに参加"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
-"subscribe.purchasebutton.title" = "Try for Free";
+"subscribe.offer.offer2" = "オシャレなフォント+40"; //+40  FANCY FONTS
+"subscribe.offer.offer3" = "色んなSNSで使えます！"; //available in all social apps
+"subscribe.offer.offer4" = "フォロワー増やす機会です！"; //ATTRACT MORE FOLLOWERS
+
+"subscribe.title" = "無料で𝕍𝕀ℙ会員になれる"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
+"subscribe.purchasebutton.title" = "無料で使用できる";
+"subscribe.tos" = "利用規約";
+"subscribe.privacy" = "個人情報保護方針";
+"subscribe.restore" = "購入されたもの復す可能";
 
 // MARK: Showroom
 
