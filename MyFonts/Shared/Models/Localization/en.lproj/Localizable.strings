@@ -7,8 +7,7 @@
  */
 
 // MARK: Subscribe Scene
-"subscribe.tos" = "You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.";
-
+"subscribe.text.tos" = "アプリの自動更新サブスクリプション利用する場合全てのフォント、絵文字使えることできます。購入はiTunesアカウントから可能です。毎月のサブスクリプションが更新される前に（24時間の間）自動更新をOffにしない限り自動的にアップグレードされサブスクリプションが更新されます。自動更新やサブスクリプション等の設定はアカウント設定から変更できます。購入されたサブスクリプションをキャンセルすることができません。サブスクリプションを購入するとすぐに、無料試用期間の未使用部分または期間は没収されます";
 "subscripe.offer.trial" = "3日間無料使用\n その後月%@(キャンセルはいつでも可能)";
 "subscribe.offer.offer1" = "インスタ可愛くしましょう！"; // Make your Insta Cute
 "subscribe.offer.offer2" = "オシャレなフォント+40"; //+40  FANCY FONTS
@@ -17,9 +16,9 @@
 
 "subscribe.title" = "無料で𝕍𝕀ℙ会員になれる"; // 𝕁𝕆𝕀ℕ 𝕍𝕀ℙ 𝔽𝕆ℝ 𝔽ℝ𝔼𝔼
 "subscribe.purchasebutton.title" = "無料で使用できる";
-"subscribe.tos" = "利用規約";
-"subscribe.privacy" = "個人情報保護方針";
-"subscribe.restore" = "購入されたもの復す可能";
+"subscribe.button.tos" = "利用規約";
+"subscribe.button.privacy" = "個人情報保護方針";
+"subscribe.button.restore" = "購入されたもの復す可能";
 
 // MARK: Showroom
 
@@ -36,3 +35,4 @@
 "settings.tutorial.step4" = "• Add New Keyboard 👈";
 "settings.tutorial.step5" = "• Select Fontspace ✅";
 
+//"subscribe.text.tos" = "You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.";

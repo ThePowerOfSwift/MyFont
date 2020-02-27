@@ -74,6 +74,25 @@ class SubscribeViewController: UIViewController {
             }
         }
     }
+    
+    @IBOutlet var tosLabel: UIButton! {
+        didSet {
+            tosLabel.setTitle(NSLocalizedString("subscribe.button.tos", comment: ""), for: .normal)
+        }
+    }
+    
+    @IBOutlet var restoreLabel: UIButton! {
+        didSet {
+            restoreLabel.setTitle(NSLocalizedString("subscribe.button.restore", comment: ""), for: .normal)
+        }
+    }
+    
+    @IBOutlet var privacyLabel: UIButton! {
+        didSet {
+            privacyLabel.setTitle(NSLocalizedString("subscribe.button.privacy", comment: ""), for: .normal)
+        }
+    }
+    
     private var subscribeViewModel = SubscribeModel()
     private var scrollingStep = 0
     

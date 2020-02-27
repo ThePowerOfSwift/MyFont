@@ -46,7 +46,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard0" translatesAutoresizingMaskIntoConstraints="NO" id="l9N-g7-vD6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="100.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -177,19 +177,19 @@
                                                 </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="10" y="415" width="394" height="202.5"/>
+                                                <rect key="frame" x="10" y="415" width="394" height="147.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription."</string>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-9Z-Pab">
-                                                <rect key="frame" x="0.0" y="617.5" width="414" height="27"/>
+                                                <rect key="frame" x="0.0" y="562.5" width="414" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-Dd-aMm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="27"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Terms of Service">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -198,8 +198,8 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GS-gw-3S7" userLabel="Restore">
-                                                        <rect key="frame" x="138" y="0.0" width="138" height="27"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <rect key="frame" x="138" y="0.0" width="138" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Restore">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -208,8 +208,8 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS2-T0-bMB">
-                                                        <rect key="frame" x="276" y="0.0" width="138" height="27"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <rect key="frame" x="276" y="0.0" width="138" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Privacy Policy">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -218,6 +218,9 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="hfx-Gm-kPS"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -291,6 +294,8 @@
                     <connections>
                         <outlet property="collectionVIew" destination="j1U-i1-Soj" id="QQA-e2-tLA"/>
                         <outlet property="collectionViewLayout" destination="Xck-KN-gZz" id="zRu-Dt-wnq"/>
+                        <outlet property="privacyLabel" destination="yS2-T0-bMB" id="7E9-Tr-2Vq"/>
+                        <outlet property="restoreLabel" destination="5GS-gw-3S7" id="eOV-oe-sXW"/>
                         <outlet property="scrollView" destination="lvJ-KH-7TJ" id="Me6-Kv-iAI"/>
                         <outlet property="settingsButton" destination="e8C-N0-Uj3" id="ecc-SS-N4z"/>
                         <outlet property="shimmeringView" destination="hzg-xY-pYz" id="IiK-Gl-36w"/>
@@ -299,6 +304,7 @@
                         <outlet property="subscriptionTOSTextView" destination="fDO-Kz-Fm2" id="Y9L-2O-QBY"/>
                         <outlet property="tableView" destination="PUb-Lp-fbO" id="iAh-3j-nXv"/>
                         <outlet property="titleLabel" destination="u6b-DO-v70" id="hfC-wu-lwC"/>
+                        <outlet property="tosLabel" destination="jSl-Dd-aMm" id="foE-GK-jvy"/>
                         <outletCollection property="titleImages" destination="6Kf-Gj-KYy" collectionClass="NSMutableArray" id="M4B-SC-AVF"/>
                         <outletCollection property="titleImages" destination="cSD-JX-vMa" collectionClass="NSMutableArray" id="ZUB-qd-xAW"/>
                     </connections>
@@ -347,7 +353,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard1" translatesAutoresizingMaskIntoConstraints="NO" id="d80-de-D08">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="186.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="186"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
