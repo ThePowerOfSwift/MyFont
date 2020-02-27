@@ -15,3 +15,16 @@
 "subscribe.offer.offer4" = "J-No ads";
 "subscribe.title" = "J-𝔽𝕆ℕ𝕋 𝔸ℂℂ𝔼𝕊𝕊";
 "subscribe.purchasebutton.title" = "J-Try for Free";
+
+
+
+
+
+// MARK: Settings
+
+"settings.title" = "簡単に設定できる！";
+"settings.tutorial.step1" = "• 設定 🛠";
+"settings.tutorial.step2" = "• 一般 📣";
+"settings.tutorial.step3" = "• キーボード ⌨";
+"settings.tutorial.step4" = "• キーボード追加 👈";
+"settings.tutorial.step5" = "• Fontspace を選んでください ✅";

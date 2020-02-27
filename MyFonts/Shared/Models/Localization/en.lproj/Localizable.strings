@@ -22,3 +22,14 @@
 
 "showroom.title" = "Fontspace";
 "showroom.description" = "Stylish Creative and Unique Fonts";
+
+
+// MARK: Settings
+
+"settings.title" = "Almost Set!";
+"settings.tutorial.step1" = "• Go To Settings 🛠";
+"settings.tutorial.step2" = "• General 📣";
+"settings.tutorial.step3" = "• Keyboards ⌨";
+"settings.tutorial.step4" = "• Add New Keyboard 👈";
+"settings.tutorial.step5" = "• Select Fontspace ✅";
+
