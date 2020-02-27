@@ -23,7 +23,7 @@
 		8F3BD9F923D878A600DE541C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F823D878A600DE541C /* Assets.xcassets */; };
 		8F3BD9FC23D878A600DE541C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9FA23D878A600DE541C /* LaunchScreen.storyboard */; };
 		8F3BDA0A23D878C800DE541C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */; };
-		8F3BDA0E23D878C800DE541C /* Unique Keyboards.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F3BDA0723D878C800DE541C /* Unique Keyboards.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F3BDA0E23D878C800DE541C /* Fancy Fonts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F3BDA0723D878C800DE541C /* Fancy Fonts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F406FFD23E2EAAF00A83874 /* SubscribeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */; };
 		8F40700223E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
 		8F40700323E2F83D00A83874 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40700123E2F83D00A83874 /* PersistencyManager.swift */; };
@@ -90,7 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8F3BDA0E23D878C800DE541C /* Unique Keyboards.appex in Embed App Extensions */,
+				8F3BDA0E23D878C800DE541C /* Fancy Fonts.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +114,7 @@
 		8F3BD9F823D878A600DE541C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3BD9FB23D878A600DE541C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F3BD9FD23D878A600DE541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F3BDA0723D878C800DE541C /* Unique Keyboards.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Unique Keyboards.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3BDA0723D878C800DE541C /* Fancy Fonts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fancy Fonts.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BDA0923D878C800DE541C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8F3BDA0B23D878C800DE541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F406FFC23E2EAAF00A83874 /* SubscribeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeModel.swift; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				8F3BD9EC23D878A500DE541C /* Fontspace.app */,
-				8F3BDA0723D878C800DE541C /* Unique Keyboards.appex */,
+				8F3BDA0723D878C800DE541C /* Fancy Fonts.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -487,7 +487,7 @@
 			);
 			name = MyKeyboard;
 			productName = MyKeyboard;
-			productReference = 8F3BDA0723D878C800DE541C /* Unique Keyboards.appex */;
+			productReference = 8F3BDA0723D878C800DE541C /* Fancy Fonts.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -906,7 +906,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts.extension;
-				PRODUCT_NAME = "Unique Keyboards";
+				PRODUCT_NAME = "Fancy Fonts";
 				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Extension Development Profile - Master";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -931,7 +931,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thargi.fancyfonts.extension;
-				PRODUCT_NAME = "Unique Keyboards";
+				PRODUCT_NAME = "Fancy Fonts";
 				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Extension Development Profile - Master";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
