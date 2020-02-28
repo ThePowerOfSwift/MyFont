@@ -28,7 +28,6 @@ class SubscribeButton: UIView {
         super.init(frame: frame)
         layer.cornerRadius = frame.height/4
         clipsToBounds = true
-        backgroundColor = THEME_MAIN_COLOR
     }
     
     
@@ -36,6 +35,5 @@ class SubscribeButton: UIView {
         super.init(coder: coder)
         layer.cornerRadius = frame.height/4
         clipsToBounds = true
-        backgroundColor = THEME_MAIN_COLOR
     }
 }
