@@ -12,8 +12,7 @@ import ShimmerSwift
 
 class KeyboardViewController: KeyboardInputViewController {
 
-    var shimmerView: ShimmeringView!
-    
+    var shimmerView: ShimmeringView = ShimmeringView(frame: CGRect.zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,24 +24,44 @@ class KeyboardViewController: KeyboardInputViewController {
         super.viewWillAppear(animated)
         setupKeyboard()
         guard PersistencyManager.shared.isSubscriptionActive() == true else {
-//            setupLock()
+            setupLock()
             return
         }
     }
     
     private func setupLock() {
         shimmerView = ShimmeringView(frame: CGRect(x: 0, y: 0, width: view.bounds.width*0.8, height: view.bounds.height/3))
-        let subscribeButton = UIButton.fromNibTyped(owner: self, named: "SubscribeButton", in: .main)
+        let subscribeView = UIView.fromNibTyped(owner: self, named: "SubscribeButton", in: .main) as! SubscribeButton
         shimmerView.center = view.center
         shimmerView.shimmerAnimationOpacity = 0.5
         shimmerView.shimmerSpeed = 330
-        shimmerView.contentView = subscribeButton
+        shimmerView.contentView = subscribeView
         shimmerView.isShimmering = true
-        subscribeButton.layer.cornerRadius = subscribeButton.frame.height/4
-        subscribeButton.clipsToBounds = true
         view.addSubview(shimmerView)
+        
+        subscribeView.unlockButton.addTapAction {
+            self.openContainerApp()
+        }
+        
     }
     
+    @objc func openURL(_ url: URL) {
+        return
+    }
+
+    private func openContainerApp() {
+        var responder: UIResponder? = self as UIResponder
+        let selector = #selector(openURL(_:))
+
+        while responder != nil {
+            if responder!.responds(to: selector) && responder != self {
+                responder!.perform(selector, with: URL(string: "Fontspace://")!)
+                return
+            }
+            responder = responder?.next
+        }
+    }
+
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         setupKeyboard()

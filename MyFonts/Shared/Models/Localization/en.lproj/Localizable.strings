@@ -33,3 +33,6 @@
 "settings.tutorial.step4" = "• Add New Keyboard 👈";
 "settings.tutorial.step5" = "• Select Fontspace ✅";
 "settings.button.configure" = "Go to Settings";
+
+// MARK: Shared
+"shared.keyboard.unlock" = "Unlock Font";

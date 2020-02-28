@@ -33,4 +33,5 @@
 "settings.tutorial.step5" = "• Fontspaceを選んでください ✅";
 "settings.button.configure" = "設定";
 
-
+// MARK: Shared
+"shared.keyboard.unlock" = "フォントアンロック";

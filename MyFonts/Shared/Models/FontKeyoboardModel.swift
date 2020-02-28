@@ -17,6 +17,8 @@ struct FontKeyboard {
             var id: Int
         }
         
+        static let LockedKeyboards = [1,2,3,5,10]
+        
         static let keyboards: [UserKeyboard] = [
             UserKeyboard(title: "Standard",
                          

@@ -36,7 +36,7 @@ extension KeyboardViewController {
         case .numericFix: setupNumericFixKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         case .settings:
-            shimmerView?.isHidden = true
+            hideKeyboardLock()
             addSettingsKeyboard()
             return
         default: return
@@ -66,10 +66,10 @@ extension KeyboardViewController {
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
-        if index > 3 {
-            shimmerView?.isHidden = false
-        } else {
-            shimmerView?.isHidden = true
+        if FontKeyboard.ViewModel.LockedKeyboards.contains(index) {
+            showKeyboardLock()
+        }  else {
+            hideKeyboardLock()
         }
     }
     
@@ -88,6 +88,16 @@ extension KeyboardViewController {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = true
         keyboardStackView.addArrangedSubview(view)
+    }
+    
+    private func hideKeyboardLock() {
+        shimmerView.isHidden = true
+        shimmerView.isUserInteractionEnabled = false
+    }
+    
+    private func showKeyboardLock() {
+        shimmerView.isHidden = false
+        shimmerView.isUserInteractionEnabled = true
     }
     
     

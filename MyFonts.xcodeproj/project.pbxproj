@@ -17,6 +17,7 @@
 		8F111DF823E2C89100EA9277 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF723E2C89100EA9277 /* Extensions.swift */; };
 		8F111DF923E2CE5B00EA9277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF523E2C85700EA9277 /* Constants.swift */; };
 		8F111DFA23E2CE7200EA9277 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F111DF723E2C89100EA9277 /* Extensions.swift */; };
+		8F1672BD2409311400F52B99 /* SubscribeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1672BC2409311400F52B99 /* SubscribeButton.swift */; };
 		8F3BD9F023D878A500DE541C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9EF23D878A500DE541C /* AppDelegate.swift */; };
 		8F3BD9F423D878A500DE541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F323D878A500DE541C /* ViewController.swift */; };
 		8F3BD9F723D878A500DE541C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3BD9F523D878A500DE541C /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		8F454BD823D87F7300E4B696 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F454BD423D87F7300E4B696 /* Colors.xcassets */; };
 		8F454BDC23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
 		8F454BDD23D883B200E4B696 /* FontKeyoboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F454BDB23D883B200E4B696 /* FontKeyoboardModel.swift */; };
+		8F5442822409299D00C48EA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F78AF9023EB3467002AE831 /* Localizable.strings */; };
 		8F7648C823DAD41F00C25DDF /* UserFontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C723DAD41F00C25DDF /* UserFontModel.swift */; };
 		8F7648CA23DADCBA00C25DDF /* UserFontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648C923DADCBA00C25DDF /* UserFontsViewController.swift */; };
 		8F7648CC23DAE35A00C25DDF /* UserFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7648CB23DAE35A00C25DDF /* UserFontCell.swift */; };
@@ -107,6 +109,7 @@
 		8F111DF323E2B84200EA9277 /* ShowroomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomCell.swift; sourceTree = "<group>"; };
 		8F111DF523E2C85700EA9277 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F111DF723E2C89100EA9277 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8F1672BC2409311400F52B99 /* SubscribeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeButton.swift; sourceTree = "<group>"; };
 		8F3BD9EC23D878A500DE541C /* Fontspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fontspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3BD9EF23D878A500DE541C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F3BD9F323D878A500DE541C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 				8F454BCA23D87C1100E4B696 /* DemoButton.swift */,
 				8F454BCB23D87C1100E4B696 /* DemoButton.xib */,
 				8F454BCC23D87C1100E4B696 /* DemoAutocompleteLabel.swift */,
+				8F1672BC2409311400F52B99 /* SubscribeButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -549,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5442822409299D00C48EA4 /* Localizable.strings in Resources */,
 				8F454BD823D87F7300E4B696 /* Colors.xcassets in Resources */,
 				8F454BCE23D87C1100E4B696 /* DemoButton.xib in Resources */,
 				8F7B997123D9B90F0093C072 /* SubscribeButton.xib in Resources */,
@@ -661,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1672BD2409311400F52B99 /* SubscribeButton.swift in Sources */,
 				8F454BC023D87B4F00E4B696 /* AlphabeticKeyboard.swift in Sources */,
 				8F454BC423D87B9400E4B696 /* NumericKeyboard.swift in Sources */,
 				8FD6231423F9206300AC4297 /* NumericKeyboardFix.swift in Sources */,
@@ -860,7 +866,7 @@
 				PRODUCT_NAME = Fontspace;
 				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Development Profile - Master";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -885,7 +891,7 @@
 				PRODUCT_NAME = Fontspace;
 				PROVISIONING_PROFILE_SPECIFIER = "Fancy Fonts Development Profile - Master";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

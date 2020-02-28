@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F3BDA0623D878C800DE541C"
-               BuildableName = "Unique Keyboards.appex"
+               BuildableName = "Fancy Fonts.appex"
                BlueprintName = "MyKeyboard"
                ReferencedContainer = "container:MyFonts.xcodeproj">
             </BuildableReference>
