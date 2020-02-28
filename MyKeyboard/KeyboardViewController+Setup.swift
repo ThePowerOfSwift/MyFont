@@ -29,9 +29,11 @@ extension KeyboardViewController {
         switch keyboardType {
         case .alphabetic(let uppercased):
             setupAlphabeticKeyboard(uppercased: uppercased, index: KeyboardManager.sharedInstance.currentIndex)
+            toggleKeyboardLock(index: KeyboardManager.sharedInstance.currentIndex)
         case .alpabetic(let uppercased, let index):
             KeyboardManager.sharedInstance.currentIndex = index
             setupAlphabeticKeyboard(uppercased: uppercased, index: index)
+            toggleKeyboardLock(index: index)
         case .numeric: setupNumericKeyboard()
         case .numericFix: setupNumericFixKeyboard()
         case .symbolic: setupSymbolicKeyboard()
@@ -66,7 +68,11 @@ extension KeyboardViewController {
         let keyboard = AlphabeticKeyboard(uppercased: uppercased, in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
-        if FontKeyboard.ViewModel.LockedKeyboards.contains(index) {
+       
+    }
+    
+    func toggleKeyboardLock(index: Int) {
+        if FontKeyboard.ViewModel.keyboards[index].locked {
             showKeyboardLock()
         }  else {
             hideKeyboardLock()
