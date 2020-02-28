@@ -42,6 +42,7 @@ class SubscribeViewController: UIViewController {
     }
     @IBOutlet var settingsButton: UIButton! {
         didSet {
+            settingsButton.image(UIImage(named: "ic_close"), renderingMode: .alwaysTemplate)
             settingsButton.tintColor = THEME_MAIN_COLOR
         }
     }
