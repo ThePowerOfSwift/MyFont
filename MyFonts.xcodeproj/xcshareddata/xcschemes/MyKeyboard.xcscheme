@@ -57,8 +57,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "com.thargi.fancyfonts"
+         RemotePath = "/Users/irakli/Library/Developer/CoreSimulator/Devices/52448BF4-1662-4821-8897-D312C99B94AB/data/Containers/Bundle/Application/E2A69CC3-8ACB-431D-B999-CCE3CF6D2D2D/Fontspace.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F3BD9EB23D878A500DE541C"
@@ -66,7 +70,7 @@
             BlueprintName = "MyFonts"
             ReferencedContainer = "container:MyFonts.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

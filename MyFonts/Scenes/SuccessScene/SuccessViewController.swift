@@ -59,6 +59,16 @@ class SuccessViewController: UIViewController {
         }
     }
     
+    @IBOutlet var tutorialHint: UIImageView! {
+        didSet {
+            tutorialHint.layer.cornerRadius = 8
+            tutorialHint.clipsToBounds = true
+            tutorialHint.layer.borderWidth = 1
+            tutorialHint.layer.borderColor = LABEL_MAIN_COLOR.cgColor
+            tutorialHint.backgroundColor = THEME_MAIN_COLOR
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
