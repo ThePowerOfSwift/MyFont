@@ -23,6 +23,7 @@ class SubscribeViewController: UIViewController {
     @IBOutlet var collectionVIew: UICollectionView! {
         didSet {
             collectionVIew.backgroundColor = UIColor.clear
+            collectionVIew.isScrollEnabled = false
         }
     }
     
