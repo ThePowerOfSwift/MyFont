@@ -13,6 +13,8 @@ struct SubscribeModel {
     // MARK: Todo refactor to use stringformat
     static let Title = NSLocalizedString("subscribe.title", comment: "Font Access")
     static let ShowroomKeyboardsAmount = 7
+    static let PrivacyURL = ""
+    static let TOSURL = ""
     let SubsribtionTOS: String = NSLocalizedString("subscribe.text.itunes", comment: "")
     var SubscriptionOffer: String
     

@@ -133,16 +133,15 @@ class SubscribeViewController: UIViewController {
     
     // MARK: TODO
     @IBAction func onRestoreTap(_ sender: UIButton) {
-        
-        //        restorePurchases()
+//        restorePurchases()
     }
     
     @IBAction func onPrivacyPolicyTap(_ sender: UIButton) {
-        
+        UIApplication.shared.open(URL(string: SubscribeModel.PrivacyURL)!)
     }
     
     @IBAction func onTermsofServiceTap(_ sender: UIButton) {
-        
+        UIApplication.shared.open(URL(string: SubscribeModel.TOSURL)!)
     }
     
     @IBAction func onTapSettings(_ sender: UIButton) {
