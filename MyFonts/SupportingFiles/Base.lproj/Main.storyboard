@@ -487,13 +487,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almost Set!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pao-tC-skw">
-                                <rect key="frame" x="20" y="98" width="374" height="42"/>
+                                <rect key="frame" x="20" y="84" width="374" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-mo-gyc">
-                                <rect key="frame" x="20" y="176" width="374" height="421.5"/>
+                                <rect key="frame" x="20" y="146" width="374" height="421.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go To Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbu-wm-HaZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
@@ -531,7 +531,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE9-eC-c0n">
-                                <rect key="frame" x="106" y="657.5" width="202" height="60"/>
+                                <rect key="frame" x="106" y="607.5" width="202" height="60"/>
                                 <color key="backgroundColor" red="0.88361614939999999" green="0.076415576040000002" blue="0.36862832309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="la7-kv-qW7"/>
@@ -547,11 +547,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pao-tC-skw" firstAttribute="top" secondItem="0eN-pg-h9y" secondAttribute="top" constant="54" id="84w-1E-imD"/>
+                            <constraint firstItem="pao-tC-skw" firstAttribute="top" secondItem="0eN-pg-h9y" secondAttribute="top" constant="40" id="84w-1E-imD"/>
                             <constraint firstItem="9u1-mo-gyc" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="AMc-gJ-4eH"/>
-                            <constraint firstItem="9u1-mo-gyc" firstAttribute="top" secondItem="pao-tC-skw" secondAttribute="bottom" constant="36" id="Fdl-d8-mzI"/>
+                            <constraint firstItem="9u1-mo-gyc" firstAttribute="top" secondItem="pao-tC-skw" secondAttribute="bottom" constant="20" id="Fdl-d8-mzI"/>
+                            <constraint firstItem="0eN-pg-h9y" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="OE9-eC-c0n" secondAttribute="bottom" constant="194.5" id="Fjj-pE-T7O"/>
                             <constraint firstItem="0eN-pg-h9y" firstAttribute="trailing" secondItem="pao-tC-skw" secondAttribute="trailing" constant="20" id="giC-AX-fPm"/>
-                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="9u1-mo-gyc" secondAttribute="bottom" constant="60" id="ihp-8a-wfg"/>
+                            <constraint firstItem="OE9-eC-c0n" firstAttribute="top" secondItem="9u1-mo-gyc" secondAttribute="bottom" constant="40" id="ihp-8a-wfg"/>
                             <constraint firstItem="pao-tC-skw" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="pVN-6G-qsd"/>
                             <constraint firstItem="OE9-eC-c0n" firstAttribute="centerX" secondItem="0eN-pg-h9y" secondAttribute="centerX" id="upE-Da-WgB"/>
                             <constraint firstItem="pao-tC-skw" firstAttribute="leading" secondItem="0eN-pg-h9y" secondAttribute="leading" constant="20" id="v9Z-Ex-apL"/>

@@ -17,7 +17,7 @@ final class PersistencyManager {
     private let lastReviewAppVersion = "last_review_app_aersion"
     static let shared = PersistencyManager()
     
-    private let userDefaults = UserDefaults.init(suiteName: "group.com.atomicbird.demonotes")
+    private let userDefaults = UserDefaults.init(suiteName: "group.thargi.com.myfont")
     
     
     func setSubscriptionActive(withDate date: Date) {
