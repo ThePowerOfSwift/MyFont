@@ -133,7 +133,7 @@ class SubscribeViewController: UIViewController {
     
     // MARK: TODO
     @IBAction func onRestoreTap(_ sender: UIButton) {
-//        restorePurchases()
+        restorePurchases()
     }
     
     @IBAction func onPrivacyPolicyTap(_ sender: UIButton) {
