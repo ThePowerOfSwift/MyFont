@@ -176,19 +176,19 @@
                                                     <constraint firstItem="Usl-19-rsh" firstAttribute="top" secondItem="WRj-1p-Bf4" secondAttribute="top" id="xNT-aG-h3M"/>
                                                 </constraints>
                                             </view>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="10" y="415" width="394" height="147.5"/>
+                                            <textView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
+                                                <rect key="frame" x="20" y="415" width="374" height="159.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <string key="text">You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription."</string>
+                                                <mutableString key="text">You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.</mutableString>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-9Z-Pab">
-                                                <rect key="frame" x="0.0" y="562.5" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="574.5" width="414" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-Dd-aMm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Terms of Service">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -198,7 +198,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GS-gw-3S7" userLabel="Restore">
-                                                        <rect key="frame" x="138" y="0.0" width="138" height="30"/>
+                                                        <rect key="frame" x="138" y="0.0" width="138" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Restore">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,7 +208,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS2-T0-bMB">
-                                                        <rect key="frame" x="276" y="0.0" width="138" height="30"/>
+                                                        <rect key="frame" x="276" y="0.0" width="138" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <state key="normal" title="Privacy Policy">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,9 +218,6 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="hfx-Gm-kPS"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -232,21 +229,23 @@
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="leading" secondItem="6Kf-Gj-KYy" secondAttribute="trailing" id="3tG-XG-lsb"/>
                                             <constraint firstItem="cSD-JX-vMa" firstAttribute="centerY" secondItem="6Kf-Gj-KYy" secondAttribute="centerY" id="5ZU-Yb-BCr"/>
                                             <constraint firstItem="u6b-DO-v70" firstAttribute="centerY" secondItem="6Kf-Gj-KYy" secondAttribute="centerY" id="6jb-Vy-DFJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="20" id="9Oh-ig-zte"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="top" secondItem="fDO-Kz-Fm2" secondAttribute="bottom" id="9ur-Oi-oT0"/>
-                                            <constraint firstAttribute="trailing" secondItem="fDO-Kz-Fm2" secondAttribute="trailing" constant="10" id="FLw-oi-Tmm"/>
+                                            <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="20" id="Exj-1b-Hbb"/>
                                             <constraint firstItem="6Kf-Gj-KYy" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="40" id="GaP-SC-08Y"/>
                                             <constraint firstItem="cSD-JX-vMa" firstAttribute="leading" secondItem="u6b-DO-v70" secondAttribute="trailing" id="Jja-xk-fdF"/>
                                             <constraint firstAttribute="trailing" secondItem="WRj-1p-Bf4" secondAttribute="trailing" constant="40" id="P0y-fq-Hn2"/>
                                             <constraint firstItem="WRj-1p-Bf4" firstAttribute="top" secondItem="IU7-Ha-cc3" secondAttribute="bottom" constant="10" id="RpY-3C-VR1"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="top" secondItem="Xrm-N7-QA5" secondAttribute="top" constant="58" id="Rt7-pL-FfA"/>
                                             <constraint firstItem="IU7-Ha-cc3" firstAttribute="top" secondItem="PUb-Lp-fbO" secondAttribute="bottom" constant="40" id="Sei-tb-Vjb"/>
+                                            <constraint firstAttribute="width" constant="414" id="Sgi-e3-NgO"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="Su7-C3-yVL"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="top" secondItem="6Kf-Gj-KYy" secondAttribute="bottom" constant="18" id="UG6-KF-yJL"/>
                                             <constraint firstItem="fDO-Kz-Fm2" firstAttribute="top" secondItem="WRj-1p-Bf4" secondAttribute="bottom" constant="18" id="UL6-xN-Hus"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" id="Uk0-Va-iWP"/>
                                             <constraint firstAttribute="trailing" secondItem="PUb-Lp-fbO" secondAttribute="trailing" id="dnm-UW-V9e"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="g3j-uv-rKd"/>
-                                            <constraint firstItem="fDO-Kz-Fm2" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" constant="10" id="nH7-gD-8A1"/>
+                                            <constraint firstAttribute="height" constant="618" id="lvv-Ex-58Y"/>
                                             <constraint firstItem="PUb-Lp-fbO" firstAttribute="leading" secondItem="Xrm-N7-QA5" secondAttribute="leading" id="qMS-zQ-awO"/>
                                             <constraint firstItem="0A8-9Z-Pab" firstAttribute="centerX" secondItem="Xrm-N7-QA5" secondAttribute="centerX" id="uSK-zG-EcH"/>
                                             <constraint firstAttribute="trailing" secondItem="cSD-JX-vMa" secondAttribute="trailing" constant="40" id="vJG-m8-b9V"/>
@@ -259,7 +258,6 @@
                                     <constraint firstItem="IU7-Ha-cc3" firstAttribute="centerX" secondItem="lvJ-KH-7TJ" secondAttribute="centerX" id="Jwz-mI-NIA"/>
                                     <constraint firstItem="Xrm-N7-QA5" firstAttribute="leading" secondItem="lvJ-KH-7TJ" secondAttribute="leading" id="NRh-Va-mB5"/>
                                     <constraint firstItem="Xrm-N7-QA5" firstAttribute="top" secondItem="lvJ-KH-7TJ" secondAttribute="top" id="PhW-7t-v3g"/>
-                                    <constraint firstItem="Xrm-N7-QA5" firstAttribute="centerY" secondItem="lvJ-KH-7TJ" secondAttribute="centerY" id="jWk-tH-ZUc"/>
                                     <constraint firstItem="Xrm-N7-QA5" firstAttribute="centerX" secondItem="lvJ-KH-7TJ" secondAttribute="centerX" id="llc-Qz-nnY"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="4zK-2q-Xku"/>
@@ -297,6 +295,8 @@
                         <outlet property="privacyLabel" destination="yS2-T0-bMB" id="7E9-Tr-2Vq"/>
                         <outlet property="restoreLabel" destination="5GS-gw-3S7" id="eOV-oe-sXW"/>
                         <outlet property="scrollView" destination="lvJ-KH-7TJ" id="Me6-Kv-iAI"/>
+                        <outlet property="scrollViewContentHeightAnchor" destination="lvv-Ex-58Y" id="3Ly-7s-Smt"/>
+                        <outlet property="scrollViewContentWidthAnchor" destination="Sgi-e3-NgO" id="iMU-s6-vEr"/>
                         <outlet property="settingsButton" destination="e8C-N0-Uj3" id="ecc-SS-N4z"/>
                         <outlet property="shimmeringView" destination="hzg-xY-pYz" id="IiK-Gl-36w"/>
                         <outlet property="subscribeButton" destination="Usl-19-rsh" id="ifC-Lj-gIt"/>

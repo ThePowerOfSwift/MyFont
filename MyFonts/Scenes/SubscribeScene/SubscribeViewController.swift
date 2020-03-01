@@ -51,10 +51,10 @@ class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var subscriptionTOSTextView: UITextView! {
         didSet {
+            
             subscriptionTOSTextView.text = subscribeViewModel.SubsribtionTOS
-            subscriptionTOSTextView.delaysContentTouches = false
-            subscriptionTOSTextView.translatesAutoresizingMaskIntoConstraints = true
             subscriptionTOSTextView.isScrollEnabled = false
+            subscriptionTOSTextView.clipsToBounds = true
             subscriptionTOSTextView.sizeToFit()
         }
     }
@@ -99,6 +99,8 @@ class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     
     private var subscribeViewModel = SubscribeModel()
     private var scrollingStep = 0
+    @IBOutlet var scrollViewContentWidthAnchor: NSLayoutConstraint!
+    @IBOutlet var scrollViewContentHeightAnchor: NSLayoutConstraint!
     
     // MARK: LifeCycle
     override func viewDidLoad() {
@@ -117,14 +119,11 @@ class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height - collectionVIew.frame.height + subscriptionTOSTextView.frame.height)
-        
-    }
-    
-    override func viewWillLayoutSubviews() {
-//        collectionViewLayout.itemSize = CGSize(width: view.frame.width, height: 100)
-//        collectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 100, bottom: 0, right: 100)
-        
+        let height = self.view.frame.height - collectionVIew.frame.height + subscriptionTOSTextView.frame.height
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: height)
+        scrollViewContentHeightAnchor.constant = height
+        scrollViewContentWidthAnchor.constant = view.frame.width
+        view.layoutIfNeeded()
     }
     
     // MARK: Actions
@@ -192,7 +191,6 @@ extension SubscribeViewController {
             self.stopLoader()
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
-                self.goToFinalVC()
                 self.showSuccessAlert(with: NSLocalizedString("subscribe.alert.restore.success.message", comment: ""))
             } else {
                 self.showErrorAlert(with: NSLocalizedString("subscribe.alert.restore.error.message", comment: ""))
