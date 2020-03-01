@@ -16,6 +16,9 @@ PODS:
   - KeychainSwift (19.0.0)
   - Kingfisher (5.7.1)
   - Layoutless (0.4.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
   - ReactiveKit (3.12.3)
   - RSKPlaceholderTextView (5.0.2)
   - ShimmerSwift (2.1.1)
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - DuckUI
   - KeyboardKit
   - KeychainSwift
+  - NVActivityIndicatorView
   - ReactiveKit
   - ShimmerSwift
   - SwiftyGif
@@ -46,6 +50,7 @@ SPEC REPOS:
     - KeychainSwift
     - Kingfisher
     - Layoutless
+    - NVActivityIndicatorView
     - ReactiveKit
     - RSKPlaceholderTextView
     - ShimmerSwift
@@ -64,6 +69,7 @@ SPEC CHECKSUMS:
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   Layoutless: ba4810c682855373bddc78d9408cc82f970541d0
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   ReactiveKit: 36cae741b465d914e4db3a18ceac11355325eabe
   RSKPlaceholderTextView: df72ca93edfac185b98f51cb85e445f54ce8a163
   ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
@@ -73,6 +79,6 @@ SPEC CHECKSUMS:
   TPInAppReceipt: b88ea8d869115372c79429cb04a86213ca476b14
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 36e4e946d02683e4ef7fac0060a2364fe68523df
+PODFILE CHECKSUM: e6da37787e03eb20a7f20b9ecf33a73c6a1f8d2f
 
 COCOAPODS: 1.8.4

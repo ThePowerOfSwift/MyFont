@@ -15,6 +15,7 @@ target 'MyFonts' do
   pod 'DuckUI'
   pod 'ReactiveKit'
   pod 'TPInAppReceipt'
+  pod 'NVActivityIndicatorView'
 end
 
 target 'MyKeyboard' do

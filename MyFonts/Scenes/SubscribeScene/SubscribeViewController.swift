@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 import UPCarouselFlowLayout
 import ShimmerSwift
+import NVActivityIndicatorView
 
-class SubscribeViewController: UIViewController {
+class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     
     // MARK: Outlets & Properties
     @IBOutlet var collectionViewLayout: UPCarouselFlowLayout! {
         didSet {
-//            collectionViewLayout.itemSize = CGSize(width: 200, height: 200)
             collectionViewLayout.spacingMode = UPCarouselFlowLayoutSpacingMode.fixed(spacing: 20)
         }
     }
@@ -138,11 +138,15 @@ class SubscribeViewController: UIViewController {
     }
     
     @IBAction func onPrivacyPolicyTap(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: SubscribeModel.PrivacyURL)!)
+        if let url = URL(string: SubscribeModel.PrivacyURL) {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func onTermsofServiceTap(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: SubscribeModel.TOSURL)!)
+        if let url = URL(string: SubscribeModel.TOSURL) {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func onTapSettings(_ sender: UIButton) {
@@ -172,7 +176,9 @@ extension SubscribeViewController {
     
     // MARK: TODO change subscription
     private func purchaseSubscription() {
+        self.startLoader()
         RebeloperStore.purchase("autoRenewableMonthly") { (result) in
+            self.stopLoader()
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
                 self.goToFinalVC()
@@ -181,13 +187,15 @@ extension SubscribeViewController {
     }
     
     private func restorePurchases() {
+        self.startLoader()
         RebeloperStore.restorePurchases { (result) in
+            self.stopLoader()
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
                 self.goToFinalVC()
                 self.showSuccessAlert(with: NSLocalizedString("subscribe.alert.restore.success.message", comment: ""))
             } else {
-                self.showErrorAlert(with: "subscribe.alert.restore.error.message")
+                self.showErrorAlert(with: NSLocalizedString("subscribe.alert.restore.error.message", comment: ""))
             }
         }
     }
@@ -202,6 +210,14 @@ extension SubscribeViewController {
         let alert = UIAlertController(title: NSLocalizedString("subscribe.alert.title.success", comment: message), message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         self.present(alert, animated: true)
+    }
+    
+    private func startLoader() {
+        startAnimating()
+    }
+    
+    private func stopLoader() {
+        stopAnimating()
     }
 }
 
