@@ -185,8 +185,23 @@ extension SubscribeViewController {
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())
                 self.goToFinalVC()
+                self.showSuccessAlert(with: NSLocalizedString("subscribe.alert.restore.success.message", comment: ""))
+            } else {
+                self.showErrorAlert(with: "subscribe.alert.restore.error.message")
             }
         }
+    }
+    
+    private func showErrorAlert(with message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    private func showSuccessAlert(with message: String) {
+        let alert = UIAlertController(title: NSLocalizedString("subscribe.alert.title.success", comment: message), message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
 }
 

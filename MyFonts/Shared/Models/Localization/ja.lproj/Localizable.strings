@@ -19,6 +19,10 @@
 "subscribe.button.privacy" = "個人情報保護方針";
 "subscribe.button.restore" = "購入されたもの復す可能";
 
+"subscribe.alert.restore.success.message" = "購入が復元されました"; //
+"subscribe.alert.title.success" = "成功";
+"subscribe.alert.restore.error.message" = "何かがうまくいかなかった"; //
+
 // MARK: Showroom
 "showroom.title" = "Fontspace";
 "showroom.description" = "+40フォント＆+200絵文字";
