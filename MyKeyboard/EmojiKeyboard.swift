@@ -40,17 +40,19 @@ struct EmojiKeyboard: DemoKeyboard {
     let bottomActions: KeyboardActionRow
 }
 
-private extension EmojiKeyboard {
+extension EmojiKeyboard {
     
     static var switchAction: KeyboardAction {
         .none
     }
     
-    static var EmojiActions: KeyboardActionRow {
+    public static var EmojiActions: KeyboardActionRow {
+        let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
+        let standardKeyboard = KeyboardAction.switchToKeyboard(.alphabetic(uppercased: false))
         if isLatestPhone() {
-            return [.backspace, .space, .newLine]
+            return [standardKeyboard, settingsKeyboard, .space, .backspace]
         } else {
-            return [.switchKeyboard, .space, .backspace, .newLine]
+            return [standardKeyboard, .switchKeyboard, settingsKeyboard, .space, .backspace]
         }
     }
 }

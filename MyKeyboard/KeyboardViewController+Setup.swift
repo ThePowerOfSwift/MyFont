@@ -28,6 +28,7 @@ extension KeyboardViewController {
         keyboardStackView.removeAllArrangedSubviews()
         switch keyboardType {
         case .alphabetic(let uppercased):
+            KeyboardManager.sharedInstance.currentIndex = 0
             setupAlphabeticKeyboard(uppercased: uppercased, index: KeyboardManager.sharedInstance.currentIndex)
             toggleKeyboardLock(index: KeyboardManager.sharedInstance.currentIndex)
         case .alpabetic(let uppercased, let index):
@@ -83,8 +84,8 @@ extension KeyboardViewController {
         var keyboard = EmojiKeyboard(in: self)
         keyboard.actions = []
         let isLandscape = view.frame.width > 400
-        let rowsPerPage = isLandscape ? 5 : 5
-        let buttonsPerRow = isLandscape ? 7 : 7
+        let rowsPerPage = isLandscape ? 4 : 4
+        let buttonsPerRow = isLandscape ? 10 : 10
         for i in stride(from: 0, to: FontKeyboard.ViewModel.keyboards[index].characters[0].count, by: 1) {
             let char = KeyboardAction.character(FontKeyboard.ViewModel.keyboards[index].characters[0][i])
             keyboard.actions.append(char)
@@ -93,7 +94,9 @@ extension KeyboardViewController {
         let view = KeyboardButtonRowCollectionView(id:"",actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = true
+        let bottom = buttonRow(for: EmojiKeyboard.EmojiActions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubview(view)
+        keyboardStackView.addArrangedSubview(bottom)
     }
     
     private func hideKeyboardLock() {
