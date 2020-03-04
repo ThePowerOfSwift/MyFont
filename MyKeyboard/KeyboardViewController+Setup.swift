@@ -28,7 +28,6 @@ extension KeyboardViewController {
         keyboardStackView.removeAllArrangedSubviews()
         switch keyboardType {
         case .alphabetic(let uppercased):
-            KeyboardManager.sharedInstance.currentIndex = 0
             setupAlphabeticKeyboard(uppercased: uppercased, index: KeyboardManager.sharedInstance.currentIndex)
             toggleKeyboardLock(index: KeyboardManager.sharedInstance.currentIndex)
         case .alpabetic(let uppercased, let index):

@@ -48,11 +48,11 @@ extension EmojiKeyboard {
     
     public static var EmojiActions: KeyboardActionRow {
         let settingsKeyboard = KeyboardAction.switchToKeyboard(.settings)
-        let standardKeyboard = KeyboardAction.switchToKeyboard(.alphabetic(uppercased: false))
+        let numeric = KeyboardAction.switchToKeyboard(.numeric)
         if isLatestPhone() {
-            return [standardKeyboard, settingsKeyboard, .space, .backspace]
+            return [numeric, settingsKeyboard, .space, .backspace]
         } else {
-            return [standardKeyboard, .switchKeyboard, settingsKeyboard, .space, .backspace]
+            return [numeric, .switchKeyboard, settingsKeyboard, .space, .backspace]
         }
     }
 }
