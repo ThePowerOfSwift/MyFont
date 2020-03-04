@@ -106,11 +106,13 @@ class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLocalizedIAP()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        if PersistencyManager.shared.isSubscriptionActive() {
+            self.goToFinalVC()
+        }
         shimmeringView.contentView = subscribeButton
         shimmeringView.isShimmering = true
         Timer.scheduledTimer(timeInterval: 1.8, target: self, selector: #selector(self.autoScroll), userInfo: nil, repeats: true)
