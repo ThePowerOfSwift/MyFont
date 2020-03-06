@@ -26,7 +26,7 @@ struct SubscribeModel {
     
     init() {
         let localizedString = NSLocalizedString("subscripe.offer.trial", comment: "")
-        let formattedLocalizedString = String(format: localizedString, "7.99$")
+        let formattedLocalizedString = String(format: localizedString, "9.99$")
         SubscriptionOffer = formattedLocalizedString
     }
     

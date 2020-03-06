@@ -73,20 +73,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrm-N7-QA5" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="diamond" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-Gj-KYy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-Gj-KYy">
                                                 <rect key="frame" x="40" y="8" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="Vfm-QX-Ubo"/>
                                                     <constraint firstAttribute="width" secondItem="6Kf-Gj-KYy" secondAttribute="height" multiplier="1:1" id="fAr-TB-fYO"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN VIP FOR FREE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-DO-v70">
-                                                <rect key="frame" x="72" y="9" width="270" height="30"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="𝔽𝕠𝕟𝕥𝕤𝕡𝕒𝕔𝕖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-DO-v70">
+                                                <rect key="frame" x="72" y="3" width="270" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="cSD-JX-vMa">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cSD-JX-vMa">
                                                 <rect key="frame" x="342" y="8" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="JtI-ow-d2W"/>
@@ -141,13 +141,13 @@
                                                 </connections>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try 3 days for free. Then 9.99$/month, cancel anytime." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU7-Ha-cc3">
-                                                <rect key="frame" x="106.5" y="298" width="201" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="85.5" y="298" width="243.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.88361614939999999" green="0.076415576040000002" blue="0.36862832309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRj-1p-Bf4" userLabel="PurchaseButtonContainer">
-                                                <rect key="frame" x="40" y="337" width="334" height="60"/>
+                                                <rect key="frame" x="40" y="344" width="334" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usl-19-rsh">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
@@ -177,7 +177,7 @@
                                                 </constraints>
                                             </view>
                                             <textView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="20" y="415" width="374" height="159.5"/>
+                                                <rect key="frame" x="20" y="422" width="374" height="159.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <string key="text">You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.</string>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,7 +185,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-9Z-Pab">
-                                                <rect key="frame" x="0.0" y="574.5" width="414" height="24"/>
+                                                <rect key="frame" x="0.0" y="581.5" width="414" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-Dd-aMm">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="24"/>
@@ -610,7 +610,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="diamond" width="21.333333969116211" height="21.333333969116211"/>
         <image name="ic_close" width="21.333333969116211" height="21.333333969116211"/>
         <image name="ic_instagram" width="64" height="64"/>
         <image name="ic_tutorial_hint" width="276.66665649414062" height="101.33333587646484"/>

@@ -73,8 +73,8 @@ class SubscribeViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet var titleImages: [UIImageView]! {
         didSet {
             for imageView in titleImages! {
-                imageView.image = UIImage(named: "diamond")?.withRenderingMode(.alwaysTemplate)
-                imageView.tintColor = THEME_MAIN_COLOR
+//                imageView.image = UIImage(named: "diamond")?.withRenderingMode(.alwaysTemplate)
+//                imageView.tintColor = THEME_MAIN_COLOR
             }
         }
     }
