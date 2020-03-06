@@ -40,7 +40,7 @@ class KeyboardViewController: KeyboardInputViewController {
         view.addSubview(shimmerView)
         
         subscribeView.unlockButton.addTapAction {
-            self.openContainerApp()
+//            self.openContainerApp()
         }
         
     }

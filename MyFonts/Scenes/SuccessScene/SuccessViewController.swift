@@ -17,6 +17,8 @@ class SuccessViewController: UIViewController {
             settingsButton.clipsToBounds = true
             settingsButton.backgroundColor = THEME_MAIN_COLOR
             settingsButton.setTitle(NSLocalizedString("settings.button.configure", comment: ""), for: .normal)
+            settingsButton.isHidden = true
+            settingsButton.isUserInteractionEnabled = false
         }
     }
     
