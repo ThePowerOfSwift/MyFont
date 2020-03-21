@@ -177,15 +177,14 @@
                                                 </constraints>
                                             </view>
                                             <textView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-Kz-Fm2">
-                                                <rect key="frame" x="20" y="422" width="374" height="159.5"/>
+                                                <rect key="frame" x="20" y="422" width="374" height="28"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <string key="text">You can unlock all fonts and emojis through auto-renewing subscription and if you want to continue getting premium features, your subscription should be continued.Payment will be charged to your iTunes Account at confirmation of purchase.Your subscription automatically renews unless auto-renewal is turned off at least 24 hours before the end of the current subscription.Your account will be charged for a renewed subscription within 24 hours prior to the end of the current subscription.You can manage your subscription and switch off the auto-renewal by accessing your account settings after purchase.You cannot cancel the current subscription during the active subscription period.Any unused part or time-span of a free trial period will be forfeited, as soon as you purchase a subscription.</string>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-9Z-Pab">
-                                                <rect key="frame" x="0.0" y="581.5" width="414" height="24"/>
+                                                <rect key="frame" x="0.0" y="450" width="414" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-Dd-aMm">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="24"/>

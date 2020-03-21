@@ -178,7 +178,7 @@ extension SubscribeViewController {
     // MARK: TODO change subscription
     private func purchaseSubscription() {
         self.startLoader()
-        RebeloperStore.purchase("autoRenewableMonthly") { (result) in
+        RebeloperStore.purchase("nonRenewableYearly") { (result) in
             self.stopLoader()
             if result == true {
                 PersistencyManager.shared.setSubscriptionActive(withDate: Date())

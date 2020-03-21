@@ -40,24 +40,26 @@ extension RebeloperStore {
     //
     // Now add your purchases below usig your in-app purchase sufixes.
     
-    static let nonConsumable = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "nonConsumable", purchaseType: .regular)
-    static let consumable = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "consumable", purchaseType: .regular)
-    static let nonRenewing = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "nonRenewing", purchaseType: .nonRenewing)
-    static let autoRenewableWeekly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableWeekly", purchaseType: .autoRenewable)
-    static let autoRenewableMonthly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableMonthly", purchaseType: .autoRenewable)
-    static let autoRenewableYearly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableYearly", purchaseType: .autoRenewable)
+//    static let nonConsumable = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "nonConsumable", purchaseType: .regular)
+//    static let consumable = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "consumable", purchaseType: .regular)
+//    static let nonRenewing = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "nonRenewing", purchaseType: .nonRenewing)
+//    static let autoRenewableWeekly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableWeekly", purchaseType: .autoRenewable)
+//    static let autoRenewableMonthly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableMonthly", purchaseType: .autoRenewable)
+//    static let autoRenewableYearly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "autoRenewableYearly", purchaseType: .autoRenewable)
+    static let nonRenewableYearly = RegisteredPurchase(imageUrl: "Icon-1024", sufix: "nonRenewableYearly", purchaseType: .nonRenewing)
     
     // -----------------------------------------------------------------------------
     // Create a list of your purchases if needed.
     // This can be useful if you're displaying them in a list.
     
     static var registeredPurchases: [RegisteredPurchase] = [
-        nonConsumable,
-        consumable,
-        nonRenewing,
-        autoRenewableWeekly,
-        autoRenewableMonthly,
-        autoRenewableYearly
+//        nonConsumable,
+//        consumable,
+//        nonRenewing,
+//        autoRenewableWeekly,
+//        autoRenewableMonthly,
+//        autoRenewableYearly
+        nonRenewableYearly
     ]
     
     // -----------------------------------------------------------------------------
